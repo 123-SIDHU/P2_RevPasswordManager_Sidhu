@@ -1,127 +1,53 @@
 package com.rev.app.entity;
 
-import java.sql.Timestamp;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "VERIFICATION_CODES")
+@Table(name = "pm_verification_codes")
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class VerificationCode {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "vc_seq")
+    @SequenceGenerator(name = "vc_seq", sequenceName = "pm_vc_seq", allocationSize = 1)
+    private Long id;
 
-    @Column(name = "USER_ID", nullable = false)
-    private int userId;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
 
-    @Column(nullable = false)
+    @Column(name = "code", nullable = false, length = 10)
     private String code;
 
+    @Column(name = "purpose", nullable = false, length = 50)
     private String purpose;
 
-    @Column(name = "EXPIRY_TIME")
-    private Timestamp expiryTime;
+    @Column(name = "expires_at", nullable = false)
+    private LocalDateTime expiresAt;
 
-    @Column(name = "IS_USED")
-    private boolean isUsed;
+    @Column(name = "used", nullable = false)
+    @Builder.Default
+    private boolean used = false;
 
-    @Column(name = "CREATED_AT", insertable = false, updatable = false)
-    private java.sql.Timestamp createdAt;
+    @CreationTimestamp
+    @Column(name = "created_at", updatable = false)
+    private LocalDateTime createdAt;
 
-    public VerificationCode() {
+    public boolean isExpired() {
+        return LocalDateTime.now().isAfter(expiresAt);
     }
 
-    public VerificationCode(int id, int userId, String code, String purpose, Timestamp expiryTime, boolean isUsed,
-                            Timestamp createdAt) {
-        this.id = id;
-        this.userId = userId;
-        this.code = code;
-        this.purpose = purpose;
-        this.expiryTime = expiryTime;
-        this.isUsed = isUsed;
-        this.createdAt = createdAt;
-    }
-
-    public VerificationCode(int userId, String code, String purpose, Timestamp expiryTime) {
-        this.userId = userId;
-        this.code = code;
-        this.purpose = purpose;
-        this.expiryTime = expiryTime;
-        this.isUsed = false;
-        this.createdAt = new Timestamp(System.currentTimeMillis());
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getUserId() {
-        return userId;
-    }
-
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
-
-    public String getCode() {
-        return code;
-    }
-
-    public void setCode(String code) {
-        this.code = code;
-    }
-
-    public String getPurpose() {
-        return purpose;
-    }
-
-    public void setPurpose(String purpose) {
-        this.purpose = purpose;
-    }
-
-    public Timestamp getExpiryTime() {
-        return expiryTime;
-    }
-
-    public void setExpiryTime(Timestamp expiryTime) {
-        this.expiryTime = expiryTime;
-    }
-
-    public boolean isUsed() {
-        return isUsed;
-    }
-
-    public void setUsed(boolean used) {
-        isUsed = used;
-    }
-
-    public Timestamp getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(Timestamp createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    @Override
-    public String toString() {
-        return "VerificationCode{" +
-                "id=" + id +
-                ", userId=" + userId +
-                ", code='" + code + '\'' +
-                ", purpose='" + purpose + '\'' +
-                ", expiryTime=" + expiryTime +
-                ", isUsed=" + isUsed +
-                ", createdAt=" + createdAt +
-                '}';
+    public boolean isValid() {
+        return !used && !isExpired();
     }
 }

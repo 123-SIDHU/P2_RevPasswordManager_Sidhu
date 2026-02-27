@@ -1,5 +1,6 @@
-package com.rev.app.service;
+package com.rev.app.service.impl;
 
+import com.passwordmanager.app.service.IEmailService;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 import org.apache.logging.log4j.LogManager;
@@ -11,19 +12,20 @@ import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 @Service
-public class EmailService {
+public class EmailServiceImpl implements IEmailService {
 
-    private static final Logger logger = LogManager.getLogger(EmailService.class);
+    private static final Logger logger = LogManager.getLogger(EmailServiceImpl.class);
 
     private final JavaMailSender mailSender;
 
     @Value("${app.mail.from}")
     private String fromAddress;
 
-    public EmailService(JavaMailSender mailSender) {
+    public EmailServiceImpl(JavaMailSender mailSender) {
         this.mailSender = mailSender;
     }
 
+    @Override
     @Async
     public void sendOtp(String toEmail, String otp, String purpose) {
         try {
@@ -31,10 +33,10 @@ public class EmailService {
             String body = buildHtml(otp, purpose);
             MimeMessage msg = mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(msg, true, "UTF-8");
-            helper.setFrom(fromAddress);
-            helper.setTo(toEmail);
-            helper.setSubject(subject);
-            helper.setText(body, true);
+            if (fromAddress != null) helper.setFrom(fromAddress);
+            if (toEmail != null) helper.setTo(toEmail);
+            if (subject != null) helper.setSubject(subject);
+            helper.setText(body != null ? body : "", true);
             mailSender.send(msg);
             logger.info("OTP email sent to {} for purpose={}", toEmail, purpose);
         } catch (MessagingException e) {

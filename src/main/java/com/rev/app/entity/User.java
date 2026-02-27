@@ -1,69 +1,79 @@
 package com.rev.app.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
-@Table(name = "USERS")
+@Table(name = "pm_users")
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
 
-    @Column(nullable = false, unique = true)
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_seq")
+    @SequenceGenerator(name = "user_seq", sequenceName = "pm_user_seq", allocationSize = 1)
+    private Long id;
+
+    @Column(name = "username", nullable = false, unique = true, length = 50)
     private String username;
 
-    @Column(name = "MASTER_PASSWORD_HASH", nullable = false)
-    private String masterPasswordHash;
-
-    private String name;
-
+    @Column(name = "email", nullable = false, unique = true, length = 100)
     private String email;
 
-    @Column(name = "PHONE_NUMBER")
-    private String phoneNumber;
+    @Column(name = "full_name", length = 100)
+    private String fullName;
 
-    @Column(name = "TWO_FACTOR_ENABLED")
-    private boolean twoFactorEnabled;
+    @Column(name = "phone", length = 20)
+    private String phone;
 
-    public User() {}
+    @Column(name = "master_password_hash", nullable = false, length = 255)
+    private String masterPasswordHash;
 
-    public User(String username, String masterPasswordHash, String name, String email, String phoneNumber) {
-        this.username = username;
-        this.masterPasswordHash = masterPasswordHash;
-        this.name = name;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.twoFactorEnabled = false;
-    }
+    @Column(name = "email_verified", nullable = false)
+    @Builder.Default
+    private boolean emailVerified = false;
 
-    public User(int id, String username, String masterPasswordHash, String name, String email, String phoneNumber) {
-        this.id = id;
-        this.username = username;
-        this.masterPasswordHash = masterPasswordHash;
-        this.name = name;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.twoFactorEnabled = false;
-    }
+    @Column(name = "pending_email", length = 100)
+    private String pendingEmail;
 
-    // Getters and setters
-    public int getId() { return id; }
-    public void setId(int id) { this.id = id; }
-    public String getUsername() { return username; }
-    public void setUsername(String username) { this.username = username; }
-    public String getMasterPasswordHash() { return masterPasswordHash; }
-    public void setMasterPasswordHash(String hash) { this.masterPasswordHash = hash; }
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-    public String getEmail() { return email; }
-    public void setEmail(String email) { this.email = email; }
-    public String getPhoneNumber() { return phoneNumber; }
-    public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
-    public boolean isTwoFactorEnabled() { return twoFactorEnabled; }
-    public void setTwoFactorEnabled(boolean twoFactorEnabled) { this.twoFactorEnabled = twoFactorEnabled; }
+    @Column(name = "profile_photo_url", columnDefinition = "CLOB")
+    private String profilePhotoUrl;
+
+    @Column(name = "totp_secret", length = 100)
+    private String totpSecret;
+
+    @Column(name = "totp_enabled", nullable = false)
+    @Builder.Default
+    private boolean totpEnabled = false;
+
+    @Column(name = "account_locked", nullable = false)
+    @Builder.Default
+    private boolean accountLocked = false;
+
+    @CreationTimestamp
+    @Column(name = "created_at", updatable = false)
+    private LocalDateTime createdAt;
+
+    @UpdateTimestamp
+    @Column(name = "updated_at")
+    private LocalDateTime updatedAt;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @Builder.Default
+    private List<VaultEntry> vaultEntries = new ArrayList<>();
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @Builder.Default
+    private List<SecurityQuestion> securityQuestions = new ArrayList<>();
 }

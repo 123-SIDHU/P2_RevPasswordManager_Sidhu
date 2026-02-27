@@ -1,18 +1,34 @@
 package com.rev.app.mapper;
 
-import com.rev.app.dto.UserDTO;
+import com.rev.app.dto.RegisterDTO;
 import com.rev.app.entity.User;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserMapper {
-    public static UserDTO toDTO(User user) {
-        if (user == null) return null;
-        UserDTO dto = new UserDTO();
-        dto.setId(user.getId());
-        dto.setUsername(user.getUsername());
-        dto.setName(user.getName());
-        dto.setEmail(user.getEmail());
-        dto.setPhoneNumber(user.getPhoneNumber());
-        dto.setTwoFactorEnabled(user.isTwoFactorEnabled());
-        return dto;
+
+    private final PasswordEncoder passwordEncoder;
+
+    public UserMapper(PasswordEncoder passwordEncoder) {
+        this.passwordEncoder = passwordEncoder;
+    }
+
+    /**
+     * Maps a RegisterDTO to a User entity.
+     * Note: emailVerified is set to true by default, matching UserService behavior.
+     */
+    public User toEntity(RegisterDTO dto) {
+        if (dto == null) {
+            return null;
+        }
+        return User.builder()
+                .username(dto.getUsername())
+                .email(dto.getEmail())
+                .fullName(dto.getFullName())
+                .phone(dto.getPhone())
+                .masterPasswordHash(passwordEncoder.encode(dto.getMasterPassword()))
+                .emailVerified(true)
+                .build();
     }
 }

@@ -1,0 +1,96 @@
+package com.rev.app.service.impl;
+
+import com.passwordmanager.app.entity.User;
+import com.passwordmanager.app.entity.VerificationCode;
+import com.passwordmanager.app.repository.IVerificationCodeRepository;
+import com.passwordmanager.app.service.IEmailService;
+import com.passwordmanager.app.service.IVerificationService;
+import jakarta.transaction.Transactional;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import java.security.SecureRandom;
+import java.time.LocalDateTime;
+
+@Service
+@Transactional
+public class VerificationServiceImpl implements IVerificationService {
+
+    private static final Logger logger = LogManager.getLogger(VerificationServiceImpl.class);
+    private final SecureRandom random = new SecureRandom();
+
+    @Value("${app.verification.expiry-minutes:10}")
+    private int expiryMinutes;
+
+    private final IVerificationCodeRepository vcRepo;
+    private final IEmailService emailService;
+
+    public VerificationServiceImpl(IVerificationCodeRepository vcRepo, IEmailService emailService) {
+        this.vcRepo = vcRepo;
+        this.emailService = emailService;
+    }
+
+    @Override
+    public String generateAndSendOtp(User user, String purpose) {
+        vcRepo.deleteExpiredAndUsed(LocalDateTime.now());
+
+        String code = String.format("%06d", random.nextInt(1_000_000));
+        VerificationCode vc = VerificationCode.builder()
+                .user(user)
+                .code(code)
+                .purpose(purpose)
+                .expiresAt(LocalDateTime.now().plusMinutes(expiryMinutes))
+                .build();
+        vcRepo.save(vc);
+
+        String targetEmail = ("EMAIL_CHANGE".equals(purpose) && user.getPendingEmail() != null)
+                ? user.getPendingEmail()
+                : user.getEmail();
+
+        emailService.sendOtp(targetEmail, code, purpose);
+        logger.info("OTP generated and emailed to {} for purpose={}", targetEmail, purpose);
+        return code;
+    }
+
+    @Override
+    public String sendRegistrationOtp(String email) {
+        String code = String.format("%06d", random.nextInt(1_000_000));
+        emailService.sendOtp(email, code, "EMAIL_VERIFY");
+        logger.info("Registration OTP generated and emailed to {}", email);
+        return code;
+    }
+
+    @Override
+    public String generateCode(User user, String purpose) {
+        vcRepo.deleteExpiredAndUsed(LocalDateTime.now());
+
+        String code = String.format("%06d", random.nextInt(1_000_000));
+        VerificationCode vc = VerificationCode.builder()
+                .user(user)
+                .code(code)
+                .purpose(purpose)
+                .expiresAt(LocalDateTime.now().plusMinutes(expiryMinutes))
+                .build();
+        vcRepo.save(vc);
+        logger.info("Verification code generated for user {} purpose={}", user.getUsername(), purpose);
+        return code;
+    }
+
+    @Override
+    public boolean validateCode(User user, String code, String purpose) {
+        return vcRepo.findTopByUserIdAndPurposeAndUsedFalseOrderByCreatedAtDesc(user.getId(), purpose)
+                .map(vc -> {
+                    if (vc.getCode().equals(code) && vc.isValid()) {
+                        vc.setUsed(true);
+                        vcRepo.save(vc);
+                        logger.info("Code validated for user {} purpose={}", user.getUsername(), purpose);
+                        return true;
+                    }
+                    logger.warn("Invalid or expired code for user {} purpose={}", user.getUsername(), purpose);
+                    return false;
+                })
+                .orElse(false);
+    }
+}
