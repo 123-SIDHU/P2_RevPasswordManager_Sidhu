@@ -1,5 +1,6 @@
 package com.rev.app.config;
 
+import com.rev.app.entity.User;
 import com.rev.app.repository.IUserRepository;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

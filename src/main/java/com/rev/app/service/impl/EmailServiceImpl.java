@@ -1,6 +1,6 @@
 package com.rev.app.service.impl;
 
-import com.passwordmanager.app.service.IEmailService;
+import com.rev.app.service.IEmailService;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 import org.apache.logging.log4j.LogManager;

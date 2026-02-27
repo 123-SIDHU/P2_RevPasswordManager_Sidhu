@@ -3,7 +3,7 @@ package com.rev.app.mapper;
 import com.rev.app.dto.VaultEntryDTO;
 import com.rev.app.entity.User;
 import com.rev.app.entity.VaultEntry;
-import com.rev.app.service.EncryptionService;
+import com.rev.app.service.IEncryptionService;
 import org.springframework.stereotype.Component;
 
 import java.time.format.DateTimeFormatter;
@@ -13,9 +13,9 @@ public class VaultEntryMapper {
 
     private static final DateTimeFormatter FMT = DateTimeFormatter.ofPattern("dd MMM yyyy HH:mm");
 
-    private final EncryptionService encryptionService;
+    private final IEncryptionService encryptionService;
 
-    public VaultEntryMapper(EncryptionService encryptionService) {
+    public VaultEntryMapper(IEncryptionService encryptionService) {
         this.encryptionService = encryptionService;
     }
 

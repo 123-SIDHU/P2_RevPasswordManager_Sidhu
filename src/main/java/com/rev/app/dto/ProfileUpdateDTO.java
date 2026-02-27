@@ -21,4 +21,6 @@ public class ProfileUpdateDTO {
     private String phone;
 
     private MultipartFile profilePhoto;
+
+    private boolean removePhoto;
 }

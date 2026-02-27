@@ -1,10 +1,10 @@
 package com.rev.app.service.impl;
 
-import com.passwordmanager.app.entity.User;
-import com.passwordmanager.app.entity.VerificationCode;
-import com.passwordmanager.app.repository.IVerificationCodeRepository;
-import com.passwordmanager.app.service.IEmailService;
-import com.passwordmanager.app.service.IVerificationService;
+import com.rev.app.entity.User;
+import com.rev.app.entity.VerificationCode;
+import com.rev.app.repository.IVerificationCodeRepository;
+import com.rev.app.service.IEmailService;
+import com.rev.app.service.IVerificationService;
 import jakarta.transaction.Transactional;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

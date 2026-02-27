@@ -2,7 +2,7 @@ package com.rev.app.rest;
 
 import com.rev.app.dto.PasswordGeneratorConfigDTO;
 import com.rev.app.dto.PasswordResultDTO;
-import com.rev.app.service.PasswordGeneratorService;
+import com.rev.app.service.IPasswordGeneratorService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,9 +16,9 @@ import java.util.stream.Collectors;
 @RequestMapping("/api/generator")
 public class PasswordGeneratorRestController {
 
-    private final PasswordGeneratorService generatorService;
+    private final IPasswordGeneratorService generatorService;
 
-    public PasswordGeneratorRestController(PasswordGeneratorService generatorService) {
+    public PasswordGeneratorRestController(IPasswordGeneratorService generatorService) {
         this.generatorService = generatorService;
     }
 

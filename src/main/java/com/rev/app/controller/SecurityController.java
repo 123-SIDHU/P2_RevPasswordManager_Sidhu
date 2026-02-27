@@ -1,10 +1,12 @@
 package com.rev.app.controller;
 
 import com.rev.app.dto.ChangePasswordDTO;
+import com.rev.app.entity.SecurityQuestion;
+import com.rev.app.entity.User;
 import com.rev.app.repository.ISecurityQuestionRepository;
-import com.rev.app.service.SecurityAuditService;
-import com.rev.app.service.UserService;
-import com.rev.app.service.VerificationService;
+import com.rev.app.service.ISecurityAuditService;
+import com.rev.app.service.IUserService;
+import com.rev.app.service.IVerificationService;
 import com.rev.app.util.AuthUtil;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Value;
@@ -25,19 +27,19 @@ public class SecurityController {
     @Value("${app.audit.old-password-days:90}")
     private int oldPasswordDays;
 
-    private final UserService userService;
-    private final SecurityAuditService auditService;
-    private final VerificationService verificationService;
+    private final IUserService userService;
+    private final ISecurityAuditService auditService;
+    private final IVerificationService verificationService;
     private final ISecurityQuestionRepository sqRepository;
     private final PasswordEncoder passwordEncoder;
     private final AuthUtil authUtil;
 
-    public SecurityController(UserService userService,
-                              SecurityAuditService auditService,
-                              VerificationService verificationService,
-                              ISecurityQuestionRepository sqRepository,
-                              PasswordEncoder passwordEncoder,
-                              AuthUtil authUtil) {
+    public SecurityController(IUserService userService,
+            ISecurityAuditService auditService,
+            IVerificationService verificationService,
+            ISecurityQuestionRepository sqRepository,
+            PasswordEncoder passwordEncoder,
+            AuthUtil authUtil) {
         this.userService = userService;
         this.auditService = auditService;
         this.verificationService = verificationService;
@@ -50,7 +52,7 @@ public class SecurityController {
     @GetMapping("/audit")
     public String audit(Model model) {
         User user = authUtil.getCurrentUser();
-        SecurityAuditService.AuditReport report = auditService.generateReport(user.getId(), oldPasswordDays);
+        ISecurityAuditService.AuditReport report = auditService.generateReport(user.getId(), oldPasswordDays);
         model.addAttribute("report", report);
         model.addAttribute("user", user);
         return "security/audit";
@@ -66,9 +68,9 @@ public class SecurityController {
 
     @PostMapping("/change-password")
     public String changePassword(@Valid @ModelAttribute("changePasswordDTO") ChangePasswordDTO dto,
-                                 BindingResult result,
-                                 RedirectAttributes redirectAttrs,
-                                 Model model) {
+            BindingResult result,
+            RedirectAttributes redirectAttrs,
+            Model model) {
         User user = authUtil.getCurrentUser();
         if (result.hasErrors()) {
             model.addAttribute("user", user);
@@ -149,9 +151,9 @@ public class SecurityController {
 
     @PostMapping("/questions/update")
     public String updateQuestions(@RequestParam String masterPassword,
-                                  @RequestParam List<String> questionTexts,
-                                  @RequestParam List<String> answers,
-                                  RedirectAttributes redirectAttrs) {
+            @RequestParam List<String> questionTexts,
+            @RequestParam List<String> answers,
+            RedirectAttributes redirectAttrs) {
         User user = authUtil.getCurrentUser();
         if (!userService.verifyMasterPassword(user, masterPassword)) {
             redirectAttrs.addFlashAttribute("errorMsg", "Incorrect master password");

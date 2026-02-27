@@ -1,9 +1,10 @@
 package com.rev.app.controller;
 
 import com.rev.app.dto.ProfileUpdateDTO;
+import com.rev.app.entity.User;
 import com.rev.app.exception.ValidationException;
-import com.rev.app.service.UserService;
-import com.rev.app.service.VerificationService;
+import com.rev.app.service.IUserService;
+import com.rev.app.service.IVerificationService;
 import com.rev.app.util.AuthUtil;
 import jakarta.validation.Valid;
 import org.apache.logging.log4j.LogManager;
@@ -20,13 +21,13 @@ public class ProfileController {
 
     private static final Logger logger = LogManager.getLogger(ProfileController.class);
 
-    private final UserService userService;
-    private final VerificationService verificationService;
+    private final IUserService userService;
+    private final IVerificationService verificationService;
     private final AuthUtil authUtil;
 
-    public ProfileController(UserService userService,
-                             VerificationService verificationService,
-                             AuthUtil authUtil) {
+    public ProfileController(IUserService userService,
+            IVerificationService verificationService,
+            AuthUtil authUtil) {
         this.userService = userService;
         this.verificationService = verificationService;
         this.authUtil = authUtil;
@@ -46,9 +47,9 @@ public class ProfileController {
 
     @PostMapping
     public String updateProfile(@Valid @ModelAttribute("profileDTO") ProfileUpdateDTO dto,
-                                BindingResult result,
-                                RedirectAttributes redirectAttrs,
-                                Model model) {
+            BindingResult result,
+            RedirectAttributes redirectAttrs,
+            Model model) {
         User user = authUtil.getCurrentUser();
         if (result.hasErrors()) {
             model.addAttribute("user", user);
@@ -113,7 +114,7 @@ public class ProfileController {
 
     @PostMapping("/delete")
     public String doDeleteAccount(@RequestParam String masterPassword, RedirectAttributes redirectAttrs,
-                                  jakarta.servlet.http.HttpSession session) {
+            jakarta.servlet.http.HttpSession session) {
         User user = authUtil.getCurrentUser();
         if (user == null)
             return "redirect:/login";

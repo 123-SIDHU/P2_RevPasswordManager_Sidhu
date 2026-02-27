@@ -2,7 +2,7 @@ package com.rev.app.config;
 
 import com.rev.app.entity.User;
 import com.rev.app.repository.IUserRepository;
-import com.rev.app.service.VerificationService;
+import com.rev.app.service.IVerificationService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -17,16 +17,16 @@ import java.io.IOException;
 public class CustomAuthenticationSuccessHandler implements AuthenticationSuccessHandler {
 
     private final IUserRepository IUserRepository;
-    private final VerificationService verificationService;
+    private final IVerificationService verificationService;
 
-    public CustomAuthenticationSuccessHandler(IUserRepository IUserRepository, VerificationService verificationService) {
+    public CustomAuthenticationSuccessHandler(IUserRepository IUserRepository, IVerificationService verificationService) {
         this.IUserRepository = IUserRepository;
         this.verificationService = verificationService;
     }
 
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
-                                        Authentication authentication) throws IOException, ServletException {
+            Authentication authentication) throws IOException, ServletException {
 
         // Get authenticated user
         String username = authentication.getName();

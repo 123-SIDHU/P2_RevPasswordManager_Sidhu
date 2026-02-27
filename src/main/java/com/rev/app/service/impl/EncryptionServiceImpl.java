@@ -1,6 +1,6 @@
 package com.rev.app.service.impl;
 
-import com.passwordmanager.app.service.IEncryptionService;
+import com.rev.app.service.IEncryptionService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;

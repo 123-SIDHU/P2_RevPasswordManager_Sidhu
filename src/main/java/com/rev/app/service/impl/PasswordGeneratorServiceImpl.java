@@ -1,7 +1,7 @@
 package com.rev.app.service.impl;
 
-import com.passwordmanager.app.dto.PasswordGeneratorConfigDTO;
-import com.passwordmanager.app.service.IPasswordGeneratorService;
+import com.rev.app.dto.PasswordGeneratorConfigDTO;
+import com.rev.app.service.IPasswordGeneratorService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;

@@ -8,7 +8,7 @@
         <version>3.4.3</version>
         <relativePath/>
     </parent>
-    <groupId>com.passwordmanager.app</groupId>
+    <groupId>com.rev.app</groupId>
     <artifactId>RevPasswordManager_P2</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>RevPasswordManager_P2</name>

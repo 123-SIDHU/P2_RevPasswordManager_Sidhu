@@ -1,16 +1,16 @@
 package com.rev.app.service.impl;
 
-import com.passwordmanager.app.dto.*;
-import com.passwordmanager.app.entity.SecurityQuestion;
-import com.passwordmanager.app.entity.User;
-import com.passwordmanager.app.exception.InvalidCredentialsException;
-import com.passwordmanager.app.exception.ValidationException;
-import com.passwordmanager.app.mapper.SecurityQuestionMapper;
-import com.passwordmanager.app.mapper.UserMapper;
-import com.passwordmanager.app.repository.ISecurityQuestionRepository;
-import com.passwordmanager.app.repository.IUserRepository;
-import com.passwordmanager.app.service.IUserService;
-import com.passwordmanager.app.service.IVerificationService;
+import com.rev.app.dto.*;
+import com.rev.app.entity.SecurityQuestion;
+import com.rev.app.entity.User;
+import com.rev.app.exception.InvalidCredentialsException;
+import com.rev.app.exception.ValidationException;
+import com.rev.app.mapper.SecurityQuestionMapper;
+import com.rev.app.mapper.UserMapper;
+import com.rev.app.repository.ISecurityQuestionRepository;
+import com.rev.app.repository.IUserRepository;
+import com.rev.app.service.IUserService;
+import com.rev.app.service.IVerificationService;
 import jakarta.transaction.Transactional;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

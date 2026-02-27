@@ -2,10 +2,11 @@ package com.rev.app.controller;
 
 import com.rev.app.dto.PasswordGeneratorConfigDTO;
 import com.rev.app.dto.VaultEntryDTO;
+import com.rev.app.entity.User;
 import com.rev.app.entity.VaultEntry;
-import com.rev.app.service.PasswordGeneratorService;
-import com.rev.app.service.UserService;
-import com.rev.app.service.VaultService;
+import com.rev.app.service.IPasswordGeneratorService;
+import com.rev.app.service.IUserService;
+import com.rev.app.service.IVaultService;
 import com.rev.app.util.AuthUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -22,15 +23,15 @@ public class PasswordGeneratorController {
 
     private static final Logger logger = LogManager.getLogger(PasswordGeneratorController.class);
 
-    private final PasswordGeneratorService generatorService;
-    private final VaultService vaultService;
-    private final UserService userService;
+    private final IPasswordGeneratorService generatorService;
+    private final IVaultService vaultService;
+    private final IUserService userService;
     private final AuthUtil authUtil;
 
-    public PasswordGeneratorController(PasswordGeneratorService generatorService,
-                                       VaultService vaultService,
-                                       UserService userService,
-                                       AuthUtil authUtil) {
+    public PasswordGeneratorController(IPasswordGeneratorService generatorService,
+            IVaultService vaultService,
+            IUserService userService,
+            AuthUtil authUtil) {
         this.generatorService = generatorService;
         this.vaultService = vaultService;
         this.userService = userService;
@@ -65,9 +66,9 @@ public class PasswordGeneratorController {
 
     @PostMapping("/save")
     public String saveToVault(@RequestParam String password,
-                              @RequestParam String accountName,
-                              @RequestParam String masterPassword,
-                              RedirectAttributes redirectAttrs) {
+            @RequestParam String accountName,
+            @RequestParam String masterPassword,
+            RedirectAttributes redirectAttrs) {
         User user = authUtil.getCurrentUser();
         if (!userService.verifyMasterPassword(user, masterPassword)) {
             redirectAttrs.addFlashAttribute("errorMsg", "Incorrect master password");

@@ -1,13 +1,13 @@
 package com.rev.app.service.impl;
 
-import com.passwordmanager.app.dto.VaultEntryDTO;
-import com.passwordmanager.app.entity.User;
-import com.passwordmanager.app.entity.VaultEntry;
-import com.passwordmanager.app.exception.ResourceNotFoundException;
-import com.passwordmanager.app.mapper.VaultEntryMapper;
-import com.passwordmanager.app.repository.IVaultEntryRepository;
-import com.passwordmanager.app.service.IEncryptionService;
-import com.passwordmanager.app.service.IVaultService;
+import com.rev.app.dto.VaultEntryDTO;
+import com.rev.app.entity.User;
+import com.rev.app.entity.VaultEntry;
+import com.rev.app.exception.ResourceNotFoundException;
+import com.rev.app.mapper.VaultEntryMapper;
+import com.rev.app.repository.IVaultEntryRepository;
+import com.rev.app.service.IEncryptionService;
+import com.rev.app.service.IVaultService;
 import jakarta.transaction.Transactional;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -1,14 +1,12 @@
 package com.rev.app.controller;
 
 import com.rev.app.dto.VaultEntryDTO;
+import com.rev.app.entity.User;
 import com.rev.app.entity.VaultEntry;
-import com.rev.app.exception.ValidationException;
-import com.rev.app.service.UserService;
-import com.rev.app.service.VaultService;
+import com.rev.app.service.IUserService;
+import com.rev.app.service.IVaultService;
 import com.rev.app.util.AuthUtil;
 import jakarta.validation.Valid;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -21,13 +19,13 @@ import java.util.List;
 @RequestMapping("/vault")
 public class VaultController {
 
-    private static final Logger logger = LogManager.getLogger(VaultController.class);
 
-    private final VaultService vaultService;
-    private final UserService userService;
+
+    private final IVaultService vaultService;
+    private final IUserService userService;
     private final AuthUtil authUtil;
 
-    public VaultController(VaultService vaultService, UserService userService, AuthUtil authUtil) {
+    public VaultController(IVaultService vaultService, IUserService userService, AuthUtil authUtil) {
         this.vaultService = vaultService;
         this.userService = userService;
         this.authUtil = authUtil;
@@ -35,10 +33,10 @@ public class VaultController {
 
     @GetMapping
     public String vaultList(@RequestParam(required = false) String search,
-                            @RequestParam(required = false) String category,
-                            @RequestParam(required = false, defaultValue = "name") String sort,
-                            @RequestParam(required = false, defaultValue = "list") String view,
-                            Model model) {
+            @RequestParam(required = false) String category,
+            @RequestParam(required = false, defaultValue = "name") String sort,
+            @RequestParam(required = false, defaultValue = "list") String view,
+            Model model) {
         User user = authUtil.getCurrentUser();
         List<VaultEntryDTO> entries = vaultService.getAllEntries(user.getId(), search, category, sort);
         model.addAttribute("entries", entries);
@@ -71,9 +69,9 @@ public class VaultController {
 
     @PostMapping("/{id}/reveal")
     public String revealPassword(@PathVariable Long id,
-                                 @RequestParam String masterPassword,
-                                 Model model,
-                                 RedirectAttributes redirectAttrs) {
+            @RequestParam String masterPassword,
+            Model model,
+            RedirectAttributes redirectAttrs) {
         User user = authUtil.getCurrentUser();
         if (!userService.verifyMasterPassword(user, masterPassword)) {
             redirectAttrs.addFlashAttribute("errorMsg", "Incorrect master password");
@@ -98,10 +96,10 @@ public class VaultController {
 
     @PostMapping("/add")
     public String addEntry(@Valid @ModelAttribute("entryDTO") VaultEntryDTO dto,
-                           BindingResult result,
-                           @RequestParam String masterPassword,
-                           Model model,
-                           RedirectAttributes redirectAttrs) {
+            BindingResult result,
+            @RequestParam String masterPassword,
+            Model model,
+            RedirectAttributes redirectAttrs) {
         User user = authUtil.getCurrentUser();
         if (result.hasErrors()) {
             model.addAttribute("categories", VaultEntry.Category.values());
@@ -134,11 +132,11 @@ public class VaultController {
 
     @PostMapping("/{id}/edit")
     public String editEntry(@PathVariable Long id,
-                            @Valid @ModelAttribute("entryDTO") VaultEntryDTO dto,
-                            BindingResult result,
-                            @RequestParam String masterPassword,
-                            Model model,
-                            RedirectAttributes redirectAttrs) {
+            @Valid @ModelAttribute("entryDTO") VaultEntryDTO dto,
+            BindingResult result,
+            @RequestParam String masterPassword,
+            Model model,
+            RedirectAttributes redirectAttrs) {
         User user = authUtil.getCurrentUser();
         if (result.hasErrors()) {
             model.addAttribute("categories", VaultEntry.Category.values());
@@ -160,8 +158,8 @@ public class VaultController {
 
     @PostMapping("/{id}/delete")
     public String deleteEntry(@PathVariable Long id,
-                              @RequestParam String masterPassword,
-                              RedirectAttributes redirectAttrs) {
+            @RequestParam String masterPassword,
+            RedirectAttributes redirectAttrs) {
         User user = authUtil.getCurrentUser();
         if (!userService.verifyMasterPassword(user, masterPassword)) {
             redirectAttrs.addFlashAttribute("errorMsg", "Incorrect master password");
@@ -174,7 +172,7 @@ public class VaultController {
 
     @PostMapping("/{id}/favorite")
     public String toggleFavorite(@PathVariable Long id,
-                                 @RequestParam(required = false, defaultValue = "/vault") String returnUrl) {
+            @RequestParam(required = false, defaultValue = "/vault") String returnUrl) {
         User user = authUtil.getCurrentUser();
         vaultService.toggleFavorite(user.getId(), id);
         return "redirect:" + returnUrl;

@@ -1,8 +1,9 @@
 package com.rev.app.controller;
 
 import com.rev.app.dto.VaultEntryDTO;
-import com.rev.app.service.SecurityAuditService;
-import com.rev.app.service.VaultService;
+import com.rev.app.entity.User;
+import com.rev.app.service.ISecurityAuditService;
+import com.rev.app.service.IVaultService;
 import com.rev.app.util.AuthUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,11 +22,11 @@ public class DashboardController {
     @Value("${app.audit.old-password-days:90}")
     private int oldPasswordDays;
 
-    private final VaultService vaultService;
-    private final SecurityAuditService auditService;
+    private final IVaultService vaultService;
+    private final ISecurityAuditService auditService;
     private final AuthUtil authUtil;
 
-    public DashboardController(VaultService vaultService, SecurityAuditService auditService, AuthUtil authUtil) {
+    public DashboardController(IVaultService vaultService, ISecurityAuditService auditService, AuthUtil authUtil) {
         this.vaultService = vaultService;
         this.auditService = auditService;
         this.authUtil = authUtil;
@@ -38,7 +39,7 @@ public class DashboardController {
             return "redirect:/login";
 
         long total = vaultService.countByUser(user.getId());
-        SecurityAuditService.AuditReport report = auditService.generateReport(user.getId(), oldPasswordDays);
+        ISecurityAuditService.AuditReport report = auditService.generateReport(user.getId(), oldPasswordDays);
         List<VaultEntryDTO> recent = vaultService.getRecentEntries(user.getId(), 5);
 
         model.addAttribute("user", user);
