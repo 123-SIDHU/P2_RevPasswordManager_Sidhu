@@ -10,9 +10,9 @@
 
 <body>
     <div class="auth-wrapper" style="align-items:flex-start; padding-top: 40px;">
-        <div class="auth-card fade-in" style="max-width:560px;">
+        <div class="auth-card" style="max-width:560px;">
             <div class="auth-logo">
-                <div class="logo-icon">🛡️</div>
+                <div class="logo-icon">🔐</div>
                 <span class="logo-text">RevSecurity</span>
             </div>
             <h1 class="auth-title">Create your account</h1>
@@ -97,21 +97,38 @@
                         <div style="background:var(--bg-secondary);border-radius:8px;padding:12px;margin-bottom:10px;">
                             <div class="form-group">
                                 <label class="form-label" th:text="'Question ' + (${stat.index + 1})">Question 1</label>
-                                <input type="text" class="form-control"
-                                    th:field="*{securityQuestions[__${stat.index}__].questionText}"
-                                    placeholder="e.g. What was your first pet's name?" />
+                                <input type="text" class="form-control" th:id="'sq_q_' + ${stat.index}"
+                                    th:field="*{securityQuestions[__${stat.index}__].questionText}" autocomplete="off"
+                                    placeholder="Enter or select a question" list="securityQuestionSuggestions" />
+                                <div class="text-danger text-sm mt-1"
+                                    th:if="${#fields.hasErrors('securityQuestions[__${stat.index}__].questionText')}"
+                                    th:errors="*{securityQuestions[__${stat.index}__].questionText}"></div>
                             </div>
                             <div class="form-group" style="margin-bottom:0;">
                                 <label class="form-label">Answer</label>
                                 <div class="input-group">
-                                    <input type="password" class="form-control"
-                                        th:field="*{securityQuestions[__${stat.index}__].answer}"
+                                    <input type="password" class="form-control" th:id="'sq_a_' + ${stat.index}"
+                                        th:field="*{securityQuestions[__${stat.index}__].answer}" autocomplete="off"
                                         placeholder="Your answer (case-insensitive)" />
                                     <button type="button" class="toggle-pw">👁️</button>
                                 </div>
+                                <div class="text-danger text-sm mt-1"
+                                    th:if="${#fields.hasErrors('securityQuestions[__${stat.index}__].answer')}"
+                                    th:errors="*{securityQuestions[__${stat.index}__].answer}"></div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Suggestions Datalist -->
+                    <datalist id="securityQuestionSuggestions">
+                        <option value="What was your first pet's name?"></option>
+                        <option value="What is your mother's maiden name?"></option>
+                        <option value="What was the name of your first school?"></option>
+                        <option value="In what city were you born?"></option>
+                        <option value="What was your favorite childhood book?"></option>
+                        <option value="What was the make of your first car?"></option>
+                        <option value="What is your favorite teacher's name?"></option>
+                    </datalist>
                 </div>
 
                 <button type="submit" class="btn btn-primary w-full" style="justify-content:center;">

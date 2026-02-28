@@ -5,14 +5,16 @@
 
 <body>
     <div class="app-wrapper">
-        <div th:replace="~{layout :: sidebar}" th:with="activePage='profile'"></div>
+        <div th:replace="~{layout :: navbar}" th:with="activePage='profile'"></div>
         <div class="main-content">
-            <div th:replace="~{layout :: topbar('👤 Profile')}" th:with="user=${user}"></div>
             <div class="page-body">
+                <div class="card-header mb-4" style="margin-bottom:24px;">
+                    <h2 class="topbar-title">My Profile</h2>
+                </div>
                 <div th:replace="~{layout :: flash}"></div>
                 <div th:if="${errorMsg}" class="alert alert-danger">❌ <span th:text="${errorMsg}"></span></div>
 
-                <div style="max-width:540px;" class="fade-in">
+                <div style="max-width:540px;" class="">
                     <!-- Avatar Banner -->
                     <div class="card mb-4" style="margin-bottom:16px;text-align:center;padding:28px;">
                         <div class="user-avatar"
@@ -46,7 +48,9 @@
                                     th:errors="*{profilePhoto}"></div>
                                 <div class="mt-2" th:if="${user.profilePhotoUrl != null}">
                                     <input type="checkbox" id="removePhoto" th:field="*{removePhoto}">
-                                    <label for="removePhoto" style="font-size: 0.875rem; margin-left: 4px; color: #dc3545;">Remove current photo</label>
+                                    <label for="removePhoto"
+                                        style="font-size: 0.875rem; margin-left: 4px; color: #dc3545;">Remove current
+                                        photo</label>
                                 </div>
                             </div>
 

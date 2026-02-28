@@ -10,7 +10,7 @@
 
 <body
     style="min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse at 50% -20%,rgba(239,68,68,.15) 0%,transparent 70%),var(--bg-primary);">
-    <div class="auth-card fade-in" style="text-align:center;">
+    <div class="auth-card" style="text-align:center;">
         <div style="font-size:60px;margin-bottom:16px;">❌</div>
         <h1 style="font-size:24px;font-weight:700;margin-bottom:8px;"
             th:text="${errorCode == '404'} ? 'Page Not Found' : (${errorCode == '403'} ? 'Access Denied' : 'Something Went Wrong')">

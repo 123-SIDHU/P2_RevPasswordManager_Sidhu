@@ -5,13 +5,28 @@
 
 <body>
     <div class="app-wrapper">
-        <div th:replace="~{layout :: sidebar}" th:with="activePage='2fa'"></div>
+        <div th:replace="~{layout :: navbar}" th:with="activePage='2fa'"></div>
         <div class="main-content">
-            <div th:replace="~{layout :: topbar('📱 Two-Factor Authentication')}" th:with="user=${user}"></div>
             <div class="page-body">
+                <div class="card-header mb-4" style="margin-bottom:24px;">
+                    <h2 class="topbar-title">Security Center</h2>
+                </div>
+
+                <!-- Security Subnav -->
+                <div class="mb-4"
+                    style="display:flex;gap:10px;margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:12px;">
+                    <a href="/security/audit" class="btn btn-sm"
+                        th:classappend="${activePage == 'audit' ? 'btn-primary' : 'btn-secondary'}">🛡️ Security
+                        Audit</a>
+                    <a href="/security/2fa" class="btn btn-sm"
+                        th:classappend="${activePage == '2fa' ? 'btn-primary' : 'btn-secondary'}">📱 Two-Factor Auth</a>
+                    <a href="/security/questions" class="btn btn-sm"
+                        th:classappend="${activePage == 'questions' ? 'btn-primary' : 'btn-secondary'}">❓ Security
+                        Questions</a>
+                </div>
                 <div th:replace="~{layout :: flash}"></div>
 
-                <div style="max-width:520px;" class="fade-in">
+                <div style="max-width:520px;" class="">
                     <!-- Status Card -->
                     <div class="card mb-4" style="margin-bottom:16px;">
                         <div style="display:flex;align-items:center;justify-content:space-between;">

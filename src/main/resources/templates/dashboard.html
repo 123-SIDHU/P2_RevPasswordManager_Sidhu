@@ -1,46 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <title>Dashboard</title>
+
 <head th:replace="~{layout :: head('Dashboard')}"></head>
 
 <body>
     <div class="app-wrapper">
-        <div th:replace="~{layout :: sidebar}" th:with="activePage='dashboard'"></div>
+        <div th:replace="~{layout :: navbar}" th:with="activePage='dashboard'"></div>
         <div class="main-content">
-            <div th:replace="~{layout :: topbar('Dashboard')}" th:with="user=${user}"></div>
             <div class="page-body">
+                <div class="card-header mb-4" style="margin-bottom:24px;">
+                    <h2 class="topbar-title">Dashboard</h2>
+                </div>
                 <div th:replace="~{layout :: flash}"></div>
 
                 <!-- Stats Cards -->
-                <div class="stats-grid fade-in">
-                    <div class="stat-card">
+                <div class="stats-grid">
+                    <a href="/vault" class="stat-card" style="text-decoration:none;"
+                        title="View all your saved passwords">
                         <div class="stat-icon purple">🗄️</div>
-                        <div>
+                        <div class="stat-info">
                             <div class="stat-value" th:text="${totalPasswords}">0</div>
                             <div class="stat-label">Total Passwords</div>
                         </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon red">⚠️</div>
-                        <div>
+                    </a>
+                    <a href="/security/audit" class="stat-card" style="text-decoration:none;"
+                        title="View passwords that are too weak">
+                        <div class="stat-icon red">🛡️</div>
+                        <div class="stat-info">
                             <div class="stat-value" th:text="${weakCount}">0</div>
                             <div class="stat-label">Weak Passwords</div>
                         </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon yellow">🔁</div>
-                        <div>
+                    </a>
+                    <a href="/security/audit" class="stat-card" style="text-decoration:none;"
+                        title="View reused passwords across different accounts">
+                        <div class="stat-icon yellow">♻️</div>
+                        <div class="stat-info">
                             <div class="stat-value" th:text="${reusedCount}">0</div>
                             <div class="stat-label">Reused Passwords</div>
                         </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon green">🕐</div>
-                        <div>
+                    </a>
+                    <a href="/security/audit" class="stat-card" style="text-decoration:none;"
+                        title="View passwords that haven't been changed in a long time">
+                        <div class="stat-icon green">📅</div>
+                        <div class="stat-info">
                             <div class="stat-value" th:text="${oldCount}">0</div>
                             <div class="stat-label">Old Passwords</div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <!-- Alerts -->
@@ -50,15 +57,16 @@
                 </div>
 
                 <!-- Recent Passwords -->
-                <div class="card fade-in">
+                <div class="card">
                     <div class="card-header">
-                        <div class="card-title">🕐 Recently Added</div>
-                        <a href="/vault" class="btn btn-secondary btn-sm">View All</a>
+                        <div class="card-title">🕒 Recently Added</div>
+                        <a href="/vault" class="btn btn-secondary btn-sm" title="See full vault list">View All</a>
                     </div>
                     <div th:if="${recentEntries.empty}" style="text-align:center;padding:32px;color:var(--text-muted);">
                         <div style="font-size:40px;margin-bottom:8px;">🔒</div>
                         <p>No passwords saved yet.</p>
-                        <a href="/vault/add" class="btn btn-primary btn-sm mt-2">Add First Password</a>
+                        <a href="/vault/add" class="btn btn-primary btn-sm mt-2"
+                            title="Create a new entry in your vault">Add First Password</a>
                     </div>
                     <div class="table-wrapper" th:unless="${recentEntries.empty}">
                         <table>
@@ -75,37 +83,81 @@
                                 <tr th:each="entry : ${recentEntries}">
                                     <td>
                                         <div style="display:flex;align-items:center;gap:10px;">
-                                            <div class="vault-card-icon" style="width:32px;height:32px;font-size:14px;">
+                                            <div class="vault-card-icon"
+                                                style="width:32px;height:32px;font-size:14px;background:#eff6ff;color:var(--accent);display:flex;align-items:center;justify-content:center;border-radius:4px;">
                                                 🔑
                                             </div>
                                             <span th:text="${entry.accountName}" class="fw-600">Account</span>
                                         </div>
                                     </td>
-                                    <td><span class="badge badge-purple" th:text="${entry.category}">OTHER</span></td>
+                                    <td><span class="badge badge-gray" th:text="${entry.category}">OTHER</span></td>
                                     <td class="text-muted" th:text="${entry.accountUsername}"></td>
                                     <td class="text-muted text-sm" th:text="${entry.createdAt}"></td>
-                                    <td><a th:href="@{/vault/{id}(id=${entry.id})}"
-                                            class="btn btn-secondary btn-sm">View</a></td>
+                                    <td>
+                                        <div style="display:flex;gap:6px;align-items:center;">
+                                            <a th:href="@{/vault/{id}(id=${entry.id})}" class="btn btn-secondary btn-sm"
+                                                title="View details of this account">View</a>
+                                            <button th:onclick="'openDeleteModal(' + ${entry.id} + ')'"
+                                                class="btn btn-secondary btn-sm" title="Delete"
+                                                style="padding:6px;">🗑️</button>
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
 
+                <!-- Delete Modal -->
+                <div id="deleteModal" class="modal-backdrop"
+                    style="display:none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); align-items: center; justify-content: center; z-index: 1000;">
+                    <div class="modal-box"
+                        style="background: white; border: 1px solid var(--border); border-radius: 8px; padding: 28px 24px; width: 100%; max-width: 400px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
+                        <div class="modal-title" style="font-size: 17px; font-weight: 700; margin-bottom: 8px;">🗑️
+                            Delete Entry?</div>
+                        <div class="modal-subtitle"
+                            style="font-size: 14px; color: var(--text-secondary); margin-bottom: 20px;">This action
+                            cannot be undone. Enter your master password to confirm.</div>
+                        <form id="deleteForm" method="post" action="">
+                            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+                            <div class="form-group">
+                                <label class="form-label">Master Password</label>
+                                <input type="password" name="masterPassword" class="form-control" required />
+                            </div>
+                            <div style="display:flex;gap:8px;margin-top:16px;">
+                                <button type="submit" class="btn btn-danger" style="flex:1;">Confirm Delete</button>
+                                <button type="button" class="btn btn-secondary" style="flex:1;"
+                                    onclick="document.getElementById('deleteModal').style.display='none'">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
                 <!-- Quick Actions -->
-                <div class="card fade-in mt-4" style="margin-top:16px;">
+                <div class="card mt-4" style="margin-top:16px;">
                     <div class="card-title mb-4" style="margin-bottom:12px;">⚡ Quick Actions</div>
                     <div style="display:flex;flex-wrap:wrap;gap:10px;">
-                        <a href="/vault/add" class="btn btn-primary">➕ Add Password</a>
-                        <a href="/generator" class="btn btn-secondary">🎲 Generate Password</a>
-                        <a href="/security/audit" class="btn btn-secondary">🛡️ Security Audit</a>
-                        <a href="/vault/favorites" class="btn btn-secondary">⭐ Favorites</a>
+                        <a href="/vault/add" class="btn btn-primary" title="Add a new set of credentials">➕ Add
+                            Password</a>
+                        <a href="/generator" class="btn btn-secondary" title="Use the password generator tool">🎲
+                            Generate Password</a>
+                        <a href="/security/audit" class="btn btn-secondary"
+                            title="Audit your vault's security health">🛡️ Security Audit</a>
+                        <a href="/vault/favorites" class="btn btn-secondary" title="View your favorite accounts">⭐
+                            Favorites</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div th:replace="~{layout :: scripts}"></div>
+    <script>
+        function openDeleteModal(id) {
+            const form = document.getElementById('deleteForm');
+            form.action = '/vault/' + id + '/delete';
+            document.getElementById('deleteModal').style.display = 'flex';
+        }
+    </script>
 </body>
 
 </html>

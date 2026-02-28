@@ -1,240 +1,152 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RevSecurity | Secure Password Vault</title>
+    <title>RevSecurity | Password Manager</title>
     <link rel="stylesheet" th:href="@{/css/styles.css}">
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
     <style>
-        .landing-navbar {
+        .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 32px 60px;
-            max-width: 1400px;
-            margin: 0 auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 100;
+            padding: 1.25rem 2rem;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
         }
 
         .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            padding: 5rem 2rem;
             text-align: center;
-            padding: 120px 24px;
-            position: relative;
-            background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
+            background: var(--bg-primary);
         }
 
-        .hero h1 {
-            font-size: clamp(3rem, 8vw, 5rem);
-            font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 24px;
-            letter-spacing: -2px;
-            background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            color: var(--text-secondary);
-            max-width: 600px;
-            margin-bottom: 48px;
-        }
-
-        .features-container {
-            max-width: 1200px;
-            margin: 0 auto 120px;
-            padding: 0 24px;
-        }
-
-        .section-tag {
-            text-transform: uppercase;
-            font-size: 12px;
+        .hero-title {
+            font-size: 2.75rem;
             font-weight: 700;
-            letter-spacing: 2px;
-            color: var(--accent-light);
-            margin-bottom: 16px;
-            display: inline-block;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
         }
 
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 32px;
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            line-height: 1.8;
         }
 
-        .feature-card {
+        .features-section {
+            padding: 4rem 2rem;
+            background: var(--bg-secondary);
+        }
+
+        .feature-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-item {
+            flex: 1;
+            min-width: 300px;
+            max-width: 350px;
+            padding: 1.5rem;
             background: var(--bg-card);
-            border: 1px solid var(--glass-stroke);
-            border-radius: 24px;
-            padding: 48px;
-            transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
-            text-align: left;
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
         }
 
-        .feature-card:hover {
-            transform: translateY(-12px);
-            border-color: var(--accent);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), var(--shadow-accent);
+        .feature-item h3 {
+            margin-bottom: 0.75rem;
+            font-size: 1.25rem;
         }
 
-        .feature-icon-box {
-            width: 64px;
-            height: 64px;
-            background: var(--glass);
-            border-radius: 16px;
+        .footer {
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+        }
+
+        .brand-link {
+            text-decoration: none;
             display: flex;
             align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            margin-bottom: 32px;
-            border: 1px solid var(--glass-stroke);
-        }
-
-        .feature-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 16px;
-            color: white;
-        }
-
-        .feature-card p {
-            color: var(--text-secondary);
-            line-height: 1.7;
-        }
-
-        .cta-section {
-            padding: 120px 24px;
-            text-align: center;
-            background: linear-gradient(0deg, var(--bg-secondary) 0%, transparent 100%);
-        }
-
-        .cta-box {
-            max-width: 800px;
-            margin: 0 auto;
-            background: var(--bg-card);
-            border: 1px solid var(--glass-stroke);
-            border-radius: 32px;
-            padding: 80px 40px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-box::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
-            transform: translate(-50%, -50%);
-            z-index: 0;
-        }
-
-        .cta-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        @media (max-width: 768px) {
-            .landing-navbar {
-                padding: 24px;
-            }
-
-            .hero {
-                padding-top: 160px;
-            }
-
-            .feature-card {
-                padding: 32px;
-            }
+            gap: 10px;
         }
     </style>
 </head>
 
-<body class="fade-in">
-    <header class="landing-navbar">
-        <a th:href="@{/}" class="sidebar-brand" style="padding:0;">
-            <div class="brand-icon">🛡️</div>
-            <span class="brand-name">RevSecurity</span>
+<body>
+    <header class="header">
+        <a class="brand-link" th:href="@{/}">
+            <div class="brand-icon"
+                style="width:32px; height:32px; background:var(--accent); border-radius:6px; display:flex; align-items:center; justify-content:center; font-size:16px; color:white;">
+                🔐</div>
+            <span style="font-size:1.25rem; font-weight:700; color:var(--text-primary);">RevSecurity</span>
         </a>
-        <div class="nav-buttons">
-            <a th:href="@{/login}" class="btn btn-secondary btn-sm">Sign In</a>
-            <a th:href="@{/register}" class="btn btn-primary btn-sm">Get Started</a>
+        <div class="auth-buttons">
+            <div th:if="${user != null}">
+                <a href="/dashboard" class="btn btn-primary">Dashboard</a>
+            </div>
+            <div th:unless="${user != null}" style="display:flex; gap:12px;">
+                <a th:href="@{/login}" class="btn btn-secondary">Sign In</a>
+                <a th:href="@{/register}" class="btn btn-primary">Create Account</a>
+            </div>
         </div>
     </header>
 
     <main>
+        <!-- Alerts -->
+        <div th:if="${successMsg}" class="alert alert-success" style="margin:20px auto; max-width:1200px;">✅ <span
+                th:text="${successMsg}"></span></div>
+        <div th:if="${errorMsg}" class="alert alert-danger" style="margin:20px auto; max-width:1200px;">❌ <span
+                th:text="${errorMsg}"></span></div>
+
         <section class="hero">
-            <div class="section-tag">Next-Gen Security</div>
-            <h1 class="text-center">Your Digital Life,<br>Reinforced.</h1>
-            <p class="text-center">Stop worrying about forgotten passwords. Store everything in a military-grade
-                encrypted vault that only you can open.</p>
-            <div style="display:flex; gap:16px;">
-                <a th:href="@{/register}" class="btn btn-primary">Create Free Vault</a>
-                <a href="#features" class="btn btn-secondary">See Features</a>
+            <h1 class="hero-title">Secure Password Management</h1>
+            <p class="hero-subtitle">Store and manage all your passwords in one secure vault. Protect your digital
+                identity with industrial-strength encryption and easy-to-use security tools.</p>
+            <div style="display:flex; justify-content:center; gap:16px;">
+                <a th:href="${user != null ? '/dashboard' : '/register'}" class="btn btn-primary"
+                    style="padding:12px 24px;">Get Started Now</a>
+                <a th:href="@{/login}" class="btn btn-secondary" style="padding:12px 24px;">Member Login</a>
             </div>
         </section>
 
-        <section id="features" class="features-container">
-            <div class="text-center" style="margin-bottom: 64px;">
-                <div class="section-tag">Unmatched Protection</div>
-                <h2 style="font-size: 2.5rem; color: white;">Why Trust RevSecurity?</h2>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon-box">🔒</div>
-                    <h3>Zero Knowledge</h3>
-                    <p>We use end-to-end AES-256 encryption. Your master password never leaves your device — even we
-                        can't access your data.</p>
+        <section class="features-section">
+            <h2 style="text-align:center; margin-bottom:3rem; font-size:2rem;">Why Choose RevSecurity?</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h3>🛡️ Secure Encryption</h3>
+                    <p class="text-secondary">Your data is encrypted using AES-256 standards before it ever leaves your
+                        device.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon-box">🧠</div>
-                    <h3>Smart Audit</h3>
-                    <p>Our intelligent engine scans your vault for weak or reused passwords and provides actionable
-                        steps to fix them instantly.</p>
+                <div class="feature-item">
+                    <h3>📱 Multi-Platform</h3>
+                    <p class="text-secondary">Access your passwords from any web browser securely and instantly.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon-box">✨</div>
-                    <h3>One-Click Login</h3>
-                    <p>Generate highly secure passwords with one click and store them instantly. Say goodbye to the
-                        'Forgot Password' loop forever.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-section">
-            <div class="cta-box">
-                <div class="cta-content">
-                    <h2 style="font-size: 2.5rem; margin-bottom: 24px; color: white;">Ready for Total Security?</h2>
-                    <p class="mb-4" style="color: var(--text-secondary); max-width: 500px; margin: 0 auto 32px;">Join
-                        thousands of users who have secured their digital identities with RevSecurity.</p>
-                    <a th:href="@{/register}" class="btn btn-primary">Start Your Free Vault Now</a>
+                <div class="feature-item">
+                    <h3>🎲 Strong Generator</h3>
+                    <p class="text-secondary">Automatically generate complex passwords that are impossible to guess or
+                        crack.</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="text-center" style="padding: 60px 24px; border-top: 1px solid var(--border); opacity: 0.8;">
-        <div class="sidebar-brand" style="justify-content: center; margin-bottom: 24px;">
-            <div class="brand-icon" style="width:32px; height:32px; font-size: 15px;">🛡️</div>
-            <span class="brand-name" style="font-size: 1.1rem;">RevSecurity</span>
+    <footer class="footer">
+        <p>&copy; 2026 RevSecurity. All rights reserved.</p>
+        <div style="display:flex; justify-content:center; gap:16px; margin-top:1rem; font-size:13px;">
+            <a href="#" style="color:var(--text-muted); text-decoration:none;">Privacy Policy</a>
+            <a href="#" style="color:var(--text-muted); text-decoration:none;">Terms of Service</a>
+            <a href="#" style="color:var(--text-muted); text-decoration:none;">Contact Help</a>
         </div>
-        <p class="text-muted text-sm">&copy; 2026 RevSecurity. Engineered for ultimate privacy and peace of mind.</p>
     </footer>
 </body>
 

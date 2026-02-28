@@ -5,17 +5,19 @@
 
 <body>
     <div class="app-wrapper">
-        <div th:replace="~{layout :: sidebar}" th:with="activePage='generator'"></div>
+        <div th:replace="~{layout :: navbar}" th:with="activePage='generator'"></div>
         <div class="main-content">
-            <div th:replace="~{layout :: topbar('🎲 Password Generator')}"></div>
             <div class="page-body">
+                <div class="card-header mb-4" style="margin-bottom:24px;">
+                    <h2 class="topbar-title">Generator</h2>
+                </div>
                 <div th:replace="~{layout :: flash}"></div>
 
                 <div
                     style="display:grid;grid-template-columns:340px 1fr;gap:20px;align-items:flex-start;flex-wrap:wrap;">
 
                     <!-- Config Panel -->
-                    <div class="card fade-in">
+                    <div class="card">
                         <div class="card-title" style="margin-bottom:16px;">⚙️ Configuration</div>
                         <form method="post" th:action="@{/generator}" th:object="${config}" id="genForm">
 
@@ -59,7 +61,7 @@
                     </div>
 
                     <!-- Results Panel -->
-                    <div class="card fade-in">
+                    <div class="card">
                         <div class="card-title" style="margin-bottom:16px;">🔑 Generated Passwords</div>
 
                         <div th:if="${results == null or results.empty}"

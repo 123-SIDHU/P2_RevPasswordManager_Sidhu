@@ -5,15 +5,17 @@
 
 <body>
     <div class="app-wrapper">
-        <div th:replace="~{layout :: sidebar}" th:with="activePage='vault'"></div>
+        <div th:replace="~{layout :: navbar}" th:with="activePage='vault'"></div>
         <div class="main-content">
-            <div th:replace="~{layout :: topbar('Entry Details')}" th:with="user=${user}"></div>
             <div class="page-body">
+                <div class="card-header mb-4" style="margin-bottom:24px;">
+                    <h2 class="topbar-title">Entry Details</h2>
+                </div>
                 <div th:replace="~{layout :: flash}"></div>
 
                 <div style="display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap;">
                     <!-- Entry Info Card -->
-                    <div class="card fade-in" style="flex:1;min-width:320px;">
+                    <div class="card" style="flex:1;min-width:320px;">
                         <div class="card-header">
                             <div style="display:flex;align-items:center;gap:12px;">
                                 <div class="vault-card-icon" style="width:44px;height:44px;font-size:20px;">🔑</div>
@@ -86,7 +88,7 @@
                     </div>
 
                     <!-- Reveal Panel -->
-                    <div th:unless="${revealed}" class="card fade-in" style="width:300px;flex-shrink:0;">
+                    <div th:unless="${revealed}" class="card" style="width:300px;flex-shrink:0;">
                         <div class="card-title" style="margin-bottom:12px;">🔒 View Password</div>
                         <p style="font-size:13px;color:var(--text-secondary);margin-bottom:16px;">
                             Enter your master password to reveal this entry's password.
@@ -106,7 +108,7 @@
                             </button>
                         </form>
                     </div>
-                    <div th:if="${revealed}" class="card fade-in" style="width:300px;flex-shrink:0;">
+                    <div th:if="${revealed}" class="card" style="width:300px;flex-shrink:0;">
                         <div class="card-title" style="margin-bottom:8px;color:var(--success);">✅ Password Revealed
                         </div>
                         <a href="/vault" class="btn btn-secondary w-full" style="justify-content:center;">← Back to

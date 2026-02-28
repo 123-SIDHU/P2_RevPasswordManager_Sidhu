@@ -5,15 +5,16 @@
 
 <body>
     <div class="app-wrapper">
-        <div th:replace="~{layout :: sidebar}" th:with="activePage='vault'"></div>
+        <div th:replace="~{layout :: navbar}" th:with="activePage='vault'"></div>
         <div class="main-content">
-            <div th:replace="~{layout :: topbar(${isEdit} ? 'Edit Entry' : 'Add New Password')}" th:with="user=${user}">
-            </div>
             <div class="page-body">
+                <div class="card-header mb-4" style="margin-bottom:24px;">
+                    <h2 class="topbar-title" th:text="${isEdit} ? 'Edit Entry' : 'Add New Entry'">Add New Entry</h2>
+                </div>
                 <div th:replace="~{layout :: flash}"></div>
                 <div th:if="${errorMsg}" class="alert alert-danger">❌ <span th:text="${errorMsg}"></span></div>
 
-                <div style="max-width:620px;" class="fade-in">
+                <div style="max-width:620px;" class="">
                     <form method="post" th:action="${isEdit} ? @{/vault/{id}/edit(id=${entryDTO.id})} : @{/vault/add}"
                         th:object="${entryDTO}">
                         <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
@@ -31,8 +32,8 @@
 
                             <div class="form-group">
                                 <label class="form-label">Website URL</label>
-                                <input type="url" class="form-control" th:field="*{websiteUrl}"
-                                    placeholder="https://example.com" />
+                                <input type="text" class="form-control" th:field="*{websiteUrl}"
+                                    placeholder="e.g. google.com or https://google.com" />
                             </div>
 
                             <div class="form-group">
@@ -130,13 +131,26 @@
     </div>
     <script>
         function updateStrength(pw) {
-            let s = 0;
-            if (pw.length >= 8) s++; if (pw.length >= 12) s++; if (/[A-Z]/.test(pw)) s++; if (/[0-9]/.test(pw)) s++; if (/[^A-Za-z0-9]/.test(pw)) s++;
-            s = Math.min(Math.floor(s * 4 / 5), 4);
             const f = document.getElementById('sf'), l = document.getElementById('sl');
+            if (!pw || pw.length < 8) {
+                f.style.width = '25%'; f.style.background = '#ef4444';
+                l.textContent = 'Weak'; l.className = 'strength-label s-weak';
+                return;
+            }
+
+            let s = 1; // Base 1 for length >= 8
+            if (pw.length >= 12) s++;
+            if (/[A-Z]/.test(pw)) s++;
+            if (/[0-9]/.test(pw)) s++;
+            if (/[^A-Za-z0-9]/.test(pw)) s++;
+
+            // Map to 1-4 scale
+            const score = Math.min(Math.floor(s * 4 / 5), 3) + 1;
             const w = ['0%', '25%', '50%', '75%', '100%'], c = ['', '#ef4444', '#f59e0b', '#22c55e', '#06b6d4'];
             const lab = ['', 'Weak', 'Medium', 'Strong', 'Very Strong'], cls = ['', 's-weak', 's-medium', 's-strong', 's-vstrong'];
-            f.style.width = w[s]; f.style.background = c[s]; l.textContent = lab[s]; l.className = 'strength-label ' + cls[s];
+
+            f.style.width = w[score]; f.style.background = c[score];
+            l.textContent = lab[score]; l.className = 'strength-label ' + cls[score];
         }
         async function quickGenerate() {
             const len = document.getElementById('genLen').value;

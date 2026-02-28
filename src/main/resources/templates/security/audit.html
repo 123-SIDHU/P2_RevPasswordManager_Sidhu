@@ -5,13 +5,28 @@
 
 <body>
     <div class="app-wrapper">
-        <div th:replace="~{layout :: sidebar}" th:with="activePage='audit'"></div>
+        <div th:replace="~{layout :: navbar}" th:with="activePage='audit'"></div>
         <div class="main-content">
-            <div th:replace="~{layout :: topbar('🛡️ Security Audit')}" th:with="user=${user}"></div>
             <div class="page-body">
+                <div class="card-header mb-4" style="margin-bottom:24px;">
+                    <h2 class="topbar-title">Security Center</h2>
+                </div>
+
+                <!-- Security Subnav -->
+                <div class="mb-4"
+                    style="display:flex;gap:10px;margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:12px;">
+                    <a href="/security/audit" class="btn btn-sm"
+                        th:classappend="${activePage == 'audit' ? 'btn-primary' : 'btn-secondary'}">🛡️ Security
+                        Audit</a>
+                    <a href="/security/2fa" class="btn btn-sm"
+                        th:classappend="${activePage == '2fa' ? 'btn-primary' : 'btn-secondary'}">📱 Two-Factor Auth</a>
+                    <a href="/security/questions" class="btn btn-sm"
+                        th:classappend="${activePage == 'questions' ? 'btn-primary' : 'btn-secondary'}">❓ Security
+                        Questions</a>
+                </div>
 
                 <!-- Summary Scores -->
-                <div class="stats-grid fade-in">
+                <div class="stats-grid">
                     <div class="stat-card">
                         <div class="stat-icon red">⚠️</div>
                         <div>
@@ -43,7 +58,7 @@
                 </div>
 
                 <!-- Score Banner -->
-                <div class="card fade-in mb-4" style="margin-bottom:16px;">
+                <div class="card mb-4" style="margin-bottom:16px;">
                     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;">
                         <span class="fw-600">Overall Security Score</span>
                         <span th:text="${report.securityScore} + '/100'"
@@ -57,7 +72,7 @@
                 </div>
 
                 <!-- Weak Passwords -->
-                <div class="card fade-in mb-4" style="margin-bottom:16px;">
+                <div class="card mb-4" style="margin-bottom:16px;">
                     <div class="card-header">
                         <div class="card-title">⚠️ Weak Passwords</div>
                         <span class="badge badge-red" th:text="${report.weakPasswords.size()}">0</span>
@@ -88,7 +103,7 @@
                 </div>
 
                 <!-- Reused Passwords -->
-                <div class="card fade-in mb-4" style="margin-bottom:16px;">
+                <div class="card mb-4" style="margin-bottom:16px;">
                     <div class="card-header">
                         <div class="card-title">🔁 Reused Passwords</div>
                         <span class="badge badge-yellow" th:text="${report.reusedPasswords.size()}">0</span>
@@ -119,7 +134,7 @@
                 </div>
 
                 <!-- Old Passwords -->
-                <div class="card fade-in">
+                <div class="card">
                     <div class="card-header">
                         <div class="card-title">🕐 Old Passwords</div>
                         <span class="badge badge-gray" th:text="${report.oldPasswords.size()}">0</span>

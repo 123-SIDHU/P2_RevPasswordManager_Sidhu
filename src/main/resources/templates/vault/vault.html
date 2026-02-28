@@ -5,36 +5,40 @@
 
 <body>
     <div class="app-wrapper">
-        <div th:replace="~{layout :: sidebar}" th:with="activePage='vault'"></div>
+        <div th:replace="~{layout :: navbar}" th:with="activePage='vault'"></div>
         <div class="main-content">
-            <div th:replace="~{layout :: topbar('Password Vault')}" th:with="user=${user}"></div>
             <div class="page-body">
+                <div class="card-header mb-4" style="margin-bottom:24px;">
+                    <h2 class="topbar-title">Vault</h2>
+                </div>
                 <div th:replace="~{layout :: flash}"></div>
 
                 <!-- Filter Bar -->
                 <form method="get" th:action="@{/vault}" class="filter-bar mb-4">
                     <input type="text" name="search" class="form-control"
                         placeholder="🔍 Search accounts, websites, usernames..." th:value="${search}"
-                        style="max-width:300px;" />
-                    <select name="sort" class="form-control" style="max-width:160px;" onchange="this.form.submit()">
+                        style="max-width:300px;" title="Search your vault by account name, URL or username" />
+                    <select name="sort" class="form-control" style="max-width:160px;" onchange="this.form.submit()"
+                        title="Change the order of your vault entries">
                         <option value="name" th:selected="${sort == 'name'}">Sort: Name</option>
                         <option value="date_added" th:selected="${sort == 'date_added'}">Sort: Date Added</option>
                         <option value="date_modified" th:selected="${sort == 'date_modified'}">Sort: Modified</option>
                     </select>
                     <!-- View toggle -->
                     <input type="hidden" name="view" th:value="${view}" />
-                    <button type="submit" class="btn btn-primary">Search</button>
-                    <a th:if="${search != null and !#strings.isEmpty(search)}" href="/vault"
-                        class="btn btn-secondary">Clear</a>
+                    <button type="submit" class="btn btn-primary" title="Execute search">Search</button>
+                    <a th:if="${search != null and !#strings.isEmpty(search)}" href="/vault" class="btn btn-secondary"
+                        title="Reset search filters">Clear</a>
                 </form>
 
                 <!-- Category Chips -->
                 <div class="filter-chips mb-4" style="margin-bottom:16px;">
                     <a th:href="@{/vault(sort=${sort})}" class="filter-chip"
-                        th:classappend="${category == 'ALL'} ? 'active'">All</a>
+                        th:classappend="${category == 'ALL'} ? 'active'" title="Show all entries">All</a>
                     <a th:each="cat : ${categories}" th:href="@{/vault(category=${cat.name()}, sort=${sort})}"
                         class="filter-chip" th:classappend="${category == cat.name()} ? 'active'"
-                        th:text="${cat.name().replace('_',' ')}">Category</a>
+                        th:text="${cat.name().replace('_',' ')}"
+                        th:title="'Show only ' + ${cat.name().replace('_',' ')} + ' entries'">Category</a>
                 </div>
 
                 <!-- Header Row -->
@@ -49,22 +53,24 @@
                         <a th:href="@{/vault(search=${search},category=${category},sort=${sort},view='grid')}"
                             class="btn-icon" title="Grid view" th:classappend="${view=='grid'} ? 'active'"
                             style="font-size:16px;">⊞</a>
-                        <a href="/vault/add" class="btn btn-primary btn-sm">➕ Add Password</a>
+                        <a href="/vault/add" class="btn btn-primary btn-sm" title="Add new credentials to your vault">➕
+                            Add Password</a>
                     </div>
                 </div>
 
                 <!-- Empty State -->
                 <div th:if="${entries.empty}" style="text-align:center;padding:60px 24px;color:var(--text-muted);"
-                    class="card fade-in">
+                    class="card">
                     <div style="font-size:50px;margin-bottom:12px;">🔒</div>
                     <p style="font-size:15px;margin-bottom:8px;">Your vault is empty</p>
                     <a href="/vault/add" class="btn btn-primary">➕ Add your first password</a>
                 </div>
 
                 <!-- GRID VIEW -->
-                <div th:if="${view == 'grid' and !entries.empty}" class="vault-grid fade-in">
+                <div th:if="${view == 'grid' and !entries.empty}" class="vault-grid">
                     <div th:each="entry : ${entries}" style="position:relative;">
-                        <a th:href="@{/vault/{id}(id=${entry.id})}" class="vault-card">
+                        <a th:href="@{/vault/{id}(id=${entry.id})}" class="vault-card"
+                            title="View details for this account">
                             <div class="vault-card-header">
                                 <div class="vault-card-icon">🔑</div>
                                 <div>
@@ -76,20 +82,23 @@
                             <div class="vault-card-url text-muted" th:text="${entry.websiteUrl}"></div>
                             <div class="vault-card-user" th:text="${entry.accountUsername}"></div>
                         </a>
-                        <!-- Favorite toggle -->
-                        <form th:action="@{/vault/{id}/favorite(id=${entry.id})}" method="post"
-                            style="position:absolute;top:12px;right:12px;">
-                            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
-                            <input type="hidden" name="returnUrl" value="/vault" />
-                            <button type="submit" class="btn-icon" style="padding:4px 6px;font-size:13px;"
-                                th:title="${entry.favorite} ? 'Remove from favorites' : 'Add to favorites'"
-                                th:text="${entry.favorite} ? '⭐' : '☆'"></button>
-                        </form>
+                        <!-- Favorite & Delete toggles -->
+                        <div style="position:absolute;top:12px;right:12px;display:flex;gap:4px;">
+                            <form th:action="@{/vault/{id}/favorite(id=${entry.id})}" method="post">
+                                <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+                                <input type="hidden" name="returnUrl" value="/vault" />
+                                <button type="submit" class="btn-icon" style="padding:4px 6px;font-size:13px;"
+                                    th:title="${entry.favorite} ? 'Remove from favorites' : 'Add to favorites'"
+                                    th:text="${entry.favorite} ? '⭐' : '☆'"></button>
+                            </form>
+                            <button th:onclick="'openDeleteModal(' + ${entry.id} + ')'" class="btn-icon"
+                                style="padding:4px 6px;font-size:13px;" title="Delete">🗑️</button>
+                        </div>
                     </div>
                 </div>
 
                 <!-- LIST VIEW -->
-                <div th:if="${view != 'grid' and !entries.empty}" class="card fade-in">
+                <div th:if="${view != 'grid' and !entries.empty}" class="card">
                     <div class="table-wrapper">
                         <table>
                             <thead>
@@ -116,10 +125,13 @@
                                     <td class="text-muted text-sm" th:text="${entry.updatedAt}"></td>
                                     <td>
                                         <div style="display:flex;gap:6px;align-items:center;">
-                                            <a th:href="@{/vault/{id}(id=${entry.id})}"
-                                                class="btn btn-secondary btn-sm">View</a>
+                                            <a th:href="@{/vault/{id}(id=${entry.id})}" class="btn btn-secondary btn-sm"
+                                                title="View item details">View</a>
                                             <a th:href="@{/vault/{id}/edit(id=${entry.id})}"
-                                                class="btn btn-secondary btn-sm">✏️</a>
+                                                class="btn btn-secondary btn-sm" title="Edit this entry">✏️</a>
+                                            <button th:onclick="'openDeleteModal(' + ${entry.id} + ')'"
+                                                class="btn btn-icon btn-sm"
+                                                title="Permanently delete this entry">🗑️</button>
                                             <form th:action="@{/vault/{id}/favorite(id=${entry.id})}" method="post"
                                                 style="display:inline;">
                                                 <input type="hidden" th:name="${_csrf.parameterName}"
@@ -135,10 +147,42 @@
                         </table>
                     </div>
                 </div>
+
+                <!-- Delete Modal -->
+                <div id="deleteModal" class="modal-backdrop"
+                    style="display:none; position: fixed; inset: 0; background: rgba(0,0,0,0.5);  align-items: center; justify-content: center; z-index: 1000;">
+                    <div class="modal-box"
+                        style="background: white; border: 1px solid var(--border); border-radius: 8px; padding: 28px 24px; width: 100%; max-width: 400px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);">
+                        <div class="modal-title" style="font-size: 17px; font-weight: 700; margin-bottom: 8px;">🗑️
+                            Delete Entry?</div>
+                        <div class="modal-subtitle"
+                            style="font-size: 13px; color: var(--text-secondary); margin-bottom: 20px;">This action
+                            cannot be undone. Enter your master password to confirm.</div>
+                        <form id="deleteForm" method="post" action="">
+                            <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+                            <div class="form-group">
+                                <label class="form-label">Master Password</label>
+                                <input type="password" name="masterPassword" class="form-control" required />
+                            </div>
+                            <div style="display:flex;gap:8px;margin-top:16px;">
+                                <button type="submit" class="btn btn-danger" style="flex:1;">Confirm Delete</button>
+                                <button type="button" class="btn btn-secondary" style="flex:1;"
+                                    onclick="document.getElementById('deleteModal').style.display='none'">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div th:replace="~{layout :: scripts}"></div>
+    <script>
+        function openDeleteModal(id) {
+            const form = document.getElementById('deleteForm');
+            form.action = '/vault/' + id + '/delete';
+            document.getElementById('deleteModal').style.display = 'flex';
+        }
+    </script>
 </body>
 
 </html>
