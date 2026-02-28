@@ -467,3 +467,156 @@
 2026-02-27 10:27:26.652 [http-nio-8081-exec-3] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
 2026-02-27 10:27:26.815 [http-nio-8081-exec-6] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
 2026-02-27 10:54:23.209 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m56s737ms911µs100ns).
+2026-02-27 11:04:56.340 [http-nio-8081-exec-8] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 11:04:56.396 [http-nio-8081-exec-10] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-02-27 11:05:23.296 [http-nio-8081-exec-2] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+2026-02-27 11:05:23.612 [http-nio-8081-exec-2] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-02-27 11:05:23.899 [http-nio-8081-exec-3] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 11:07:04.689 [http-nio-8081-exec-4] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+2026-02-27 11:07:04.984 [http-nio-8081-exec-4] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-02-27 11:07:05.073 [http-nio-8081-exec-7] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 11:07:08.716 [http-nio-8081-exec-8] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 11:07:12.874 [http-nio-8081-exec-1] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 11:07:29.243 [http-nio-8081-exec-3] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 11:07:50.033 [http-nio-8081-exec-5] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 11:08:04.547 [http-nio-8081-exec-9] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 11:08:04.582 [http-nio-8081-exec-8] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-02-27 11:08:10.079 [http-nio-8081-exec-10] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+2026-02-27 11:08:10.364 [http-nio-8081-exec-10] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-02-27 11:08:10.442 [http-nio-8081-exec-1] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 11:08:23.063 [http-nio-8081-exec-3] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 11:08:23.096 [http-nio-8081-exec-6] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-02-27 11:08:25.442 [http-nio-8081-exec-4] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 11:08:25.470 [http-nio-8081-exec-7] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-02-27 11:08:27.241 [http-nio-8081-exec-8] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 11:08:27.268 [http-nio-8081-exec-10] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-02-27 11:41:43.122 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m49s581ms622µs800ns).
+2026-02-27 12:03:34.468 [http-nio-8081-exec-5] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 12:03:34.573 [http-nio-8081-exec-4] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-02-27 12:04:01.128 [http-nio-8081-exec-9] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+2026-02-27 12:04:01.449 [http-nio-8081-exec-9] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-02-27 12:04:01.526 [http-nio-8081-exec-8] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 12:04:07.490 [http-nio-8081-exec-1] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 12:04:10.801 [http-nio-8081-exec-3] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 12:04:24.462 [http-nio-8081-exec-6] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+2026-02-27 12:04:24.692 [http-nio-8081-exec-6] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-02-27 12:04:24.752 [http-nio-8081-exec-5] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 12:39:18.094 [http-nio-8081-exec-10] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 12:39:18.270 [http-nio-8081-exec-1] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-02-27 14:27:29.085 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h22m44s201ms666µs700ns).
+2026-02-27 14:41:16.222 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m45s465ms719µs).
+2026-02-27 14:51:48.485 [http-nio-8081-exec-4] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource css/styles.css.
+2026-02-27 14:51:48.589 [http-nio-8081-exec-7] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-02-27 15:17:51.073 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2026-02-27 15:17:51.297 [Thread-1] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2026-02-27 15:17:52.044 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-27 15:17:52.414 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-27 15:17:55.357 [restartedMain] INFO  com.rev.app.RevPasswordManagerP2Application - Starting RevPasswordManagerP2Application using Java 24.0.1 with PID 2896 (C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu\target\classes started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-02-27 15:17:55.362 [restartedMain] DEBUG com.rev.app.RevPasswordManagerP2Application - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-02-27 15:17:55.362 [restartedMain] INFO  com.rev.app.RevPasswordManagerP2Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-27 15:17:57.665 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-02-27 15:17:57.665 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-27 15:17:57.666 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-02-27 15:17:57.777 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-27 15:17:58.230 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27 15:17:58.245 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-27 15:17:58.334 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-02-27 15:18:00.164 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection oracle.jdbc.driver.T4CConnection@54507567
+2026-02-27 15:18:00.165 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-02-27 15:18:01.422 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27 15:18:02.283 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 23.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27 15:18:02.381 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2026-02-27 15:18:02.393 [restartedMain] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [OJDBC-WORKER-THREAD-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:408)
+ java.base/java.util.concurrent.LinkedTransferQueue$DualNode.await(LinkedTransferQueue.java:452)
+ java.base/java.util.concurrent.SynchronousQueue$Transferer.xferLifo(SynchronousQueue.java:194)
+ java.base/java.util.concurrent.SynchronousQueue.xfer(SynchronousQueue.java:235)
+ java.base/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:338)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1020)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1081)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+ java.base/java.lang.Thread.run(Thread.java:1447)
+2026-02-27 15:18:02.394 [restartedMain] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-2 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:271)
+ java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1802)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1166)
+ java.base/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:883)
+ java.base/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1021)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1081)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+ java.base/java.lang.Thread.run(Thread.java:1447)
+2026-02-27 15:18:02.400 [restartedMain] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [HikariPool-2 connection adder] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+ java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:46)
+ java.base/sun.nio.ch.SocketChannelImpl.tryRead(SocketChannelImpl.java:1339)
+ java.base/sun.nio.ch.SocketChannelImpl.blockingRead(SocketChannelImpl.java:1414)
+ java.base/sun.nio.ch.SocketInputStream.implRead(SocketInputStream.java:70)
+ java.base/sun.nio.ch.SocketInputStream.read(SocketInputStream.java:78)
+ oracle.net.nt.TimeoutSocketChannel.doBlockedRead(TimeoutSocketChannel.java:600)
+ oracle.net.nt.TimeoutSocketChannel.read(TimeoutSocketChannel.java:536)
+ oracle.net.ns.NSProtocolNIO.doSocketRead(NSProtocolNIO.java:1224)
+ oracle.net.ns.NIOPacket.readHeader(NIOPacket.java:272)
+ oracle.net.ns.NIOPacket.readPacketFromSocketChannel(NIOPacket.java:205)
+ oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:148)
+ oracle.net.ns.NIOPacket.readFromSocketChannel(NIOPacket.java:121)
+ oracle.net.ns.NIONSDataChannel.readDataFromSocketChannel(NIONSDataChannel.java:111)
+ oracle.net.ano.AnoCommNIO.prepareForUnmarshall(AnoCommNIO.java:77)
+ oracle.net.ano.AnoCommNIO.buffer2Value(AnoCommNIO.java:292)
+ oracle.net.ano.AnoComm.readUB4(AnoComm.java:504)
+ oracle.net.ano.Ano.receiveANOHeader(Ano.java:513)
+ oracle.net.ano.Ano.negotiation(Ano.java:206)
+ oracle.net.ns.NSProtocol.initializeAno(NSProtocol.java:579)
+ oracle.net.ns.NSProtocol.connect(NSProtocol.java:360)
+ oracle.jdbc.driver.T4CConnection.connectNetworkSessionProtocol(T4CConnection.java:3419)
+ oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:1018)
+ oracle.jdbc.driver.PhysicalConnection.connect(PhysicalConnection.java:1206)
+ oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:105)
+ oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:886)
+ oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:693)
+ com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+ com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+ com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+ com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+ com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:724)
+ com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:703)
+ java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+ java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+ java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+ java.base/java.lang.Thread.run(Thread.java:1447)
+2026-02-27 15:18:02.404 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-02-27 15:18:03.850 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-02-27 15:18:05.765 [restartedMain] INFO  com.rev.app.RevPasswordManagerP2Application - Starting RevPasswordManagerP2Application using Java 24.0.1 with PID 2896 (C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu\target\classes started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-02-27 15:18:05.767 [restartedMain] DEBUG com.rev.app.RevPasswordManagerP2Application - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-02-27 15:18:05.767 [restartedMain] INFO  com.rev.app.RevPasswordManagerP2Application - No active profile set, falling back to 1 default profile: "default"
+2026-02-27 15:18:07.024 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-02-27 15:18:07.025 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-27 15:18:07.025 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-02-27 15:18:07.089 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-27 15:18:07.212 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27 15:18:07.217 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-27 15:18:07.277 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-02-27 15:18:09.454 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection oracle.jdbc.driver.T4CConnection@7e5e6a3c
+2026-02-27 15:18:09.455 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-02-27 15:18:10.590 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27 15:18:11.427 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 23.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27 15:18:13.643 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27 15:18:50.288 [restartedMain] DEBUG com.rev.app.filter.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-02-27 15:18:51.491 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-02-27 15:18:54.566 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-02-27 15:18:54.568 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
