@@ -33,8 +33,11 @@
                                             th:value="${q.questionText}" placeholder="Security question" />
                                     </div>
                                     <div class="form-group" style="margin-bottom:0;">
-                                        <input type="password" class="form-control" name="answers"
-                                            placeholder="Answer (leave blank to keep current — NOT supported, re-enter required)" />
+                                        <div class="input-group">
+                                            <input type="password" class="form-control" name="answers"
+                                                placeholder="Answer (re-enter required)" />
+                                            <button type="button" class="toggle-pw">👁️</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -50,8 +53,11 @@
                                             placeholder="Add new question (optional)" />
                                     </div>
                                     <div class="form-group" style="margin-bottom:0;">
-                                        <input type="password" class="form-control" name="answers"
-                                            placeholder="Answer" />
+                                        <div class="input-group">
+                                            <input type="password" class="form-control" name="answers"
+                                                placeholder="Answer" />
+                                            <button type="button" class="toggle-pw">👁️</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

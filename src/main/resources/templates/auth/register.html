@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create Account | RevPassManager</title>
+    <title>Create Account | RevSecurity</title>
     <link rel="stylesheet" th:href="@{/css/styles.css}" />
 </head>
 
@@ -12,8 +12,8 @@
     <div class="auth-wrapper" style="align-items:flex-start; padding-top: 40px;">
         <div class="auth-card fade-in" style="max-width:560px;">
             <div class="auth-logo">
-                <div class="logo-icon">🔐</div>
-                <span class="logo-text">RevPassManager</span>
+                <div class="logo-icon">🛡️</div>
+                <span class="logo-text">RevSecurity</span>
             </div>
             <h1 class="auth-title">Create your account</h1>
             <p class="auth-subtitle">Set up your secure password vault</p>
@@ -103,9 +103,12 @@
                             </div>
                             <div class="form-group" style="margin-bottom:0;">
                                 <label class="form-label">Answer</label>
-                                <input type="password" class="form-control"
-                                    th:field="*{securityQuestions[__${stat.index}__].answer}"
-                                    placeholder="Your answer (case-insensitive)" />
+                                <div class="input-group">
+                                    <input type="password" class="form-control"
+                                        th:field="*{securityQuestions[__${stat.index}__].answer}"
+                                        placeholder="Your answer (case-insensitive)" />
+                                    <button type="button" class="toggle-pw">👁️</button>
+                                </div>
                             </div>
                         </div>
                     </div>

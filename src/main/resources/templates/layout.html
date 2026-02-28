@@ -4,10 +4,10 @@
 <head th:fragment="head(title)">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title th:text="${title} + ' | RevPassManager'">RevPassManager</title>
+    <title th:text="${title} + ' | RevSecurity'">RevSecurity</title>
     <link rel="stylesheet" th:href="@{/css/styles.css}" />
     <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔐</text></svg>" />
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
 </head>
 
 <body>
@@ -15,32 +15,32 @@
     <!-- ===== SIDEBAR FRAGMENT ===== -->
     <nav class="sidebar" th:fragment="sidebar">
         <a class="sidebar-brand" href="/dashboard">
-            <div class="brand-icon">🔐</div>
-            <span class="brand-name">RevPass</span>
+            <div class="brand-icon">🛡️</div>
+            <span class="brand-name">RevSecurity</span>
         </a>
         <div class="sidebar-nav">
             <div class="nav-section-title">Main</div>
             <a class="nav-item" th:classappend="${activePage == 'dashboard'} ? 'active'" href="/dashboard">
-                <span class="nav-icon">📊</span><span>Dashboard</span>
+                <span class="nav-icon">💎</span><span>Dashboard</span>
             </a>
             <a class="nav-item" th:classappend="${activePage == 'vault'} ? 'active'" href="/vault">
-                <span class="nav-icon">🗄️</span><span>Password Vault</span>
+                <span class="nav-icon">🗝️</span><span>Vault</span>
             </a>
             <a class="nav-item" th:classappend="${activePage == 'favorites'} ? 'active'" href="/vault/favorites">
-                <span class="nav-icon">⭐</span><span>Favorites</span>
+                <span class="nav-icon">✨</span><span>Favorites</span>
             </a>
             <a class="nav-item" th:classappend="${activePage == 'generator'} ? 'active'" href="/generator">
-                <span class="nav-icon">🎲</span><span>Generator</span>
+                <span class="nav-icon">⚡</span><span>Generator</span>
             </a>
             <div class="nav-section-title">Security</div>
             <a class="nav-item" th:classappend="${activePage == 'audit'} ? 'active'" href="/security/audit">
-                <span class="nav-icon">🛡️</span><span>Security Audit</span>
+                <span class="nav-icon">🛰️</span><span>Security Audit</span>
             </a>
             <a class="nav-item" th:classappend="${activePage == '2fa'} ? 'active'" href="/security/2fa">
-                <span class="nav-icon">📱</span><span>Two-Factor Auth</span>
+                <span class="nav-icon">📱</span><span>2FA Shield</span>
             </a>
             <a class="nav-item" th:classappend="${activePage == 'questions'} ? 'active'" href="/security/questions">
-                <span class="nav-icon">❓</span><span>Security Questions</span>
+                <span class="nav-icon">💬</span><span>Questions</span>
             </a>
             <div class="nav-section-title">Account</div>
             <a class="nav-item" th:classappend="${activePage == 'profile'} ? 'active'" href="/profile">
@@ -48,7 +48,7 @@
             </a>
             <a class="nav-item" th:classappend="${activePage == 'changepw'} ? 'active'"
                 href="/security/change-password">
-                <span class="nav-icon">🔑</span><span>Change Password</span>
+                <span class="nav-icon">🔒</span><span>Credentials</span>
             </a>
         </div>
         <div class="sidebar-footer">
