@@ -22,7 +22,7 @@
     </Appenders>
 
     <Loggers>
-        <Logger name="com.passwordmanager.app" level="DEBUG" additivity="false">
+        <Logger name="com.rev.app" level="DEBUG" additivity="false">
             <AppenderRef ref="ConsoleAppender"/>
             <AppenderRef ref="FileAppender"/>
         </Logger>

@@ -74,10 +74,10 @@ public class SecurityConfig {
                                 .authenticationProvider(authenticationProvider())
                                 .authorizeHttpRequests(auth -> auth
                                                 .requestMatchers(
-                                                                "/login", "/register", "/auth/login", "/auth/register",
+                                                                "/", "/index", "/login", "/register", "/auth/login", "/auth/register",
                                                                 "/recover/**", "/auth/verify-email", "/verify-email",
                                                                 "/auth/2fa-login", "/api/auth/**",
-                                                        "/static.css/**", "/js/**", "/images/**", "/favicon.ico")
+                                                                "/css/**", "/js/**", "/images/**", "/favicon.ico")
                                                 .permitAll()
                                                 .anyRequest().authenticated())
                                 .formLogin(form -> form

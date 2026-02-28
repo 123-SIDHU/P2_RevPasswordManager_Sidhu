@@ -150,33 +150,44 @@ public class SecurityController {
     }
 
     @PostMapping("/questions/update")
+    @org.springframework.transaction.annotation.Transactional
     public String updateQuestions(@RequestParam String masterPassword,
             @RequestParam List<String> questionTexts,
             @RequestParam List<String> answers,
             RedirectAttributes redirectAttrs) {
         User user = authUtil.getCurrentUser();
+        if (user == null)
+            return "redirect:/login";
+
         if (!userService.verifyMasterPassword(user, masterPassword)) {
             redirectAttrs.addFlashAttribute("errorMsg", "Incorrect master password");
             return "redirect:/security/questions";
         }
-        if (questionTexts.size() < 3) {
-            redirectAttrs.addFlashAttribute("errorMsg", "Minimum 3 security questions required");
-            return "redirect:/security/questions";
-        }
 
-        sqRepository.deleteByUserId(user.getId());
         List<SecurityQuestion> newQuestions = new ArrayList<>();
-        for (int i = 0; i < questionTexts.size(); i++) {
-            if (!questionTexts.get(i).isBlank() && !answers.get(i).isBlank()) {
+        int maxSize = Math.min(questionTexts.size(), answers.size());
+        for (int i = 0; i < maxSize; i++) {
+            String qText = questionTexts.get(i);
+            String ans = answers.get(i);
+            if (qText != null && !qText.isBlank() && ans != null && !ans.isBlank()) {
                 newQuestions.add(SecurityQuestion.builder()
                         .user(user)
-                        .questionText(questionTexts.get(i))
-                        .answerHash(passwordEncoder.encode(answers.get(i).toLowerCase().trim()))
+                        .questionText(qText.trim())
+                        .answerHash(passwordEncoder.encode(ans.toLowerCase().trim()))
                         .build());
             }
         }
+
+        if (newQuestions.size() < 3) {
+            redirectAttrs.addFlashAttribute("errorMsg", "Minimum 3 valid security questions and answers are required");
+            return "redirect:/security/questions";
+        }
+
+        // Delete only after we know we have valid new questions to replace them with
+        sqRepository.deleteByUserId(user.getId());
         sqRepository.saveAll(newQuestions);
-        redirectAttrs.addFlashAttribute("successMsg", "Security questions updated!");
+
+        redirectAttrs.addFlashAttribute("successMsg", "Security questions updated successfully!");
         return "redirect:/security/questions";
     }
 }

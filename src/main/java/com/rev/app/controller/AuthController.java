@@ -40,11 +40,12 @@ public class AuthController {
         this.verificationService = verificationService;
     }
 
-    @GetMapping("/login")
+    @GetMapping({"/login", "/auth/login"})
     public String loginPage(@RequestParam(required = false) String error,
             @RequestParam(required = false) String logout,
             @RequestParam(required = false) String expired,
             Model model) {
+        logger.info("Accessing login page from user/guest. Path aliases: /login, /auth/login");
         if (error != null)
             model.addAttribute("loginError", "Invalid username/email or password");
         if (logout != null)
@@ -54,8 +55,9 @@ public class AuthController {
         return "auth/login";
     }
 
-    @GetMapping("/register")
+    @GetMapping({"/register", "/auth/register"})
     public String registerPage(Model model) {
+        logger.info("Redirecting to registration page. Mapping set for: /register and /auth/register");
         RegisterDTO dto = new RegisterDTO();
         dto.setSecurityQuestions(new ArrayList<>(List.of(
                 new SecurityQuestionDTO(), new SecurityQuestionDTO(), new SecurityQuestionDTO())));
@@ -63,7 +65,7 @@ public class AuthController {
         return "auth/register";
     }
 
-    @PostMapping("/register")
+    @PostMapping({"/register", "/auth/register"})
     public String doRegister(@Valid @ModelAttribute("registerDTO") RegisterDTO dto,
             BindingResult result,
             RedirectAttributes redirectAttrs,
@@ -74,6 +76,7 @@ public class AuthController {
 
         if (result.hasErrors()) {
             logger.warn("Registration validation failed for user {}: {}", dto.getUsername(), result.getAllErrors());
+            model.addAttribute("errorMsg", "Please correct the errors in the form.");
             return "auth/register";
         }
         try {
@@ -86,14 +89,13 @@ public class AuthController {
             // Store registration DTO, OTP, and expiry in session
             session.setAttribute("pendingRegisterDTO", dto);
             session.setAttribute("pendingRegisterOtp", otp);
-            session.setAttribute("pendingRegisterOtpExpiry", System.currentTimeMillis() + (10 * 60 * 1000)); // 10
-                                                                                                             // minutes
+            session.setAttribute("pendingRegisterOtpExpiry", System.currentTimeMillis() + (10 * 60 * 1000)); // 10 minutes
 
             redirectAttrs.addFlashAttribute("successMsg",
                     "Success! Check your email for a verification code to complete registration.");
             return "redirect:/auth/verify-email";
         } catch (Exception e) {
-            logger.error("Registration failed for user {}: {}", dto.getUsername(), e.getMessage(), e);
+            logger.error("Registration failed for user {}: {}", dto.getUsername(), e.getMessage());
             model.addAttribute("errorMsg", e.getMessage());
             return "auth/register";
         }
@@ -103,8 +105,10 @@ public class AuthController {
 
     @GetMapping("/auth/verify-email")
     public String verifyEmailPage(HttpSession session, Model model) {
-        if (session.getAttribute("pendingRegisterDTO") == null)
+        if (session.getAttribute("pendingRegisterDTO") == null) {
+            logger.warn("Accessed verify-email page without pending registration session.");
             return "redirect:/login";
+        }
         model.addAttribute("purpose", "EMAIL_VERIFY");
         model.addAttribute("returnUrl", "/login?verified=true");
         return "auth/verify-email";
@@ -118,18 +122,20 @@ public class AuthController {
         String sessionOtp = (String) session.getAttribute("pendingRegisterOtp");
         Long otpExpiry = (Long) session.getAttribute("pendingRegisterOtpExpiry");
 
-        if (dto == null || sessionOtp == null || otpExpiry == null)
+        if (dto == null || sessionOtp == null || otpExpiry == null) {
+            logger.warn("Verification attempt with missing session data.");
             return "redirect:/login";
+        }
 
         if (System.currentTimeMillis() > otpExpiry) {
+            logger.warn("OTP expired for user {}.", dto.getUsername());
             redirectAttrs.addFlashAttribute("errorMsg", "Verification code expired. Please register again.");
-            session.removeAttribute("pendingRegisterDTO");
-            session.removeAttribute("pendingRegisterOtp");
-            session.removeAttribute("pendingRegisterOtpExpiry");
+            clearPendingRegistration(session);
             return "redirect:/register";
         }
 
         if (!sessionOtp.equals(otp)) {
+            logger.warn("Invalid OTP entered for user {}.", dto.getUsername());
             redirectAttrs.addFlashAttribute("errorMsg", "Invalid verification code. Please try again.");
             return "redirect:/auth/verify-email";
         }
@@ -137,19 +143,23 @@ public class AuthController {
         try {
             // OTP is valid, proceed with actual registration
             userService.register(dto);
+            logger.info("Account successfully created after email verification: {}", dto.getUsername());
 
-            session.removeAttribute("pendingRegisterDTO");
-            session.removeAttribute("pendingRegisterOtp");
-            session.removeAttribute("pendingRegisterOtpExpiry");
+            clearPendingRegistration(session);
 
             redirectAttrs.addFlashAttribute("successMsg", "Email verified and account created! You can now login.");
             return "redirect:/login";
         } catch (Exception e) {
-            logger.error("Registration failed during verification for user {}: {}", dto.getUsername(), e.getMessage(),
-                    e);
+            logger.error("Registration failed during verification for user {}: {}", dto.getUsername(), e.getMessage());
             redirectAttrs.addFlashAttribute("errorMsg", "Error creating account: " + e.getMessage());
             return "redirect:/register";
         }
+    }
+
+    private void clearPendingRegistration(HttpSession session) {
+        session.removeAttribute("pendingRegisterDTO");
+        session.removeAttribute("pendingRegisterOtp");
+        session.removeAttribute("pendingRegisterOtpExpiry");
     }
 
     // ===== Password Recovery =====
