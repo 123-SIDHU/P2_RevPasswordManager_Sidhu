@@ -255,11 +255,23 @@ body {
   color: #dc2626;
 }
 
+.topbar-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .stat-value {
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
 }
+
 
 .stat-label {
   font-size: 12px;
@@ -523,9 +535,46 @@ tr:hover td {
 }
 
 /* ===== Password Strength Meter ===== */
+.strength-bar {
+  height: 4px;
+  background: #e2e8f0;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+
+.strength-fill {
+  height: 100%;
+  width: 0;
+  transition: all 0.3s ease;
+}
+
+.strength-label {
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.s-weak {
+  color: #ef4444;
+}
+
+.s-medium {
+  color: #f59e0b;
+}
+
+.s-strong {
+  color: #22c55e;
+}
+
+.s-vstrong {
+  color: #06b6d4;
+}
+
 .strength-fill.strength-4 {
   background: var(--success);
 }
+
 
 /* ===== Auth Pages ===== */
 .auth-wrapper {
@@ -547,6 +596,14 @@ tr:hover td {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
+.auth-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
 .auth-logo .logo-icon {
   width: 40px;
   height: 40px;
@@ -558,6 +615,27 @@ tr:hover td {
   font-size: 18px;
   color: white;
 }
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.auth-title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.auth-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
 
 /* ===== Filter Chips ===== */
 .filter-chip {
@@ -853,4 +931,249 @@ input[type="range"] {
 
 .toast-error {
   border-left: 3px solid var(--danger);
+}
+
+/* ===================================================
+   RevSecurity Landing Page Styles
+   =================================================== */
+
+:root {
+  --accent-gradient: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  --glass: rgba(255, 255, 255, 0.7);
+  --accent-glow: rgba(37, 99, 235, 0.1);
+}
+
+.landing-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.brand-link:hover {
+  transform: translateY(-1px);
+}
+
+.brand-icon-box {
+  width: 40px;
+  height: 40px;
+  background: var(--accent-gradient);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.brand-text {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.landing-hero {
+  padding: 180px 5% 100px;
+  background: radial-gradient(circle at top right, #eff6ff 0%, #f8fafc 100%);
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1.5px;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #475569;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.landing-features {
+  padding: 100px 5%;
+  background: white;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+  color: #1e293b;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  padding: 3rem 2rem;
+  background: #f8fafc;
+  border-radius: 24px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  background: white;
+  border-color: #cbd5e1;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card .icon-box {
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04);
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.feature-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.cta-section {
+  padding: 100px 5%;
+  background: #0f172a;
+  text-align: center;
+  color: white;
+}
+
+.cta-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.cta-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.btn-white {
+  background: white;
+  color: #0f172a;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn-white:hover {
+  transform: scale(1.05);
+}
+
+.landing-footer {
+  padding: 80px 5% 40px;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: #64748b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #2563eb;
+}
+
+/* Animations */
+.slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .landing-hero {
+    padding: 140px 5% 60px;
+  }
 }
