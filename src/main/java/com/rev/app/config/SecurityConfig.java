@@ -1,6 +1,5 @@
 package com.rev.app.config;
 
-import com.rev.app.filter.JwtAuthenticationFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
@@ -15,6 +14,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+
+import com.rev.app.filter.JwtAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
@@ -77,7 +78,7 @@ public class SecurityConfig {
                                                                 "/", "/index", "/login", "/register", "/auth/login", "/auth/register",
                                                                 "/recover/**", "/auth/verify-email", "/verify-email",
                                                                 "/auth/2fa-login", "/api/auth/**",
-                                                        "/static/**", "/js/**", "/images/**", "/favicon.ico")
+                                                                "/static/**", "/css/**", "/js/**", "/images/**", "/favicon.ico")
                                                 .permitAll()
                                                 .anyRequest().authenticated())
                                 .formLogin(form -> form
