@@ -28,5 +28,8 @@ public interface ISecurityQuestionRepository extends JpaRepository<SecurityQuest
 
     long countByUserId(Long userId);
 
-    void deleteByUserId(Long userId);
+    @org.springframework.data.jpa.repository.Modifying
+    @org.springframework.transaction.annotation.Transactional
+    @org.springframework.data.jpa.repository.Query("DELETE FROM SecurityQuestion s WHERE s.user.id = :userId")
+    void deleteByUserId(@org.springframework.data.repository.query.Param("userId") Long userId);
 }

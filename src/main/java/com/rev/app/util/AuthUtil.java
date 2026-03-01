@@ -17,7 +17,7 @@ public class AuthUtil {
 
     public User getCurrentUser() {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        if (auth == null || !auth.isAuthenticated())
+        if (auth == null || !auth.isAuthenticated() || "anonymousUser".equals(auth.getName()))
             return null;
         return IUserRepository.findByUsername(auth.getName()).orElse(null);
     }

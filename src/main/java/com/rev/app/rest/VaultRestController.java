@@ -2,8 +2,8 @@ package com.rev.app.rest;
 
 import com.rev.app.dto.VaultEntryDTO;
 import com.rev.app.entity.User;
-import com.rev.app.service.UserService;
-import com.rev.app.service.VaultService;
+import com.rev.app.service.IUserService;
+import com.rev.app.service.IVaultService;
 import com.rev.app.util.AuthUtil;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
@@ -18,11 +18,11 @@ import java.util.Map;
 @RequestMapping("/api/vault")
 public class VaultRestController {
 
-    private final VaultService vaultService;
-    private final UserService userService;
+    private final IVaultService vaultService;
+    private final IUserService userService;
     private final AuthUtil authUtil;
 
-    public VaultRestController(VaultService vaultService, UserService userService, AuthUtil authUtil) {
+    public VaultRestController(IVaultService vaultService, IUserService userService, AuthUtil authUtil) {
         this.vaultService = vaultService;
         this.userService = userService;
         this.authUtil = authUtil;

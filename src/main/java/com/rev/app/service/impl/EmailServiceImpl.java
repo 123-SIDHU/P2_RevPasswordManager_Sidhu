@@ -8,7 +8,6 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -26,7 +25,6 @@ public class EmailServiceImpl implements IEmailService {
     }
 
     @Override
-    @Async
     public void sendOtp(String toEmail, String otp, String purpose) {
         try {
             String subject = getSubject(purpose);
@@ -41,6 +39,7 @@ public class EmailServiceImpl implements IEmailService {
             logger.info("OTP email sent to {} for purpose={}", toEmail, purpose);
         } catch (MessagingException e) {
             logger.error("Failed to send OTP email to {}: {}", toEmail, e.getMessage());
+            throw new RuntimeException("Failed to send OTP email: " + e.getMessage());
         }
     }
 

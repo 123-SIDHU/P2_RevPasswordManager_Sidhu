@@ -77,7 +77,7 @@ public class SecurityConfig {
                                                                 "/", "/index", "/login", "/register", "/auth/login", "/auth/register",
                                                                 "/recover/**", "/auth/verify-email", "/verify-email",
                                                                 "/auth/2fa-login", "/api/auth/**",
-                                                                "/css/**", "/js/**", "/images/**", "/favicon.ico")
+                                                        "/static/**", "/js/**", "/images/**", "/favicon.ico")
                                                 .permitAll()
                                                 .anyRequest().authenticated())
                                 .formLogin(form -> form

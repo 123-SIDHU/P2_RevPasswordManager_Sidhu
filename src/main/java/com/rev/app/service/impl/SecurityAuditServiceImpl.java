@@ -50,8 +50,11 @@ public class SecurityAuditServiceImpl implements ISecurityAuditService {
                 continue;
             }
             int score = generatorService.strengthScore(plain);
+            
+            // Log for debugging (remove in prod)
+            logger.debug("Password check: id={}, score={}, label={}", entry.getId(), score, generatorService.strengthLabel(score));
 
-            if (score <= 1) {
+            if (score <= 1) { // 0 or 1 are "Weak"
                 report.getWeakPasswords().add(toItem(entry, score));
             }
 

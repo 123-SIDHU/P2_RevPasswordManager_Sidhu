@@ -3,7 +3,7 @@ package com.rev.app.rest;
 import com.rev.app.dto.LoginDTO;
 import com.rev.app.dto.RegisterDTO;
 import com.rev.app.entity.User;
-import com.rev.app.service.UserService;
+import com.rev.app.service.IUserService;
 import com.rev.app.util.JwtUtil;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
@@ -27,12 +27,12 @@ import java.util.Map;
 public class AuthRestController {
 
     private final AuthenticationManager authenticationManager;
-    private final UserService userService;
+    private final IUserService userService;
     private final JwtUtil jwtUtil;
     private final UserDetailsService userDetailsService;
 
-    public AuthRestController(AuthenticationManager authenticationManager, UserService userService, JwtUtil jwtUtil,
-                              UserDetailsService userDetailsService) {
+    public AuthRestController(AuthenticationManager authenticationManager, IUserService userService, JwtUtil jwtUtil,
+            UserDetailsService userDetailsService) {
         this.authenticationManager = authenticationManager;
         this.userService = userService;
         this.jwtUtil = jwtUtil;
@@ -61,7 +61,7 @@ public class AuthRestController {
             response.put("username", authentication.getName());
             response.put("token", token);
             return ResponseEntity.ok(response);
-        } catch (Exception e) {
+        } catch (org.springframework.security.core.AuthenticationException e) {
             response.put("error", "Invalid credentials");
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(response);
         }

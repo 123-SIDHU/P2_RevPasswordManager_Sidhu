@@ -85,22 +85,26 @@ public class PasswordGeneratorServiceImpl implements IPasswordGeneratorService {
 
     @Override
     public int strengthScore(String password) {
-        int score = 0;
         if (password == null || password.isEmpty())
             return 0;
-        if (password.length() >= 8)
-            score++;
-        if (password.length() >= 12)
-            score++;
-        if (password.matches(".*[A-Z].*"))
-            score++;
-        if (password.matches(".*[a-z].*"))
-            score++;
-        if (password.matches(".*[0-9].*"))
-            score++;
-        if (password.matches(".*[^A-Za-z0-9].*"))
-            score++;
-        return Math.min(score, 4);
+        
+        int score = 0;
+        int length = password.length();
+
+        // Length checks (Minimum 8 for any score > 0)
+        if (length < 8) return 0;
+        
+        score++; // Score 1: >= 8 chars
+        if (length >= 12) score++; // Score 2: >= 12 chars
+        
+        // Character variety checks
+        if (password.matches(".*[A-Z].*")) score++;
+        if (password.matches(".*[a-z].*")) score++;
+        if (password.matches(".*[0-9].*")) score++;
+        if (password.matches(".*[^A-Za-z0-9].*")) score++;
+
+        // Max score of 4 for UI consistency, but mapped from potential 6
+        return Math.min((score * 4) / 6 + (score > 4 ? 1 : 0), 4);
     }
 
     @Override
