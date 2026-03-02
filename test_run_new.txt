@@ -1,0 +1,27 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.rev.app:RevPasswordManager_P2 >------------------
+[INFO] Building RevPasswordManager_P2 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ RevPasswordManager_P2 ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 26 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ RevPasswordManager_P2 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ RevPasswordManager_P2 ---
+[INFO] skip non existing resourceDirectory C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ RevPasswordManager_P2 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.5.2:test (default-test) @ RevPasswordManager_P2 ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.810 s
+[INFO] Finished at: 2026-03-02T09:56:56+05:30
+[INFO] ------------------------------------------------------------------------

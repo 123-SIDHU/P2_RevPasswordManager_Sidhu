@@ -1,0 +1,771 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.rev.app:RevPasswordManager_P2 >------------------
+[INFO] Building RevPasswordManager_P2 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ RevPasswordManager_P2 ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 26 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ RevPasswordManager_P2 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ RevPasswordManager_P2 ---
+[INFO] skip non existing resourceDirectory C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ RevPasswordManager_P2 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- surefire:3.5.2:test (default-test) @ RevPasswordManager_P2 ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.rev.app.config.CustomAuthenticationSuccessHandlerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.086 s -- in com.rev.app.config.CustomAuthenticationSuccessHandlerTest
+[INFO] Running com.rev.app.config.UserDetailsServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.186 s -- in com.rev.app.config.UserDetailsServiceImplTest
+[INFO] Running com.rev.app.controller.AuthControllerTest
+2026-03-02 09:32:45.238 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 09:32:45.261 [main] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 09:32:45.312 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: null
+2026-03-02 09:32:45.313 [main] WARN  com.rev.app.controller.AuthController - Registration validation failed for user null: []
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.483 s -- in com.rev.app.controller.AuthControllerTest
+[INFO] Running com.rev.app.controller.DashboardControllerTest
+2026-03-02 09:32:45.550 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.252 s -- in com.rev.app.controller.DashboardControllerTest
+[INFO] Running com.rev.app.controller.IndexControllerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in com.rev.app.controller.IndexControllerTest
+[INFO] Running com.rev.app.controller.PasswordGeneratorControllerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s -- in com.rev.app.controller.PasswordGeneratorControllerTest
+[INFO] Running com.rev.app.controller.ProfileControllerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s -- in com.rev.app.controller.ProfileControllerTest
+[INFO] Running com.rev.app.controller.SecurityControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 s -- in com.rev.app.controller.SecurityControllerTest
+[INFO] Running com.rev.app.controller.VaultControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s -- in com.rev.app.controller.VaultControllerTest
+[INFO] Running com.rev.app.entity.UserEntityTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in com.rev.app.entity.UserEntityTest
+[INFO] Running com.rev.app.exception.GlobalExceptionHandlerTest
+2026-03-02 09:32:46.076 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
+2026-03-02 09:32:46.084 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s -- in com.rev.app.exception.GlobalExceptionHandlerTest
+[INFO] Running com.rev.app.filter.JwtAuthenticationFilterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 s -- in com.rev.app.filter.JwtAuthenticationFilterTest
+[INFO] Running com.rev.app.mapper.SecurityQuestionMapperTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in com.rev.app.mapper.SecurityQuestionMapperTest
+[INFO] Running com.rev.app.mapper.UserMapperTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in com.rev.app.mapper.UserMapperTest
+[INFO] Running com.rev.app.mapper.VaultEntryMapperTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s -- in com.rev.app.mapper.VaultEntryMapperTest
+[INFO] Running com.rev.app.repository.ISecurityQuestionRepositoryTest
+2026-03-02 09:32:46.733 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.rev.app.repository.ISecurityQuestionRepositoryTest]: ISecurityQuestionRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-02 09:32:47.140 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.rev.app.RevPasswordManagerP2Application for test class com.rev.app.repository.ISecurityQuestionRepositoryTest
+2026-03-02 09:32:47.365 [main] INFO  org.springframework.boot.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2026-03-02 09:32:48.174 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-03-02 09:32:48.315 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 9236 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 09:32:48.327 [main] DEBUG com.rev.app.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 09:32:48.329 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
+2026-03-02 09:32:49.422 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-02 09:32:49.656 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 204 ms. Found 4 JPA repository interfaces.
+2026-03-02 09:32:49.802 [main] INFO  org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+2026-03-02 09:32:50.215 [main] INFO  org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:58a4a8a0-ad2a-46a7-a082-e09bd54a7d17;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2026-03-02 09:32:51.026 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 09:32:51.245 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-02 09:32:51.658 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 09:32:52.475 [main] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-02 09:32:52.647 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-02 09:32:52.701 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@591febcb']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 09:32:55.113 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 09:32:55.386 [main] DEBUG org.hibernate.SQL - 
+    create table pm_security_questions (
+        id bigint not null,
+        answer_hash varchar(255) not null,
+        question_text varchar(255) not null,
+        user_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table pm_security_questions (
+        id bigint not null,
+        answer_hash varchar(255) not null,
+        question_text varchar(255) not null,
+        user_id bigint not null,
+        primary key (id)
+    )
+2026-03-02 09:32:55.400 [main] DEBUG org.hibernate.SQL - 
+    create table pm_users (
+        id bigint not null,
+        account_locked boolean not null,
+        created_at timestamp(6),
+        email varchar(100) not null,
+        email_verified boolean not null,
+        full_name varchar(100),
+        master_password_hash varchar(255) not null,
+        pending_email varchar(100),
+        phone varchar(20),
+        profile_photo_url CLOB,
+        totp_enabled boolean not null,
+        totp_secret varchar(100),
+        updated_at timestamp(6),
+        username varchar(50) not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table pm_users (
+        id bigint not null,
+        account_locked boolean not null,
+        created_at timestamp(6),
+        email varchar(100) not null,
+        email_verified boolean not null,
+        full_name varchar(100),
+        master_password_hash varchar(255) not null,
+        pending_email varchar(100),
+        phone varchar(20),
+        profile_photo_url CLOB,
+        totp_enabled boolean not null,
+        totp_secret varchar(100),
+        updated_at timestamp(6),
+        username varchar(50) not null,
+        primary key (id)
+    )
+2026-03-02 09:32:55.412 [main] DEBUG org.hibernate.SQL - 
+    create table pm_vault_entries (
+        id bigint not null,
+        account_name varchar(100) not null,
+        account_username varchar(100),
+        category enum ('BANKING','EMAIL','OTHER','SHOPPING','SOCIAL_MEDIA','WORK'),
+        created_at timestamp(6),
+        encrypted_password varchar(500) not null,
+        is_favorite boolean not null,
+        notes varchar(1000),
+        updated_at timestamp(6),
+        website_url varchar(255),
+        user_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table pm_vault_entries (
+        id bigint not null,
+        account_name varchar(100) not null,
+        account_username varchar(100),
+        category enum ('BANKING','EMAIL','OTHER','SHOPPING','SOCIAL_MEDIA','WORK'),
+        created_at timestamp(6),
+        encrypted_password varchar(500) not null,
+        is_favorite boolean not null,
+        notes varchar(1000),
+        updated_at timestamp(6),
+        website_url varchar(255),
+        user_id bigint not null,
+        primary key (id)
+    )
+2026-03-02 09:32:55.416 [main] DEBUG org.hibernate.SQL - 
+    create table pm_verification_codes (
+        id bigint not null,
+        code varchar(10) not null,
+        created_at timestamp(6),
+        expires_at timestamp(6) not null,
+        purpose varchar(50) not null,
+        used boolean not null,
+        user_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table pm_verification_codes (
+        id bigint not null,
+        code varchar(10) not null,
+        created_at timestamp(6),
+        expires_at timestamp(6) not null,
+        purpose varchar(50) not null,
+        used boolean not null,
+        user_id bigint not null,
+        primary key (id)
+    )
+2026-03-02 09:32:55.422 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists pm_users 
+       drop constraint if exists UKmf6ijflkv5y8e4dl8h5prvtdx
+Hibernate: 
+    alter table if exists pm_users 
+       drop constraint if exists UKmf6ijflkv5y8e4dl8h5prvtdx
+2026-03-02 09:32:55.423 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists pm_users 
+       add constraint UKmf6ijflkv5y8e4dl8h5prvtdx unique (email)
+Hibernate: 
+    alter table if exists pm_users 
+       add constraint UKmf6ijflkv5y8e4dl8h5prvtdx unique (email)
+2026-03-02 09:32:55.428 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists pm_users 
+       drop constraint if exists UKqdgwanmddee6skop8jtf9cuyw
+Hibernate: 
+    alter table if exists pm_users 
+       drop constraint if exists UKqdgwanmddee6skop8jtf9cuyw
+2026-03-02 09:32:55.428 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists pm_users 
+       add constraint UKqdgwanmddee6skop8jtf9cuyw unique (username)
+Hibernate: 
+    alter table if exists pm_users 
+       add constraint UKqdgwanmddee6skop8jtf9cuyw unique (username)
+2026-03-02 09:32:55.436 [main] DEBUG org.hibernate.SQL - 
+    create sequence pm_sq_seq start with 1 increment by 1
+Hibernate: 
+    create sequence pm_sq_seq start with 1 increment by 1
+2026-03-02 09:32:55.440 [main] DEBUG org.hibernate.SQL - 
+    create sequence pm_user_seq start with 1 increment by 1
+Hibernate: 
+    create sequence pm_user_seq start with 1 increment by 1
+2026-03-02 09:32:55.440 [main] DEBUG org.hibernate.SQL - 
+    create sequence pm_vault_seq start with 1 increment by 1
+Hibernate: 
+    create sequence pm_vault_seq start with 1 increment by 1
+2026-03-02 09:32:55.442 [main] DEBUG org.hibernate.SQL - 
+    create sequence pm_vc_seq start with 1 increment by 1
+Hibernate: 
+    create sequence pm_vc_seq start with 1 increment by 1
+2026-03-02 09:32:55.443 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists pm_security_questions 
+       add constraint FKpnocfi8h0e99wn17yk5kws7tf 
+       foreign key (user_id) 
+       references pm_users
+Hibernate: 
+    alter table if exists pm_security_questions 
+       add constraint FKpnocfi8h0e99wn17yk5kws7tf 
+       foreign key (user_id) 
+       references pm_users
+2026-03-02 09:32:55.458 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists pm_vault_entries 
+       add constraint FK39mtoi2w4li4eqw3xw69047nj 
+       foreign key (user_id) 
+       references pm_users
+Hibernate: 
+    alter table if exists pm_vault_entries 
+       add constraint FK39mtoi2w4li4eqw3xw69047nj 
+       foreign key (user_id) 
+       references pm_users
+2026-03-02 09:32:55.460 [main] DEBUG org.hibernate.SQL - 
+    alter table if exists pm_verification_codes 
+       add constraint FKrib73mt36dt6ywsdl6yxnsgox 
+       foreign key (user_id) 
+       references pm_users
+Hibernate: 
+    alter table if exists pm_verification_codes 
+       add constraint FKrib73mt36dt6ywsdl6yxnsgox 
+       foreign key (user_id) 
+       references pm_users
+2026-03-02 09:32:55.497 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-02 09:32:56.684 [main] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-02 09:33:00.516 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 13.185 seconds (process running for 21.602)
+2026-03-02 09:33:00.647 [main] DEBUG org.hibernate.SQL - 
+    select
+        next value for pm_user_seq
+Hibernate: 
+    select
+        next value for pm_user_seq
+2026-03-02 09:33:00.743 [main] DEBUG org.hibernate.SQL - 
+    select
+        next value for pm_sq_seq
+Hibernate: 
+    select
+        next value for pm_sq_seq
+2026-03-02 09:33:00.935 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        pm_users
+        (account_locked, created_at, email, email_verified, full_name, master_password_hash, pending_email, phone, profile_photo_url, totp_enabled, totp_secret, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        pm_users
+        (account_locked, created_at, email, email_verified, full_name, master_password_hash, pending_email, phone, profile_photo_url, totp_enabled, totp_secret, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-02 09:33:00.951 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        pm_security_questions
+        (answer_hash, question_text, user_id, id) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        pm_security_questions
+        (answer_hash, question_text, user_id, id) 
+    values
+        (?, ?, ?, ?)
+2026-03-02 09:33:00.990 [main] DEBUG org.hibernate.SQL - 
+    select
+        sq1_0.id,
+        sq1_0.answer_hash,
+        sq1_0.question_text,
+        sq1_0.user_id 
+    from
+        pm_security_questions sq1_0 
+    left join
+        pm_users u1_0 
+            on u1_0.id=sq1_0.user_id 
+    where
+        u1_0.id=?
+Hibernate: 
+    select
+        sq1_0.id,
+        sq1_0.answer_hash,
+        sq1_0.question_text,
+        sq1_0.user_id 
+    from
+        pm_security_questions sq1_0 
+    left join
+        pm_users u1_0 
+            on u1_0.id=sq1_0.user_id 
+    where
+        u1_0.id=?
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.58 s -- in com.rev.app.repository.ISecurityQuestionRepositoryTest
+[INFO] Running com.rev.app.repository.IUserRepositoryTest
+2026-03-02 09:33:01.078 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.rev.app.repository.IUserRepositoryTest]: IUserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-02 09:33:01.119 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.rev.app.RevPasswordManagerP2Application for test class com.rev.app.repository.IUserRepositoryTest
+2026-03-02 09:33:01.137 [main] DEBUG org.hibernate.SQL - 
+    select
+        next value for pm_user_seq
+Hibernate: 
+    select
+        next value for pm_user_seq
+2026-03-02 09:33:01.150 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        pm_users
+        (account_locked, created_at, email, email_verified, full_name, master_password_hash, pending_email, phone, profile_photo_url, totp_enabled, totp_secret, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        pm_users
+        (account_locked, created_at, email, email_verified, full_name, master_password_hash, pending_email, phone, profile_photo_url, totp_enabled, totp_secret, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-02 09:33:01.152 [main] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id 
+    from
+        pm_users u1_0 
+    where
+        u1_0.username=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        pm_users u1_0 
+    where
+        u1_0.username=? 
+    fetch
+        first ? rows only
+2026-03-02 09:33:01.160 [main] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id 
+    from
+        pm_users u1_0 
+    where
+        u1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        pm_users u1_0 
+    where
+        u1_0.email=? 
+    fetch
+        first ? rows only
+2026-03-02 09:33:01.179 [main] DEBUG org.hibernate.SQL - 
+    select
+        next value for pm_user_seq
+Hibernate: 
+    select
+        next value for pm_user_seq
+2026-03-02 09:33:01.187 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        pm_users
+        (account_locked, created_at, email, email_verified, full_name, master_password_hash, pending_email, phone, profile_photo_url, totp_enabled, totp_secret, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        pm_users
+        (account_locked, created_at, email, email_verified, full_name, master_password_hash, pending_email, phone, profile_photo_url, totp_enabled, totp_secret, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-02 09:33:01.192 [main] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.account_locked,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.full_name,
+        u1_0.master_password_hash,
+        u1_0.pending_email,
+        u1_0.phone,
+        u1_0.profile_photo_url,
+        u1_0.totp_enabled,
+        u1_0.totp_secret,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        pm_users u1_0 
+    where
+        u1_0.username=?
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.account_locked,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.email_verified,
+        u1_0.full_name,
+        u1_0.master_password_hash,
+        u1_0.pending_email,
+        u1_0.phone,
+        u1_0.profile_photo_url,
+        u1_0.totp_enabled,
+        u1_0.totp_secret,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        pm_users u1_0 
+    where
+        u1_0.username=?
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 s -- in com.rev.app.repository.IUserRepositoryTest
+[INFO] Running com.rev.app.repository.IVaultEntryRepositoryTest
+2026-03-02 09:33:01.213 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.rev.app.repository.IVaultEntryRepositoryTest]: IVaultEntryRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-02 09:33:01.239 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.rev.app.RevPasswordManagerP2Application for test class com.rev.app.repository.IVaultEntryRepositoryTest
+2026-03-02 09:33:01.250 [main] DEBUG org.hibernate.SQL - 
+    select
+        next value for pm_user_seq
+Hibernate: 
+    select
+        next value for pm_user_seq
+2026-03-02 09:33:01.253 [main] DEBUG org.hibernate.SQL - 
+    select
+        next value for pm_vault_seq
+Hibernate: 
+    select
+        next value for pm_vault_seq
+2026-03-02 09:33:01.262 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        pm_users
+        (account_locked, created_at, email, email_verified, full_name, master_password_hash, pending_email, phone, profile_photo_url, totp_enabled, totp_secret, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        pm_users
+        (account_locked, created_at, email, email_verified, full_name, master_password_hash, pending_email, phone, profile_photo_url, totp_enabled, totp_secret, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-02 09:33:01.265 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        pm_vault_entries
+        (account_name, account_username, category, created_at, encrypted_password, is_favorite, notes, updated_at, user_id, website_url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        pm_vault_entries
+        (account_name, account_username, category, created_at, encrypted_password, is_favorite, notes, updated_at, user_id, website_url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-02 09:33:01.266 [main] DEBUG org.hibernate.SQL - 
+    select
+        ve1_0.id,
+        ve1_0.account_name,
+        ve1_0.account_username,
+        ve1_0.category,
+        ve1_0.created_at,
+        ve1_0.encrypted_password,
+        ve1_0.is_favorite,
+        ve1_0.notes,
+        ve1_0.updated_at,
+        ve1_0.user_id,
+        ve1_0.website_url 
+    from
+        pm_vault_entries ve1_0 
+    left join
+        pm_users u1_0 
+            on u1_0.id=ve1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        ve1_0.account_name
+Hibernate: 
+    select
+        ve1_0.id,
+        ve1_0.account_name,
+        ve1_0.account_username,
+        ve1_0.category,
+        ve1_0.created_at,
+        ve1_0.encrypted_password,
+        ve1_0.is_favorite,
+        ve1_0.notes,
+        ve1_0.updated_at,
+        ve1_0.user_id,
+        ve1_0.website_url 
+    from
+        pm_vault_entries ve1_0 
+    left join
+        pm_users u1_0 
+            on u1_0.id=ve1_0.user_id 
+    where
+        u1_0.id=? 
+    order by
+        ve1_0.account_name
+2026-03-02 09:33:01.282 [main] DEBUG org.hibernate.SQL - 
+    select
+        next value for pm_user_seq
+Hibernate: 
+    select
+        next value for pm_user_seq
+2026-03-02 09:33:01.286 [main] DEBUG org.hibernate.SQL - 
+    select
+        next value for pm_vault_seq
+Hibernate: 
+    select
+        next value for pm_vault_seq
+2026-03-02 09:33:01.312 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        pm_users
+        (account_locked, created_at, email, email_verified, full_name, master_password_hash, pending_email, phone, profile_photo_url, totp_enabled, totp_secret, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        pm_users
+        (account_locked, created_at, email, email_verified, full_name, master_password_hash, pending_email, phone, profile_photo_url, totp_enabled, totp_secret, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-02 09:33:01.314 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        pm_vault_entries
+        (account_name, account_username, category, created_at, encrypted_password, is_favorite, notes, updated_at, user_id, website_url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        pm_vault_entries
+        (account_name, account_username, category, created_at, encrypted_password, is_favorite, notes, updated_at, user_id, website_url, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-02 09:33:01.316 [main] DEBUG org.hibernate.SQL - 
+    select
+        ve1_0.id,
+        ve1_0.account_name,
+        ve1_0.account_username,
+        ve1_0.category,
+        ve1_0.created_at,
+        ve1_0.encrypted_password,
+        ve1_0.is_favorite,
+        ve1_0.notes,
+        ve1_0.updated_at,
+        ve1_0.user_id,
+        ve1_0.website_url 
+    from
+        pm_vault_entries ve1_0 
+    where
+        ve1_0.user_id=? 
+        and (
+            lower(ve1_0.account_name) like lower(('%'||?||'%')) escape '' 
+            or lower(ve1_0.website_url) like lower(('%'||?||'%')) escape '' 
+            or lower(ve1_0.account_username) like lower(('%'||?||'%')) escape ''
+        )
+Hibernate: 
+    select
+        ve1_0.id,
+        ve1_0.account_name,
+        ve1_0.account_username,
+        ve1_0.category,
+        ve1_0.created_at,
+        ve1_0.encrypted_password,
+        ve1_0.is_favorite,
+        ve1_0.notes,
+        ve1_0.updated_at,
+        ve1_0.user_id,
+        ve1_0.website_url 
+    from
+        pm_vault_entries ve1_0 
+    where
+        ve1_0.user_id=? 
+        and (
+            lower(ve1_0.account_name) like lower(('%'||?||'%')) escape '' 
+            or lower(ve1_0.website_url) like lower(('%'||?||'%')) escape '' 
+            or lower(ve1_0.account_username) like lower(('%'||?||'%')) escape ''
+        )
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 s -- in com.rev.app.repository.IVaultEntryRepositoryTest
+[INFO] Running com.rev.app.repository.IVerificationCodeRepositoryTest
+2026-03-02 09:33:01.340 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.rev.app.repository.IVerificationCodeRepositoryTest]: IVerificationCodeRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-02 09:33:01.363 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.rev.app.RevPasswordManagerP2Application for test class com.rev.app.repository.IVerificationCodeRepositoryTest
+2026-03-02 09:33:01.376 [main] DEBUG org.hibernate.SQL - 
+    select
+        next value for pm_user_seq
+Hibernate: 
+    select
+        next value for pm_user_seq
+2026-03-02 09:33:01.381 [main] DEBUG org.hibernate.SQL - 
+    select
+        next value for pm_vc_seq
+Hibernate: 
+    select
+        next value for pm_vc_seq
+2026-03-02 09:33:01.390 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        pm_users
+        (account_locked, created_at, email, email_verified, full_name, master_password_hash, pending_email, phone, profile_photo_url, totp_enabled, totp_secret, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        pm_users
+        (account_locked, created_at, email, email_verified, full_name, master_password_hash, pending_email, phone, profile_photo_url, totp_enabled, totp_secret, updated_at, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-03-02 09:33:01.392 [main] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        pm_verification_codes
+        (code, created_at, expires_at, purpose, used, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        pm_verification_codes
+        (code, created_at, expires_at, purpose, used, user_id, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2026-03-02 09:33:01.394 [main] DEBUG org.hibernate.SQL - 
+    select
+        vc1_0.id,
+        vc1_0.code,
+        vc1_0.created_at,
+        vc1_0.expires_at,
+        vc1_0.purpose,
+        vc1_0.used,
+        vc1_0.user_id 
+    from
+        pm_verification_codes vc1_0 
+    left join
+        pm_users u1_0 
+            on u1_0.id=vc1_0.user_id 
+    where
+        u1_0.id=? 
+        and vc1_0.purpose=? 
+        and not(vc1_0.used) 
+    order by
+        vc1_0.created_at desc 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        vc1_0.id,
+        vc1_0.code,
+        vc1_0.created_at,
+        vc1_0.expires_at,
+        vc1_0.purpose,
+        vc1_0.used,
+        vc1_0.user_id 
+    from
+        pm_verification_codes vc1_0 
+    left join
+        pm_users u1_0 
+            on u1_0.id=vc1_0.user_id 
+    where
+        u1_0.id=? 
+        and vc1_0.purpose=? 
+        and not(vc1_0.used) 
+    order by
+        vc1_0.created_at desc 
+    fetch
+        first ? rows only
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s -- in com.rev.app.repository.IVerificationCodeRepositoryTest
+[INFO] Running com.rev.app.rest.AuthRestControllerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 s -- in com.rev.app.rest.AuthRestControllerTest
+[INFO] Running com.rev.app.rest.PasswordGeneratorRestControllerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in com.rev.app.rest.PasswordGeneratorRestControllerTest
+[INFO] Running com.rev.app.rest.VaultRestControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s -- in com.rev.app.rest.VaultRestControllerTest
+[INFO] Running com.rev.app.service.impl.EmailServiceImplTest
+2026-03-02 09:33:02.039 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.446 s -- in com.rev.app.service.impl.EmailServiceImplTest
+[INFO] Running com.rev.app.service.impl.EncryptionServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s -- in com.rev.app.service.impl.EncryptionServiceImplTest
+[INFO] Running com.rev.app.service.impl.PasswordGeneratorServiceImplTest
+2026-03-02 09:33:02.117 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 5 password(s) with length 12
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 s -- in com.rev.app.service.impl.PasswordGeneratorServiceImplTest
+[INFO] Running com.rev.app.service.impl.PasswordRecoveryServiceImplTest
+2026-03-02 09:33:02.337 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: null
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s -- in com.rev.app.service.impl.PasswordRecoveryServiceImplTest
+[INFO] Running com.rev.app.service.impl.SecurityAuditServiceImplTest
+2026-03-02 09:33:02.480 [main] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=1, score=1, label=Weak
+2026-03-02 09:33:02.482 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=1, reused=0, old=0, score=90
+2026-03-02 09:33:02.487 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 s -- in com.rev.app.service.impl.SecurityAuditServiceImplTest
+[INFO] Running com.rev.app.service.impl.UserServiceImplTest
+2026-03-02 09:33:02.645 [main] INFO  com.rev.app.service.impl.UserServiceImpl - User null registered and security questions saved successfully.
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 s -- in com.rev.app.service.impl.UserServiceImplTest
+[INFO] Running com.rev.app.service.impl.VaultServiceImplTest
+2026-03-02 09:33:02.736 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry deleted: id=1 for user 1
+2026-03-02 09:33:02.743 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'null' for user null
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s -- in com.rev.app.service.impl.VaultServiceImplTest
+[INFO] Running com.rev.app.service.impl.VerificationServiceImplTest
+2026-03-02 09:33:02.954 [main] INFO  com.rev.app.service.impl.VerificationServiceImpl - Code validated for user null purpose=2FA
+2026-03-02 09:33:02.959 [main] INFO  com.rev.app.service.impl.VerificationServiceImpl - OTP generated and emailed to test@mail.com for purpose=2FA
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 s -- in com.rev.app.service.impl.VerificationServiceImplTest
+[INFO] Running com.rev.app.util.AuthUtilTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s -- in com.rev.app.util.AuthUtilTest
+[INFO] Running com.rev.app.util.JwtUtilTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.276 s -- in com.rev.app.util.JwtUtilTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 71, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  29.323 s
+[INFO] Finished at: 2026-03-02T09:33:03+05:30
+[INFO] ------------------------------------------------------------------------

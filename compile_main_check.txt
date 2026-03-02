@@ -1,0 +1,19 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.rev.app:RevPasswordManager_P2 >------------------
+[INFO] Building RevPasswordManager_P2 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ RevPasswordManager_P2 ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 26 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ RevPasswordManager_P2 ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.719 s
+[INFO] Finished at: 2026-03-02T09:56:37+05:30
+[INFO] ------------------------------------------------------------------------
