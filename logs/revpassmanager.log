@@ -6890,3 +6890,36 @@ select pm_user_seq.nextval from dual [42122-232]
 2026-03-02 11:07:45.934 [http-nio-8081-exec-4] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
 2026-03-02 11:07:56.400 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-03-02 11:07:57.780 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-02 11:22:33.934 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: null
+2026-03-02 11:22:33.939 [main] WARN  com.rev.app.controller.AuthController - Registration validation failed for user null: []
+2026-03-02 11:22:33.965 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: test@mail.com
+2026-03-02 11:22:33.966 [main] INFO  com.rev.app.controller.AuthController - User null successfully pre-validated. Sending OTP...
+2026-03-02 11:22:33.993 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 11:22:33.995 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 11:22:34.001 [main] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 11:22:34.022 [main] INFO  com.rev.app.controller.AuthController - Account successfully created after email verification: null
+2026-03-02 11:22:34.430 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
+2026-03-02 11:22:34.437 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
+2026-03-02 11:22:34.993 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
+2026-03-02 11:26:53.272 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: null
+2026-03-02 11:26:53.277 [main] WARN  com.rev.app.controller.AuthController - Registration validation failed for user null: []
+2026-03-02 11:26:53.301 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: test@mail.com
+2026-03-02 11:26:53.302 [main] INFO  com.rev.app.controller.AuthController - User null successfully pre-validated. Sending OTP...
+2026-03-02 11:26:53.328 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 11:26:53.329 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 11:26:53.337 [main] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 11:26:53.362 [main] INFO  com.rev.app.controller.AuthController - Account successfully created after email verification: null
+2026-03-02 11:26:53.882 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
+2026-03-02 11:26:53.888 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
+2026-03-02 11:26:54.473 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
+2026-03-02 11:51:06.737 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: null
+2026-03-02 11:51:06.742 [main] WARN  com.rev.app.controller.AuthController - Registration validation failed for user null: []
+2026-03-02 11:51:06.766 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: test@mail.com
+2026-03-02 11:51:06.767 [main] INFO  com.rev.app.controller.AuthController - User null successfully pre-validated. Sending OTP...
+2026-03-02 11:51:06.796 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 11:51:06.798 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 11:51:06.805 [main] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 11:51:06.831 [main] INFO  com.rev.app.controller.AuthController - Account successfully created after email verification: null
+2026-03-02 11:51:07.247 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
+2026-03-02 11:51:07.254 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
+2026-03-02 11:51:07.832 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
