@@ -1,14 +1,15 @@
 package com.rev.app.config;
 
-import com.rev.app.entity.User;
-import com.rev.app.repository.IUserRepository;
+import java.util.List;
+
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import com.rev.app.entity.User;
+import com.rev.app.repository.IUserRepository;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {

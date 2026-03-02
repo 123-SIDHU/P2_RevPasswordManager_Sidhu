@@ -24,46 +24,46 @@
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
-[INFO] Running com.rev.app.config.CustomAuthenticationSuccessHandlerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.086 s -- in com.rev.app.config.CustomAuthenticationSuccessHandlerTest
-[INFO] Running com.rev.app.config.UserDetailsServiceImplTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.186 s -- in com.rev.app.config.UserDetailsServiceImplTest
-[INFO] Running com.rev.app.controller.AuthControllerTest
+[INFO] Running test.config.CustomAuthenticationSuccessHandlerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.086 s -- in test.config.CustomAuthenticationSuccessHandlerTest
+[INFO] Running test.config.UserDetailsServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.186 s -- in test.config.UserDetailsServiceImplTest
+[INFO] Running test.controller.AuthControllerTest
 2026-03-02 09:32:45.238 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
 2026-03-02 09:32:45.261 [main] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
 2026-03-02 09:32:45.312 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: null
 2026-03-02 09:32:45.313 [main] WARN  com.rev.app.controller.AuthController - Registration validation failed for user null: []
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.483 s -- in com.rev.app.controller.AuthControllerTest
-[INFO] Running com.rev.app.controller.DashboardControllerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.483 s -- in test.controller.AuthControllerTest
+[INFO] Running test.controller.DashboardControllerTest
 2026-03-02 09:32:45.550 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.252 s -- in com.rev.app.controller.DashboardControllerTest
-[INFO] Running com.rev.app.controller.IndexControllerTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in com.rev.app.controller.IndexControllerTest
-[INFO] Running com.rev.app.controller.PasswordGeneratorControllerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s -- in com.rev.app.controller.PasswordGeneratorControllerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.252 s -- in test.controller.DashboardControllerTest
+[INFO] Running test.controller.IndexControllerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in test.controller.IndexControllerTest
+[INFO] Running test.controller.PasswordGeneratorControllerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s -- in test.controller.PasswordGeneratorControllerTest
 [INFO] Running com.rev.app.controller.ProfileControllerTest
 [INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s -- in com.rev.app.controller.ProfileControllerTest
-[INFO] Running com.rev.app.controller.SecurityControllerTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 s -- in com.rev.app.controller.SecurityControllerTest
-[INFO] Running com.rev.app.controller.VaultControllerTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s -- in com.rev.app.controller.VaultControllerTest
-[INFO] Running com.rev.app.entity.UserEntityTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in com.rev.app.entity.UserEntityTest
-[INFO] Running com.rev.app.exception.GlobalExceptionHandlerTest
+[INFO] Running test.controller.SecurityControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 s -- in test.controller.SecurityControllerTest
+[INFO] Running test.controller.VaultControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 s -- in test.controller.VaultControllerTest
+[INFO] Running test.entity.UserEntityTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in test.entity.UserEntityTest
+[INFO] Running test.exception.GlobalExceptionHandlerTest
 2026-03-02 09:32:46.076 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
 2026-03-02 09:32:46.084 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s -- in com.rev.app.exception.GlobalExceptionHandlerTest
-[INFO] Running com.rev.app.filter.JwtAuthenticationFilterTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 s -- in com.rev.app.filter.JwtAuthenticationFilterTest
-[INFO] Running com.rev.app.mapper.SecurityQuestionMapperTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in com.rev.app.mapper.SecurityQuestionMapperTest
-[INFO] Running com.rev.app.mapper.UserMapperTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in com.rev.app.mapper.UserMapperTest
-[INFO] Running com.rev.app.mapper.VaultEntryMapperTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s -- in com.rev.app.mapper.VaultEntryMapperTest
-[INFO] Running com.rev.app.repository.ISecurityQuestionRepositoryTest
-2026-03-02 09:32:46.733 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.rev.app.repository.ISecurityQuestionRepositoryTest]: ISecurityQuestionRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-03-02 09:32:47.140 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.rev.app.RevPasswordManagerP2Application for test class com.rev.app.repository.ISecurityQuestionRepositoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s -- in test.exception.GlobalExceptionHandlerTest
+[INFO] Running test.filter.JwtAuthenticationFilterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.241 s -- in test.filter.JwtAuthenticationFilterTest
+[INFO] Running test.mapper.SecurityQuestionMapperTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s -- in test.mapper.SecurityQuestionMapperTest
+[INFO] Running test.mapper.UserMapperTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s -- in test.mapper.UserMapperTest
+[INFO] Running test.mapper.VaultEntryMapperTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 s -- in test.mapper.VaultEntryMapperTest
+[INFO] Running test.repository.ISecurityQuestionRepositoryTest
+2026-03-02 09:32:46.733 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [test.repository.ISecurityQuestionRepositoryTest]: ISecurityQuestionRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-02 09:32:47.140 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.rev.app.RevPasswordManagerP2Application for test class test.repository.ISecurityQuestionRepositoryTest
 2026-03-02 09:32:47.365 [main] INFO  org.springframework.boot.devtools.restart.RestartApplicationListener - Restart disabled due to context in which it is running
 
   .   ____          _            __ _ _
@@ -76,9 +76,9 @@
  :: Spring Boot ::                (v3.4.3)
 
 2026-03-02 09:32:48.174 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
-2026-03-02 09:32:48.315 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 9236 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
-2026-03-02 09:32:48.327 [main] DEBUG com.rev.app.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
-2026-03-02 09:32:48.329 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
+2026-03-02 09:32:48.315 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 9236 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 09:32:48.327 [main] DEBUG test.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 09:32:48.329 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
 2026-03-02 09:32:49.422 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
 2026-03-02 09:32:49.656 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 204 ms. Found 4 JPA repository interfaces.
 2026-03-02 09:32:49.802 [main] INFO  org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
@@ -273,7 +273,7 @@ Hibernate:
        references pm_users
 2026-03-02 09:32:55.497 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2026-03-02 09:32:56.684 [main] INFO  org.springframework.data.jpa.repository.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-03-02 09:33:00.516 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 13.185 seconds (process running for 21.602)
+2026-03-02 09:33:00.516 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 13.185 seconds (process running for 21.602)
 2026-03-02 09:33:00.647 [main] DEBUG org.hibernate.SQL - 
     select
         next value for pm_user_seq
@@ -340,10 +340,10 @@ Hibernate:
             on u1_0.id=sq1_0.user_id 
     where
         u1_0.id=?
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.58 s -- in com.rev.app.repository.ISecurityQuestionRepositoryTest
-[INFO] Running com.rev.app.repository.IUserRepositoryTest
-2026-03-02 09:33:01.078 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.rev.app.repository.IUserRepositoryTest]: IUserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-03-02 09:33:01.119 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.rev.app.RevPasswordManagerP2Application for test class com.rev.app.repository.IUserRepositoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.58 s -- in test.repository.ISecurityQuestionRepositoryTest
+[INFO] Running test.repository.IUserRepositoryTest
+2026-03-02 09:33:01.078 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [test.repository.IUserRepositoryTest]: IUserRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-02 09:33:01.119 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.rev.app.RevPasswordManagerP2Application for test class test.repository.IUserRepositoryTest
 2026-03-02 09:33:01.137 [main] DEBUG org.hibernate.SQL - 
     select
         next value for pm_user_seq
@@ -460,10 +460,10 @@ Hibernate:
         pm_users u1_0 
     where
         u1_0.username=?
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 s -- in com.rev.app.repository.IUserRepositoryTest
-[INFO] Running com.rev.app.repository.IVaultEntryRepositoryTest
-2026-03-02 09:33:01.213 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.rev.app.repository.IVaultEntryRepositoryTest]: IVaultEntryRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-03-02 09:33:01.239 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.rev.app.RevPasswordManagerP2Application for test class com.rev.app.repository.IVaultEntryRepositoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 s -- in test.repository.IUserRepositoryTest
+[INFO] Running test.repository.IVaultEntryRepositoryTest
+2026-03-02 09:33:01.213 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [test.repository.IVaultEntryRepositoryTest]: IVaultEntryRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-02 09:33:01.239 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.rev.app.RevPasswordManagerP2Application for test class test.repository.IVaultEntryRepositoryTest
 2026-03-02 09:33:01.250 [main] DEBUG org.hibernate.SQL - 
     select
         next value for pm_user_seq
@@ -632,10 +632,10 @@ Hibernate:
             or lower(ve1_0.website_url) like lower(('%'||?||'%')) escape '' 
             or lower(ve1_0.account_username) like lower(('%'||?||'%')) escape ''
         )
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 s -- in com.rev.app.repository.IVaultEntryRepositoryTest
-[INFO] Running com.rev.app.repository.IVerificationCodeRepositoryTest
-2026-03-02 09:33:01.340 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.rev.app.repository.IVerificationCodeRepositoryTest]: IVerificationCodeRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-03-02 09:33:01.363 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.rev.app.RevPasswordManagerP2Application for test class com.rev.app.repository.IVerificationCodeRepositoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 s -- in test.repository.IVaultEntryRepositoryTest
+[INFO] Running test.repository.IVerificationCodeRepositoryTest
+2026-03-02 09:33:01.340 [main] INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [test.repository.IVerificationCodeRepositoryTest]: IVerificationCodeRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-02 09:33:01.363 [main] INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.rev.app.RevPasswordManagerP2Application for test class test.repository.IVerificationCodeRepositoryTest
 2026-03-02 09:33:01.376 [main] DEBUG org.hibernate.SQL - 
     select
         next value for pm_user_seq
@@ -720,44 +720,44 @@ Hibernate:
         vc1_0.created_at desc 
     fetch
         first ? rows only
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s -- in com.rev.app.repository.IVerificationCodeRepositoryTest
-[INFO] Running com.rev.app.rest.AuthRestControllerTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 s -- in com.rev.app.rest.AuthRestControllerTest
-[INFO] Running com.rev.app.rest.PasswordGeneratorRestControllerTest
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in com.rev.app.rest.PasswordGeneratorRestControllerTest
-[INFO] Running com.rev.app.rest.VaultRestControllerTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s -- in com.rev.app.rest.VaultRestControllerTest
-[INFO] Running com.rev.app.service.impl.EmailServiceImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s -- in test.repository.IVerificationCodeRepositoryTest
+[INFO] Running test.rest.AuthRestControllerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.133 s -- in test.rest.AuthRestControllerTest
+[INFO] Running test.rest.PasswordGeneratorRestControllerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s -- in test.rest.PasswordGeneratorRestControllerTest
+[INFO] Running test.rest.VaultRestControllerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s -- in test.rest.VaultRestControllerTest
+[INFO] Running test.impl.service.EmailServiceImplTest
 2026-03-02 09:33:02.039 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.446 s -- in com.rev.app.service.impl.EmailServiceImplTest
-[INFO] Running com.rev.app.service.impl.EncryptionServiceImplTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s -- in com.rev.app.service.impl.EncryptionServiceImplTest
-[INFO] Running com.rev.app.service.impl.PasswordGeneratorServiceImplTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.446 s -- in test.impl.service.EmailServiceImplTest
+[INFO] Running test.impl.service.EncryptionServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s -- in test.impl.service.EncryptionServiceImplTest
+[INFO] Running test.impl.service.PasswordGeneratorServiceImplTest
 2026-03-02 09:33:02.117 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 5 password(s) with length 12
-[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 s -- in com.rev.app.service.impl.PasswordGeneratorServiceImplTest
-[INFO] Running com.rev.app.service.impl.PasswordRecoveryServiceImplTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 s -- in test.impl.service.PasswordGeneratorServiceImplTest
+[INFO] Running test.impl.service.PasswordRecoveryServiceImplTest
 2026-03-02 09:33:02.337 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: null
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s -- in com.rev.app.service.impl.PasswordRecoveryServiceImplTest
-[INFO] Running com.rev.app.service.impl.SecurityAuditServiceImplTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s -- in test.impl.service.PasswordRecoveryServiceImplTest
+[INFO] Running test.impl.service.SecurityAuditServiceImplTest
 2026-03-02 09:33:02.480 [main] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=1, score=1, label=Weak
 2026-03-02 09:33:02.482 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=1, reused=0, old=0, score=90
 2026-03-02 09:33:02.487 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 s -- in com.rev.app.service.impl.SecurityAuditServiceImplTest
-[INFO] Running com.rev.app.service.impl.UserServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.145 s -- in test.impl.service.SecurityAuditServiceImplTest
+[INFO] Running test.impl.service.UserServiceImplTest
 2026-03-02 09:33:02.645 [main] INFO  com.rev.app.service.impl.UserServiceImpl - User null registered and security questions saved successfully.
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 s -- in com.rev.app.service.impl.UserServiceImplTest
-[INFO] Running com.rev.app.service.impl.VaultServiceImplTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 s -- in test.impl.service.UserServiceImplTest
+[INFO] Running test.impl.service.VaultServiceImplTest
 2026-03-02 09:33:02.736 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry deleted: id=1 for user 1
 2026-03-02 09:33:02.743 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'null' for user null
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s -- in com.rev.app.service.impl.VaultServiceImplTest
-[INFO] Running com.rev.app.service.impl.VerificationServiceImplTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s -- in test.impl.service.VaultServiceImplTest
+[INFO] Running test.impl.service.VerificationServiceImplTest
 2026-03-02 09:33:02.954 [main] INFO  com.rev.app.service.impl.VerificationServiceImpl - Code validated for user null purpose=2FA
 2026-03-02 09:33:02.959 [main] INFO  com.rev.app.service.impl.VerificationServiceImpl - OTP generated and emailed to test@mail.com for purpose=2FA
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 s -- in com.rev.app.service.impl.VerificationServiceImplTest
-[INFO] Running com.rev.app.util.AuthUtilTest
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s -- in com.rev.app.util.AuthUtilTest
-[INFO] Running com.rev.app.util.JwtUtilTest
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.276 s -- in com.rev.app.util.JwtUtilTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.206 s -- in test.impl.service.VerificationServiceImplTest
+[INFO] Running test.util.AuthUtilTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s -- in test.util.AuthUtilTest
+[INFO] Running test.util.JwtUtilTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.276 s -- in test.util.JwtUtilTest
 [INFO] 
 [INFO] Results:
 [INFO] 

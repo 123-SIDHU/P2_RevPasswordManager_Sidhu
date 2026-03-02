@@ -13,9 +13,9 @@
 2026-03-02 09:30:47.746 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
 2026-03-02 09:30:47.755 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
 2026-03-02 09:30:50.703 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
-2026-03-02 09:30:50.853 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 23124 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
-2026-03-02 09:30:50.866 [main] DEBUG com.rev.app.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
-2026-03-02 09:30:50.868 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
+2026-03-02 09:30:50.853 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 23124 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 09:30:50.866 [main] DEBUG test.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 09:30:50.868 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
 2026-03-02 09:30:53.892 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
 2026-03-02 09:30:54.111 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
 2026-03-02 09:30:54.227 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
@@ -29,7 +29,7 @@
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
 2026-03-02 09:30:57.323 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-02 09:31:02.757 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 13.021 seconds (process running for 24.413)
+2026-03-02 09:31:02.757 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 13.021 seconds (process running for 24.413)
 2026-03-02 09:31:04.327 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
 2026-03-02 09:31:04.405 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 5 password(s) with length 12
 2026-03-02 09:31:04.645 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: null
@@ -49,9 +49,9 @@
 2026-03-02 09:31:58.683 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
 2026-03-02 09:31:58.693 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
 2026-03-02 09:32:01.004 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
-2026-03-02 09:32:01.184 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 25900 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
-2026-03-02 09:32:01.192 [main] DEBUG com.rev.app.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
-2026-03-02 09:32:01.193 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
+2026-03-02 09:32:01.184 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 25900 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 09:32:01.192 [main] DEBUG test.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 09:32:01.193 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
 2026-03-02 09:32:04.373 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
 2026-03-02 09:32:04.584 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
 2026-03-02 09:32:04.708 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
@@ -65,7 +65,7 @@
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
 2026-03-02 09:32:07.716 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-02 09:32:13.492 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 13.423 seconds (process running for 22.368)
+2026-03-02 09:32:13.492 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 13.423 seconds (process running for 22.368)
 2026-03-02 09:32:14.938 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
 2026-03-02 09:32:15.105 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 5 password(s) with length 12
 2026-03-02 09:32:15.307 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: null
@@ -85,9 +85,9 @@
 2026-03-02 09:32:46.076 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
 2026-03-02 09:32:46.084 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
 2026-03-02 09:32:48.174 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
-2026-03-02 09:32:48.315 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 9236 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
-2026-03-02 09:32:48.327 [main] DEBUG com.rev.app.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
-2026-03-02 09:32:48.329 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
+2026-03-02 09:32:48.315 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 9236 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 09:32:48.327 [main] DEBUG test.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 09:32:48.329 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
 2026-03-02 09:32:51.026 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
 2026-03-02 09:32:51.245 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
 2026-03-02 09:32:51.658 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
@@ -101,7 +101,7 @@
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
 2026-03-02 09:32:55.113 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-02 09:33:00.516 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 13.185 seconds (process running for 21.602)
+2026-03-02 09:33:00.516 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 13.185 seconds (process running for 21.602)
 2026-03-02 09:33:02.039 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
 2026-03-02 09:33:02.117 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 5 password(s) with length 12
 2026-03-02 09:33:02.337 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: null
@@ -124,9 +124,9 @@
 2026-03-02 09:41:17.736 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
 2026-03-02 09:41:17.765 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
 2026-03-02 09:41:20.735 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
-2026-03-02 09:41:20.880 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 29532 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
-2026-03-02 09:41:20.888 [main] DEBUG com.rev.app.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
-2026-03-02 09:41:20.890 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
+2026-03-02 09:41:20.880 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 29532 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 09:41:20.888 [main] DEBUG test.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 09:41:20.890 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
 2026-03-02 09:41:23.918 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
 2026-03-02 09:41:24.131 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
 2026-03-02 09:41:24.254 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
@@ -140,7 +140,7 @@
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
 2026-03-02 09:41:27.404 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-02 09:41:32.431 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 12.734 seconds (process running for 23.893)
+2026-03-02 09:41:32.431 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 12.734 seconds (process running for 23.893)
 2026-03-02 09:41:33.908 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
 2026-03-02 09:41:33.996 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 5 password(s) with length 12
 2026-03-02 09:41:34.221 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: null
@@ -164,9 +164,9 @@
 2026-03-02 09:42:46.454 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
 2026-03-02 09:42:46.465 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
 2026-03-02 09:42:48.967 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
-2026-03-02 09:42:49.139 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 27116 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
-2026-03-02 09:42:49.146 [main] DEBUG com.rev.app.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
-2026-03-02 09:42:49.148 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
+2026-03-02 09:42:49.139 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 27116 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 09:42:49.146 [main] DEBUG test.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 09:42:49.148 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
 2026-03-02 09:42:52.241 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
 2026-03-02 09:42:52.455 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
 2026-03-02 09:42:52.573 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
@@ -180,7 +180,7 @@
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
 2026-03-02 09:42:56.268 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-03-02 09:43:01.782 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 13.745 seconds (process running for 28.103)
+2026-03-02 09:43:01.782 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 13.745 seconds (process running for 28.103)
 2026-03-02 09:43:03.306 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
 2026-03-02 09:43:03.391 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 5 password(s) with length 12
 2026-03-02 09:43:03.617 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: null
@@ -6923,3 +6923,1064 @@ select pm_user_seq.nextval from dual [42122-232]
 2026-03-02 11:51:07.247 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
 2026-03-02 11:51:07.254 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
 2026-03-02 11:51:07.832 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
+2026-03-02 12:12:54.139 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: null
+2026-03-02 12:12:54.155 [main] WARN  com.rev.app.controller.AuthController - Registration validation failed for user null: []
+2026-03-02 12:12:54.168 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: test@mail.com
+2026-03-02 12:12:54.169 [main] INFO  com.rev.app.controller.AuthController - User null successfully pre-validated. Sending OTP...
+2026-03-02 12:12:54.201 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 12:12:54.204 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 12:12:54.218 [main] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 12:12:54.266 [main] INFO  com.rev.app.controller.AuthController - Account successfully created after email verification: null
+2026-03-02 12:12:54.535 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
+2026-03-02 12:12:56.011 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
+2026-03-02 12:12:56.061 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
+2026-03-02 12:28:02.582 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-03-02 12:28:02.781 [main] INFO  main.test.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 26652 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 12:28:02.798 [main] INFO  main.test.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
+2026-03-02 12:28:06.461 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 12:28:06.706 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-02 12:28:06.888 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 12:28:08.979 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 2.3.232 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2026-03-02 12:28:08.998 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-02 12:28:09.047 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@79cdf2d4']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 12:28:13.941 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 12:28:14.016 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 42104, SQLState: 42S04
+2026-03-02 12:28:14.017 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "ALL_SEQUENCES" not found (this database is empty); SQL statement:
+select * from all_sequences [42104-232]
+2026-03-02 12:48:58.459 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-03-02 12:48:58.600 [main] INFO  test.config.SecurityConfigTest - Starting SecurityConfigTest using Java 24.0.1 with PID 6948 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 12:48:58.616 [main] DEBUG test.config.SecurityConfigTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 12:48:58.621 [main] INFO  test.config.SecurityConfigTest - The following 1 profile is active: "h2"
+2026-03-02 12:49:04.389 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 12:49:04.628 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-02 12:49:04.756 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 12:49:05.372 [main] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2026-03-02 12:49:05.372 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-02 12:49:08.297 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@674fd531
+2026-03-02 12:49:08.302 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-02 12:49:10.153 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-02 12:49:11.806 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 23.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 12:49:16.369 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 12:50:03.200 [main] INFO  test.config.SecurityConfigTest - Started SecurityConfigTest in 65.762 seconds (process running for 83.925)
+2026-03-02 12:50:04.109 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: null
+2026-03-02 12:50:04.110 [main] WARN  com.rev.app.controller.AuthController - Registration validation failed for user null: []
+2026-03-02 12:50:04.120 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: test@mail.com
+2026-03-02 12:50:04.121 [main] INFO  com.rev.app.controller.AuthController - User null successfully pre-validated. Sending OTP...
+2026-03-02 12:50:04.141 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 12:50:04.143 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 12:50:04.151 [main] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 12:50:04.182 [main] INFO  com.rev.app.controller.AuthController - Account successfully created after email verification: null
+2026-03-02 12:50:04.579 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
+2026-03-02 12:50:05.678 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
+2026-03-02 12:50:05.683 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
+2026-03-02 12:50:07.490 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 6948 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 12:50:07.491 [main] DEBUG test.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 12:50:07.493 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
+2026-03-02 12:50:09.782 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 12:50:09.793 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 12:50:09.955 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 2.3.232 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2026-03-02 12:50:09.957 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-02 12:50:09.971 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@10adc78d']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 12:50:10.431 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 12:50:10.440 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 42104, SQLState: 42S04
+2026-03-02 12:50:10.440 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "ALL_SEQUENCES" not found (this database is empty); SQL statement:
+select * from all_sequences [42104-232]
+2026-03-02 12:50:11.916 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
+2026-03-02 12:50:11.976 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 2 password(s) with length 12
+2026-03-02 12:50:12.036 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: user
+2026-03-02 12:50:12.248 [main] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=1, score=1, label=Weak
+2026-03-02 12:50:12.251 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=1, reused=0, old=0, score=90
+2026-03-02 12:50:12.259 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+2026-03-02 12:50:12.514 [main] INFO  com.rev.app.service.impl.UserServiceImpl - User user registered and security questions saved successfully.
+2026-03-02 12:50:12.670 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry deleted: id=1 for user 1
+2026-03-02 12:50:12.678 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'null' for user null
+2026-03-02 12:50:13.041 [main] INFO  com.rev.app.service.impl.VerificationServiceImpl - OTP generated and emailed to test@mail.com for purpose=2FA
+2026-03-02 12:50:14.001 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-02 12:50:14.976 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-02 12:51:05.475 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-03-02 12:51:05.578 [main] INFO  test.config.SecurityConfigTest - Starting SecurityConfigTest using Java 24.0.1 with PID 26472 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 12:51:05.586 [main] DEBUG test.config.SecurityConfigTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 12:51:05.588 [main] INFO  test.config.SecurityConfigTest - The following 1 profile is active: "h2"
+2026-03-02 12:51:13.842 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 12:51:14.198 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-02 12:51:14.343 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 12:51:15.040 [main] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2026-03-02 12:51:15.041 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-02 12:51:18.654 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@68feca3a
+2026-03-02 12:51:18.658 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-02 12:51:20.322 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-02 12:51:21.494 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 23.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 12:51:26.157 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 12:52:11.424 [main] INFO  test.config.SecurityConfigTest - Started SecurityConfigTest in 66.744 seconds (process running for 82.148)
+2026-03-02 12:52:12.196 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: null
+2026-03-02 12:52:12.197 [main] WARN  com.rev.app.controller.AuthController - Registration validation failed for user null: []
+2026-03-02 12:52:12.207 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: test@mail.com
+2026-03-02 12:52:12.208 [main] INFO  com.rev.app.controller.AuthController - User null successfully pre-validated. Sending OTP...
+2026-03-02 12:52:12.225 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 12:52:12.226 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 12:52:12.234 [main] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 12:52:12.256 [main] INFO  com.rev.app.controller.AuthController - Account successfully created after email verification: null
+2026-03-02 12:52:12.651 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
+2026-03-02 12:52:13.534 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
+2026-03-02 12:52:13.539 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
+2026-03-02 12:52:14.325 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 26472 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 12:52:14.326 [main] DEBUG test.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 12:52:14.328 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
+2026-03-02 12:52:15.637 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 12:52:15.647 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 12:52:15.738 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 2.3.232 version for [org.hibernate.dialect.OracleDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 19.0.0. Check the community dialects project for available legacy versions.
+2026-03-02 12:52:15.739 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-02 12:52:15.752 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@34fa65d6']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 12:52:16.037 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 12:52:16.044 [main] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 42104, SQLState: 42S04
+2026-03-02 12:52:16.045 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Table "ALL_SEQUENCES" not found (this database is empty); SQL statement:
+select * from all_sequences [42104-232]
+2026-03-02 12:52:17.128 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
+2026-03-02 12:52:17.149 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 2 password(s) with length 12
+2026-03-02 12:52:17.172 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: user
+2026-03-02 12:52:17.353 [main] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=1, score=1, label=Weak
+2026-03-02 12:52:17.355 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=1, reused=0, old=0, score=90
+2026-03-02 12:52:17.364 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+2026-03-02 12:52:17.597 [main] INFO  com.rev.app.service.impl.UserServiceImpl - User user registered and security questions saved successfully.
+2026-03-02 12:52:17.718 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry deleted: id=1 for user 1
+2026-03-02 12:52:17.729 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'null' for user null
+2026-03-02 12:52:18.008 [main] INFO  com.rev.app.service.impl.VerificationServiceImpl - OTP generated and emailed to test@mail.com for purpose=2FA
+2026-03-02 12:52:18.426 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-02 12:52:19.887 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-02 12:54:48.783 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-03-02 12:54:48.890 [main] INFO  test.config.SecurityConfigTest - Starting SecurityConfigTest using Java 24.0.1 with PID 13172 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 12:54:48.903 [main] DEBUG test.config.SecurityConfigTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 12:54:48.905 [main] INFO  test.config.SecurityConfigTest - The following 1 profile is active: "h2"
+2026-03-02 12:54:53.647 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 12:54:53.906 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-02 12:54:54.040 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 12:54:54.981 [main] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2026-03-02 12:54:54.982 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-02 12:54:58.206 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-03-02 12:54:58.212 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-02 12:54:58.314 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-02 12:54:58.393 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 12:55:01.561 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 12:55:21.973 [main] INFO  test.config.SecurityConfigTest - Started SecurityConfigTest in 33.935 seconds (process running for 46.869)
+2026-03-02 12:55:25.106 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: null
+2026-03-02 12:55:25.180 [main] WARN  com.rev.app.controller.AuthController - Registration validation failed for user null: []
+2026-03-02 12:55:25.188 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: test@mail.com
+2026-03-02 12:55:25.188 [main] INFO  com.rev.app.controller.AuthController - User null successfully pre-validated. Sending OTP...
+2026-03-02 12:55:25.206 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 12:55:25.208 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 12:55:25.215 [main] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 12:55:25.239 [main] INFO  com.rev.app.controller.AuthController - Account successfully created after email verification: null
+2026-03-02 12:55:25.726 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
+2026-03-02 12:55:26.893 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
+2026-03-02 12:55:26.898 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
+2026-03-02 12:55:29.410 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 13172 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 12:55:29.412 [main] DEBUG test.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 12:55:29.412 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
+2026-03-02 12:55:33.099 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 12:55:33.120 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 12:55:33.176 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-02 12:55:33.181 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@311eb977']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 12:55:33.661 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 12:55:34.632 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 5.55 seconds (process running for 59.528)
+2026-03-02 12:55:37.158 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
+2026-03-02 12:55:37.250 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 2 password(s) with length 12
+2026-03-02 12:55:37.276 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: user
+2026-03-02 12:55:37.507 [main] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=1, score=1, label=Weak
+2026-03-02 12:55:37.509 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=1, reused=0, old=0, score=90
+2026-03-02 12:55:37.517 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+2026-03-02 12:55:37.768 [main] INFO  com.rev.app.service.impl.UserServiceImpl - User user registered and security questions saved successfully.
+2026-03-02 12:55:37.880 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry deleted: id=1 for user 1
+2026-03-02 12:55:37.888 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'null' for user null
+2026-03-02 12:55:38.154 [main] INFO  com.rev.app.service.impl.VerificationServiceImpl - OTP generated and emailed to test@mail.com for purpose=2FA
+2026-03-02 12:55:38.632 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-02 12:55:38.638 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-02 12:56:50.799 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-03-02 12:56:50.913 [main] INFO  test.config.SecurityConfigTest - Starting SecurityConfigTest using Java 24.0.1 with PID 17840 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 12:56:50.923 [main] DEBUG test.config.SecurityConfigTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 12:56:50.926 [main] INFO  test.config.SecurityConfigTest - The following 1 profile is active: "h2"
+2026-03-02 12:56:55.738 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 12:56:56.010 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-02 12:56:56.184 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 12:56:56.814 [main] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2026-03-02 12:56:56.814 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-02 12:56:58.101 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-03-02 12:56:58.111 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-02 12:56:58.241 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-02 12:56:58.360 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 12:57:03.328 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 12:57:13.480 [main] INFO  test.config.SecurityConfigTest - Started SecurityConfigTest in 23.469 seconds (process running for 36.394)
+2026-03-02 12:57:14.469 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: null
+2026-03-02 12:57:14.473 [main] WARN  com.rev.app.controller.AuthController - Registration validation failed for user null: []
+2026-03-02 12:57:14.486 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: test@mail.com
+2026-03-02 12:57:14.488 [main] INFO  com.rev.app.controller.AuthController - User null successfully pre-validated. Sending OTP...
+2026-03-02 12:57:14.514 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 12:57:14.515 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 12:57:14.525 [main] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 12:57:14.564 [main] INFO  com.rev.app.controller.AuthController - Account successfully created after email verification: null
+2026-03-02 12:57:14.961 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
+2026-03-02 12:57:15.809 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
+2026-03-02 12:57:15.814 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
+2026-03-02 12:57:16.703 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 17840 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 12:57:16.705 [main] DEBUG test.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 12:57:16.706 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - The following 1 profile is active: "h2"
+2026-03-02 12:57:17.519 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 12:57:17.534 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 12:57:17.584 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-02 12:57:17.588 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@3c88b82b']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 12:57:18.266 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 12:57:18.687 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 2.123 seconds (process running for 41.601)
+2026-03-02 12:57:20.589 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
+2026-03-02 12:57:20.653 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 2 password(s) with length 12
+2026-03-02 12:57:20.687 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: user
+2026-03-02 12:57:20.892 [main] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=1, score=1, label=Weak
+2026-03-02 12:57:20.894 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=1, reused=0, old=0, score=90
+2026-03-02 12:57:20.902 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+2026-03-02 12:57:21.156 [main] INFO  com.rev.app.service.impl.UserServiceImpl - User user registered and security questions saved successfully.
+2026-03-02 12:57:21.284 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry deleted: id=1 for user 1
+2026-03-02 12:57:21.299 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'null' for user null
+2026-03-02 12:57:21.609 [main] INFO  com.rev.app.service.impl.VerificationServiceImpl - OTP generated and emailed to test@mail.com for purpose=2FA
+2026-03-02 12:57:22.129 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-02 12:57:22.137 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-02 13:00:57.656 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-03-02 13:00:57.771 [main] INFO  test.config.SecurityConfigTest - Starting SecurityConfigTest using Java 24.0.1 with PID 16220 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 13:00:57.783 [main] DEBUG test.config.SecurityConfigTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 13:00:57.786 [main] INFO  test.config.SecurityConfigTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-02 13:01:03.999 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 13:01:04.251 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-02 13:01:04.418 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 13:01:05.191 [main] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2026-03-02 13:01:05.192 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-02 13:01:09.719 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@44df834c
+2026-03-02 13:01:09.724 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-02 13:01:12.800 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 23.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 13:01:17.131 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 13:02:02.255 [main] INFO  test.config.SecurityConfigTest - Started SecurityConfigTest in 65.38 seconds (process running for 76.612)
+2026-03-02 13:02:03.352 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: null
+2026-03-02 13:02:03.353 [main] WARN  com.rev.app.controller.AuthController - Registration validation failed for user null: []
+2026-03-02 13:02:03.363 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: test@mail.com
+2026-03-02 13:02:03.364 [main] INFO  com.rev.app.controller.AuthController - User null successfully pre-validated. Sending OTP...
+2026-03-02 13:02:03.390 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 13:02:03.391 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 13:02:03.401 [main] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 13:02:03.437 [main] INFO  com.rev.app.controller.AuthController - Account successfully created after email verification: null
+2026-03-02 13:02:03.864 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
+2026-03-02 13:02:04.807 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
+2026-03-02 13:02:04.814 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
+2026-03-02 13:02:06.235 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 16220 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 13:02:06.237 [main] DEBUG test.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 13:02:06.239 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-02 13:02:07.662 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 13:02:07.674 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 13:02:07.758 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@303d3936']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 13:02:08.115 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 13:02:08.650 [main] INFO  test.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 2.546 seconds (process running for 83.006)
+2026-03-02 13:02:10.493 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
+2026-03-02 13:02:10.522 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 2 password(s) with length 12
+2026-03-02 13:02:10.549 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: user
+2026-03-02 13:02:10.748 [main] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=1, score=1, label=Weak
+2026-03-02 13:02:10.750 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=1, reused=0, old=0, score=90
+2026-03-02 13:02:10.759 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+2026-03-02 13:02:11.014 [main] INFO  com.rev.app.service.impl.UserServiceImpl - User user registered and security questions saved successfully.
+2026-03-02 13:02:11.143 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry deleted: id=1 for user 1
+2026-03-02 13:02:11.151 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'null' for user null
+2026-03-02 13:02:11.459 [main] INFO  com.rev.app.service.impl.VerificationServiceImpl - OTP generated and emailed to test@mail.com for purpose=2FA
+2026-03-02 13:02:11.961 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-02 13:02:12.998 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-02 13:24:16.626 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-03-02 13:24:16.685 [main] INFO  com.rev.app.config.SecurityConfigTest - Starting SecurityConfigTest using Java 24.0.1 with PID 25128 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 13:24:16.690 [main] DEBUG com.rev.app.config.SecurityConfigTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 13:24:16.691 [main] INFO  com.rev.app.config.SecurityConfigTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-02 13:24:19.682 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 13:24:19.850 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-02 13:24:19.940 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 13:24:20.333 [main] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2026-03-02 13:24:20.334 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-02 13:24:22.927 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@44df834c
+2026-03-02 13:24:22.930 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-02 13:24:25.373 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 23.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 13:24:27.460 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 13:25:08.084 [main] INFO  com.rev.app.config.SecurityConfigTest - Started SecurityConfigTest in 51.886 seconds (process running for 58.329)
+2026-03-02 13:25:08.748 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: null
+2026-03-02 13:25:08.749 [main] WARN  com.rev.app.controller.AuthController - Registration validation failed for user null: []
+2026-03-02 13:25:08.758 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: test@mail.com
+2026-03-02 13:25:08.759 [main] INFO  com.rev.app.controller.AuthController - User null successfully pre-validated. Sending OTP...
+2026-03-02 13:25:08.774 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 13:25:08.775 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 13:25:08.781 [main] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 13:25:08.800 [main] INFO  com.rev.app.controller.AuthController - Account successfully created after email verification: null
+2026-03-02 13:25:09.126 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
+2026-03-02 13:25:09.761 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
+2026-03-02 13:25:09.764 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
+2026-03-02 13:25:10.434 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 25128 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 13:25:10.436 [main] DEBUG com.rev.app.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 13:25:10.437 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-02 13:25:11.493 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 13:25:11.501 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 13:25:11.573 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@12997ff6']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 13:25:11.862 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 13:25:12.226 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 1.881 seconds (process running for 62.471)
+2026-03-02 13:25:13.908 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
+2026-03-02 13:25:13.936 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 2 password(s) with length 12
+2026-03-02 13:25:13.959 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: user
+2026-03-02 13:25:14.138 [main] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=1, score=1, label=Weak
+2026-03-02 13:25:14.139 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=1, reused=0, old=0, score=90
+2026-03-02 13:25:14.144 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+2026-03-02 13:25:14.368 [main] INFO  com.rev.app.service.impl.UserServiceImpl - User user registered and security questions saved successfully.
+2026-03-02 13:25:14.479 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry deleted: id=1 for user 1
+2026-03-02 13:25:14.486 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'null' for user null
+2026-03-02 13:25:14.717 [main] INFO  com.rev.app.service.impl.VerificationServiceImpl - OTP generated and emailed to test@mail.com for purpose=2FA
+2026-03-02 13:25:15.076 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-02 13:25:16.458 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-02 13:38:28.398 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 2 password(s) with length 12
+2026-03-02 13:38:29.148 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: user
+2026-03-02 13:38:29.312 [main] INFO  com.rev.app.service.impl.VerificationServiceImpl - OTP generated and emailed to test@mail.com for purpose=2FA
+2026-03-02 13:38:31.442 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-03-02 13:38:31.562 [main] INFO  com.rev.app.repository.IUserRepositoryTest - Starting IUserRepositoryTest using Java 24.0.1 with PID 12708 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 13:38:31.569 [main] DEBUG com.rev.app.repository.IUserRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 13:38:31.570 [main] INFO  com.rev.app.repository.IUserRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-02 13:38:33.867 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 13:38:34.044 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-02 13:38:34.148 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 13:38:34.671 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@75a6bd06']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 13:38:36.674 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 13:38:40.456 [main] INFO  com.rev.app.repository.IUserRepositoryTest - Started IUserRepositoryTest in 9.729 seconds (process running for 18.16)
+2026-03-02 13:38:41.911 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: null
+2026-03-02 13:38:41.912 [main] WARN  com.rev.app.controller.AuthController - Registration validation failed for user null: []
+2026-03-02 13:38:41.921 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: test@mail.com
+2026-03-02 13:38:41.925 [main] INFO  com.rev.app.controller.AuthController - User null successfully pre-validated. Sending OTP...
+2026-03-02 13:38:41.947 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 13:38:41.949 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 13:38:41.961 [main] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 13:38:41.984 [main] INFO  com.rev.app.controller.AuthController - Account successfully created after email verification: null
+2026-03-02 13:38:42.834 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
+2026-03-02 13:38:43.191 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
+2026-03-02 13:38:43.350 [main] INFO  com.rev.app.service.impl.UserServiceImpl - User user registered and security questions saved successfully.
+2026-03-02 13:38:43.696 [main] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=1, score=1, label=Weak
+2026-03-02 13:38:43.699 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=1, reused=0, old=0, score=90
+2026-03-02 13:38:43.705 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+2026-03-02 13:38:43.777 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry deleted: id=1 for user 1
+2026-03-02 13:38:43.786 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'null' for user null
+2026-03-02 13:38:43.935 [main] INFO  com.rev.app.config.SecurityConfigTest - Starting SecurityConfigTest using Java 24.0.1 with PID 12708 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 13:38:43.937 [main] DEBUG com.rev.app.config.SecurityConfigTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 13:38:43.937 [main] INFO  com.rev.app.config.SecurityConfigTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-02 13:38:45.932 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 13:38:45.938 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 13:38:45.960 [main] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2026-03-02 13:38:45.960 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-02 13:38:49.346 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@39af729d
+2026-03-02 13:38:49.350 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-02 13:38:51.908 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 23.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 13:38:52.141 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 13:39:32.846 [main] INFO  com.rev.app.config.SecurityConfigTest - Started SecurityConfigTest in 48.98 seconds (process running for 70.55)
+2026-03-02 13:39:32.895 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
+2026-03-02 13:39:32.897 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
+2026-03-02 13:39:32.927 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-02 13:39:34.306 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-02 13:41:49.075 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-03-02 13:41:49.161 [main] INFO  com.rev.app.config.SecurityConfigTest - Starting SecurityConfigTest using Java 24.0.1 with PID 1012 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 13:41:49.169 [main] DEBUG com.rev.app.config.SecurityConfigTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 13:41:49.172 [main] INFO  com.rev.app.config.SecurityConfigTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-02 13:41:53.754 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 13:41:54.190 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-02 13:41:54.307 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 13:41:54.843 [main] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2026-03-02 13:41:54.843 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-02 13:41:57.873 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@44df834c
+2026-03-02 13:41:57.877 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-02 13:42:01.979 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 23.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 13:42:04.488 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 13:42:51.772 [main] INFO  com.rev.app.config.SecurityConfigTest - Started SecurityConfigTest in 63.316 seconds (process running for 70.154)
+2026-03-02 13:42:52.484 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: null
+2026-03-02 13:42:52.484 [main] WARN  com.rev.app.controller.AuthController - Registration validation failed for user null: []
+2026-03-02 13:42:52.496 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: test@mail.com
+2026-03-02 13:42:52.497 [main] INFO  com.rev.app.controller.AuthController - User null successfully pre-validated. Sending OTP...
+2026-03-02 13:42:52.514 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 13:42:52.515 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 13:42:52.522 [main] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 13:42:52.542 [main] INFO  com.rev.app.controller.AuthController - Account successfully created after email verification: null
+2026-03-02 13:42:52.882 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
+2026-03-02 13:42:53.562 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
+2026-03-02 13:42:53.565 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
+2026-03-02 13:42:54.281 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 1012 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 13:42:54.284 [main] DEBUG com.rev.app.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 13:42:54.284 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-02 13:42:55.566 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 13:42:55.578 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 13:42:55.652 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@303d3936']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 13:42:55.953 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 13:42:56.334 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 2.149 seconds (process running for 74.717)
+2026-03-02 13:42:57.908 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
+2026-03-02 13:42:57.932 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 2 password(s) with length 12
+2026-03-02 13:42:57.954 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: user
+2026-03-02 13:42:58.143 [main] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=1, score=1, label=Weak
+2026-03-02 13:42:58.145 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=1, reused=0, old=0, score=90
+2026-03-02 13:42:58.150 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+2026-03-02 13:42:58.415 [main] INFO  com.rev.app.service.impl.UserServiceImpl - User user registered and security questions saved successfully.
+2026-03-02 13:42:58.526 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry deleted: id=1 for user 1
+2026-03-02 13:42:58.533 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'null' for user null
+2026-03-02 13:42:58.806 [main] INFO  com.rev.app.service.impl.VerificationServiceImpl - OTP generated and emailed to test@mail.com for purpose=2FA
+2026-03-02 13:42:59.242 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-02 13:43:00.541 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-02 14:05:44.377 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 2 password(s) with length 12
+2026-03-02 14:05:45.149 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: user
+2026-03-02 14:05:45.342 [main] INFO  com.rev.app.service.impl.VerificationServiceImpl - OTP generated and emailed to test@mail.com for purpose=2FA
+2026-03-02 14:05:47.432 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-03-02 14:05:47.567 [main] INFO  com.rev.app.repository.IUserRepositoryTest - Starting IUserRepositoryTest using Java 24.0.1 with PID 25664 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 14:05:47.573 [main] DEBUG com.rev.app.repository.IUserRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 14:05:47.574 [main] INFO  com.rev.app.repository.IUserRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-02 14:05:49.915 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 14:05:50.096 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-02 14:05:50.199 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 14:05:50.787 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@1701beb3']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 14:05:53.310 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 14:05:57.356 [main] INFO  com.rev.app.repository.IUserRepositoryTest - Started IUserRepositoryTest in 10.658 seconds (process running for 19.222)
+2026-03-02 14:05:58.315 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: null
+2026-03-02 14:05:58.316 [main] WARN  com.rev.app.controller.AuthController - Registration validation failed for user null: []
+2026-03-02 14:05:58.323 [main] INFO  com.rev.app.controller.AuthController - Registration attempt for username: null, email: test@mail.com
+2026-03-02 14:05:58.324 [main] INFO  com.rev.app.controller.AuthController - User null successfully pre-validated. Sending OTP...
+2026-03-02 14:05:58.337 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 14:05:58.338 [main] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 14:05:58.344 [main] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 14:05:58.370 [main] INFO  com.rev.app.controller.AuthController - Account successfully created after email verification: null
+2026-03-02 14:05:59.244 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
+2026-03-02 14:05:59.601 [main] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: testuser
+2026-03-02 14:05:59.744 [main] INFO  com.rev.app.service.impl.UserServiceImpl - User user registered and security questions saved successfully.
+2026-03-02 14:06:00.068 [main] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=1, score=1, label=Weak
+2026-03-02 14:06:00.068 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=1, reused=0, old=0, score=90
+2026-03-02 14:06:00.074 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+2026-03-02 14:06:00.144 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry deleted: id=1 for user 1
+2026-03-02 14:06:00.150 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'null' for user null
+2026-03-02 14:06:00.277 [main] INFO  com.rev.app.config.SecurityConfigTest - Starting SecurityConfigTest using Java 24.0.1 with PID 25664 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 14:06:00.279 [main] DEBUG com.rev.app.config.SecurityConfigTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 14:06:00.279 [main] INFO  com.rev.app.config.SecurityConfigTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-02 14:06:02.100 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 14:06:02.106 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 14:06:02.144 [main] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2026-03-02 14:06:02.144 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-02 14:06:05.685 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5774c2dd
+2026-03-02 14:06:05.691 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-02 14:06:08.632 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 23.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 14:06:08.896 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 14:06:48.878 [main] INFO  com.rev.app.config.SecurityConfigTest - Started SecurityConfigTest in 48.665 seconds (process running for 70.745)
+2026-03-02 14:06:48.934 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Validation error: Invalid
+2026-03-02 14:06:48.937 [main] WARN  com.rev.app.exception.GlobalExceptionHandler - Resource not found: Not found
+2026-03-02 14:06:48.972 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-02 14:06:50.808 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-03-02 14:07:40.574 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-03-02 14:07:40.684 [restartedMain] INFO  com.rev.app.RevPasswordManagerP2Application - Starting RevPasswordManagerP2Application using Java 24.0.1 with PID 27932 (C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu\target\classes started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-02 14:07:40.691 [restartedMain] DEBUG com.rev.app.RevPasswordManagerP2Application - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-02 14:07:40.694 [restartedMain] INFO  com.rev.app.RevPasswordManagerP2Application - No active profile set, falling back to 1 default profile: "default"
+2026-03-02 14:07:43.969 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-03-02 14:07:43.971 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-02 14:07:43.972 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-02 14:07:44.067 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-02 14:07:44.715 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-02 14:07:44.877 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-02 14:07:44.970 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-02 14:07:45.629 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2026-03-02 14:07:45.630 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-02 14:07:49.033 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3630643
+2026-03-02 14:07:49.035 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-02 14:07:52.096 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 23.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-02 14:07:54.318 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-02 14:08:34.027 [restartedMain] DEBUG com.rev.app.filter.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-02 14:08:41.169 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-03-02 14:08:41.646 [restartedMain] INFO  com.rev.app.RevPasswordManagerP2Application - Started RevPasswordManagerP2Application in 61.782 seconds (process running for 64.005)
+2026-03-02 14:11:07.216 [http-nio-8081-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-02 14:11:07.544 [http-nio-8081-exec-2] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2026-03-02 14:11:07.909 [http-nio-8081-exec-2] DEBUG org.thymeleaf.TemplateEngine.CONFIG - Initializing Thymeleaf Template engine configuration...
+[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Thymeleaf version: 3.1.3.RELEASE (built 2024-12-08T21:30:43+0000)
+[THYMELEAF] * Cache Manager implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template resolvers:
+[THYMELEAF]     * org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers:
+[THYMELEAF]     * org.thymeleaf.spring6.messageresolver.SpringMessageResolver
+[THYMELEAF] * Link builders:
+[THYMELEAF]     * org.thymeleaf.linkbuilder.StandardLinkBuilder
+[THYMELEAF] * Dialect [1 of 2]: SpringStandard (org.thymeleaf.spring6.dialect.SpringStandardDialect)
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF]     * Processors for Template Mode: HTML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:include,data-th-include}] [100]: org.thymeleaf.standard.processor.StandardIncludeTagProcessor
+[THYMELEAF]             * [* {th:insert,data-th-insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace,data-th-replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each,data-th-each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch,data-th-switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case,data-th-case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if,data-th-if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless,data-th-unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object,data-th-object}] [500]: org.thymeleaf.spring6.processor.SpringObjectTagProcessor
+[THYMELEAF]             * [* {th:with,data-th-with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:attr,data-th-attr}] [700]: org.thymeleaf.standard.processor.StandardAttrTagProcessor
+[THYMELEAF]             * [* {th:attrprepend,data-th-attrprepend}] [800]: org.thymeleaf.standard.processor.StandardAttrprependTagProcessor
+[THYMELEAF]             * [* {th:attrappend,data-th-attrappend}] [900]: org.thymeleaf.standard.processor.StandardAttrappendTagProcessor
+[THYMELEAF]             * [* {th:method,data-th-method}] [990]: org.thymeleaf.spring6.processor.SpringMethodTagProcessor
+[THYMELEAF]             * [* {th:alt-title,data-th-alt-title}] [990]: org.thymeleaf.standard.processor.StandardAltTitleTagProcessor
+[THYMELEAF]             * [* {th:lang-xmllang,data-th-lang-xmllang}] [990]: org.thymeleaf.standard.processor.StandardLangXmlLangTagProcessor
+[THYMELEAF]             * [* {th:action,data-th-action}] [1000]: org.thymeleaf.spring6.processor.SpringActionTagProcessor
+[THYMELEAF]             * [* {th:href,data-th-href}] [1000]: org.thymeleaf.spring6.processor.SpringHrefTagProcessor
+[THYMELEAF]             * [* {th:src,data-th-src}] [1000]: org.thymeleaf.spring6.processor.SpringSrcTagProcessor
+[THYMELEAF]             * [* {th:pubdate,data-th-pubdate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:controls,data-th-controls}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:default,data-th-default}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:open,data-th-open}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:async,data-th-async}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:loop,data-th-loop}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:selected,data-th-selected}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:scoped,data-th-scoped}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:hidden,data-th-hidden}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:multiple,data-th-multiple}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:autoplay,data-th-autoplay}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:novalidate,data-th-novalidate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:autofocus,data-th-autofocus}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:disabled,data-th-disabled}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:nowrap,data-th-nowrap}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:readonly,data-th-readonly}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:ismap,data-th-ismap}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:reversed,data-th-reversed}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:defer,data-th-defer}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:required,data-th-required}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:seamless,data-th-seamless}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:formnovalidate,data-th-formnovalidate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:checked,data-th-checked}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:declare,data-th-declare}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:onbeforeunload,data-th-onbeforeunload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousedown,data-th-onmousedown}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onvolumechange,data-th-onvolumechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onstalled,data-th-onstalled}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oninput,data-th-oninput}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadstart,data-th-onloadstart}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onplaying,data-th-onplaying}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onstorage,data-th-onstorage}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onreadystatechange,data-th-onreadystatechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onpause,data-th-onpause}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onundo,data-th-onundo}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousemove,data-th-onmousemove}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onformchange,data-th-onformchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeypress,data-th-onkeypress}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onresize,data-th-onresize}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onshow,data-th-onshow}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragover,data-th-ondragover}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onoffline,data-th-onoffline}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onredo,data-th-onredo}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeydown,data-th-onkeydown}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseover,data-th-onmouseover}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragend,data-th-ondragend}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onafterprint,data-th-onafterprint}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousewheel,data-th-onmousewheel}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oninvalid,data-th-oninvalid}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onload,data-th-onload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragenter,data-th-ondragenter}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseup,data-th-onmouseup}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeyup,data-th-onkeyup}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmessage,data-th-onmessage}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onprogress,data-th-onprogress}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ononline,data-th-ononline}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onclick,data-th-onclick}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onemptied,data-th-onemptied}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onratechange,data-th-onratechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncanplay,data-th-oncanplay}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onended,data-th-onended}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onfocus,data-th-onfocus}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onsuspend,data-th-onsuspend}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onerror,data-th-onerror}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onscroll,data-th-onscroll}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondurationchange,data-th-ondurationchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onsubmit,data-th-onsubmit}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ontimeupdate,data-th-ontimeupdate}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onforminput,data-th-onforminput}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadeddata,data-th-onloadeddata}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onabort,data-th-onabort}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onseeked,data-th-onseeked}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondblclick,data-th-ondblclick}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onwaiting,data-th-onwaiting}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onhashchange,data-th-onhashchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onblur,data-th-onblur}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncanplaythrough,data-th-oncanplaythrough}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondrop,data-th-ondrop}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onplay,data-th-onplay}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncontextmenu,data-th-oncontextmenu}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseout,data-th-onmouseout}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadedmetadata,data-th-onloadedmetadata}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onbeforeprint,data-th-onbeforeprint}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onreset,data-th-onreset}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onpopstate,data-th-onpopstate}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragstart,data-th-ondragstart}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onunload,data-th-onunload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondrag,data-th-ondrag}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onseeking,data-th-onseeking}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onselect,data-th-onselect}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onchange,data-th-onchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragleave,data-th-ondragleave}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:inline,data-th-inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineHTMLTagProcessor
+[THYMELEAF]             * [* {th:name,data-th-name}] [1000]: org.thymeleaf.standard.processor.StandardNonRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:type,data-th-type}] [1000]: org.thymeleaf.standard.processor.StandardNonRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:label,data-th-label}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:width,data-th-width}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rev,data-th-rev}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rowspan,data-th-rowspan}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:span,data-th-span}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:sizes,data-th-sizes}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:preload,data-th-preload}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cellpadding,data-th-cellpadding}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cols,data-th-cols}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:manifest,data-th-manifest}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:placeholder,data-th-placeholder}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:optimum,data-th-optimum}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:hreflang,data-th-hreflang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:valuetype,data-th-valuetype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:headers,data-th-headers}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scrolling,data-th-scrolling}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:contextmenu,data-th-contextmenu}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:height,data-th-height}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:axis,data-th-axis}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:contenteditable,data-th-contenteditable}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:usemap,data-th-usemap}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:poster,data-th-poster}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:vspace,data-th-vspace}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:background,data-th-background}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:charset,data-th-charset}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:codebase,data-th-codebase}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formaction,data-th-formaction}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:datetime,data-th-datetime}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:frameborder,data-th-frameborder}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formtarget,data-th-formtarget}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:data,data-th-data}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:dropzone,data-th-dropzone}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:title,data-th-title}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:srclang,data-th-srclang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:compact,data-th-compact}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:bgcolor,data-th-bgcolor}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:abbr,data-th-abbr}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:step,data-th-step}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rows,data-th-rows}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:draggable,data-th-draggable}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:max,data-th-max}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:start,data-th-start}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:for,data-th-for}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:icon,data-th-icon}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accesskey,data-th-accesskey}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:sandbox,data-th-sandbox}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cite,data-th-cite}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:marginheight,data-th-marginheight}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:lang,data-th-lang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:target,data-th-target}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:high,data-th-high}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:media,data-th-media}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:alt,data-th-alt}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:frame,data-th-frame}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:radiogroup,data-th-radiogroup}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:enctype,data-th-enctype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:standby,data-th-standby}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:tabindex,data-th-tabindex}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accept-charset,data-th-accept-charset}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:longdesc,data-th-longdesc}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scheme,data-th-scheme}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:classid,data-th-classid}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:list,data-th-list}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:keytype,data-th-keytype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:form,data-th-form}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:challenge,data-th-challenge}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cellspacing,data-th-cellspacing}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rel,data-th-rel}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:maxlength,data-th-maxlength}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:kind,data-th-kind}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:content,data-th-content}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:codetype,data-th-codetype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:min,data-th-min}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:size,data-th-size}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:spellcheck,data-th-spellcheck}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:colspan,data-th-colspan}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:pattern,data-th-pattern}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:wrap,data-th-wrap}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formmethod,data-th-formmethod}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:low,data-th-low}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formenctype,data-th-formenctype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:border,data-th-border}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:marginwidth,data-th-marginwidth}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:http-equiv,data-th-http-equiv}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accept,data-th-accept}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scope,data-th-scope}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:dir,data-th-dir}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rules,data-th-rules}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:hspace,data-th-hspace}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:align,data-th-align}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:class,data-th-class}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:archive,data-th-archive}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:summary,data-th-summary}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:autocomplete,data-th-autocomplete}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:style,data-th-style}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:id,data-th-id}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:audio,data-th-audio}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:xmlbase,data-th-xmlbase}] [1000]: org.thymeleaf.standard.processor.StandardXmlBaseTagProcessor
+[THYMELEAF]             * [* {th:xmllang,data-th-xmllang}] [1000]: org.thymeleaf.standard.processor.StandardXmlLangTagProcessor
+[THYMELEAF]             * [* {xmlns:th}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {th:xmlspace,data-th-xmlspace}] [1000]: org.thymeleaf.standard.processor.StandardXmlSpaceTagProcessor
+[THYMELEAF]             * [{option} *] [1005]: org.thymeleaf.spring6.processor.SpringOptionInSelectFieldTagProcessor
+[THYMELEAF]             * [* {th:value,data-th-value}] [1010]: org.thymeleaf.spring6.processor.SpringValueTagProcessor
+[THYMELEAF]             * [* {th:classappend,data-th-classappend}] [1100]: org.thymeleaf.standard.processor.StandardClassappendTagProcessor
+[THYMELEAF]             * [* {th:styleappend,data-th-styleappend}] [1100]: org.thymeleaf.standard.processor.StandardStyleappendTagProcessor
+[THYMELEAF]             * [* {th:text,data-th-text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext,data-th-utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:fragment,data-th-fragment}] [1500]: org.thymeleaf.standard.processor.StandardFragmentTagProcessor
+[THYMELEAF]             * [* {th:assert,data-th-assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove,data-th-remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* {th:errors,data-th-errors}] [1700]: org.thymeleaf.spring6.processor.SpringErrorsTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputCheckboxFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputFileFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputGeneralFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputPasswordFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputRadioFieldTagProcessor
+[THYMELEAF]             * [{option} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringOptionFieldTagProcessor
+[THYMELEAF]             * [{select} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringSelectFieldTagProcessor
+[THYMELEAF]             * [{textarea} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringTextareaFieldTagProcessor
+[THYMELEAF]             * [* {th:uerrors,data-th-uerrors}] [1700]: org.thymeleaf.spring6.processor.SpringUErrorsTagProcessor
+[THYMELEAF]             * [* {th:errorclass,data-th-errorclass}] [1800]: org.thymeleaf.spring6.processor.SpringErrorClassTagProcessor
+[THYMELEAF]             * [* {th:ref,data-th-ref}] [10000]: org.thymeleaf.standard.processor.StandardRefAttributeTagProcessor
+[THYMELEAF]             * [{th:block,th-block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* th:*] [2147483647]: org.thymeleaf.standard.processor.StandardDefaultAttributesTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]         * DOCTYPE Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardTranslationDocTypeProcessor
+[THYMELEAF]         * CDATA Section Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCDATASectionProcessor
+[THYMELEAF]         * Comment Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCommentProcessor
+[THYMELEAF]             * [1100]: org.thymeleaf.standard.processor.StandardConditionalCommentProcessor
+[THYMELEAF]     * Processors for Template Mode: XML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:include}] [100]: org.thymeleaf.standard.processor.StandardIncludeTagProcessor
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:attr}] [700]: org.thymeleaf.standard.processor.StandardAttrTagProcessor
+[THYMELEAF]             * [* {th:attrprepend}] [800]: org.thymeleaf.standard.processor.StandardAttrprependTagProcessor
+[THYMELEAF]             * [* {th:attrappend}] [900]: org.thymeleaf.standard.processor.StandardAttrappendTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineXMLTagProcessor
+[THYMELEAF]             * [* {xmlns:th}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:fragment}] [1500]: org.thymeleaf.standard.processor.StandardFragmentTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* {th:ref}] [10000]: org.thymeleaf.standard.processor.StandardRefAttributeTagProcessor
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* th:*] [2147483647]: org.thymeleaf.standard.processor.StandardDefaultAttributesTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]         * CDATA Section Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCDATASectionProcessor
+[THYMELEAF]         * Comment Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCommentProcessor
+[THYMELEAF]     * Processors for Template Mode: TEXT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Processors for Template Mode: JAVASCRIPT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Processors for Template Mode: CSS
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Expression Objects:
+[THYMELEAF]         * #ctx
+[THYMELEAF]         * #root
+[THYMELEAF]         * #vars
+[THYMELEAF]         * #object
+[THYMELEAF]         * #locale
+[THYMELEAF]         * #conversions
+[THYMELEAF]         * #uris
+[THYMELEAF]         * #temporals
+[THYMELEAF]         * #calendars
+[THYMELEAF]         * #dates
+[THYMELEAF]         * #bools
+[THYMELEAF]         * #numbers
+[THYMELEAF]         * #objects
+[THYMELEAF]         * #strings
+[THYMELEAF]         * #arrays
+[THYMELEAF]         * #lists
+[THYMELEAF]         * #sets
+[THYMELEAF]         * #maps
+[THYMELEAF]         * #aggregates
+[THYMELEAF]         * #messages
+[THYMELEAF]         * #ids
+[THYMELEAF]         * #execInfo
+[THYMELEAF]         * #request
+[THYMELEAF]         * #response
+[THYMELEAF]         * #session
+[THYMELEAF]         * #servletContext
+[THYMELEAF]         * #fields
+[THYMELEAF]         * #themes
+[THYMELEAF]         * #mvc
+[THYMELEAF]         * #requestdatavalues
+[THYMELEAF]     * Execution Attributes:
+[THYMELEAF]         * "StandardExpressionParser": Standard Expression Parser
+[THYMELEAF]         * "StandardJavaScriptSerializer": org.thymeleaf.standard.serializer.StandardJavaScriptSerializer@3f8dbd07
+[THYMELEAF]         * "StandardCSSSerializer": org.thymeleaf.standard.serializer.StandardCSSSerializer@569f0ba5
+[THYMELEAF]         * "EnableSpringELCompiler": false
+[THYMELEAF]         * "StandardVariableExpressionEvaluator": SpringEL
+[THYMELEAF]         * "StandardConversionService": org.thymeleaf.spring6.expression.SpringStandardConversionService@51800223
+[THYMELEAF] * Dialect [2 of 2]: SpringSecurity (org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect)
+[THYMELEAF]     * Prefix: "sec"
+[THYMELEAF]     * Processors for Template Mode: HTML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {sec:authorize-acl,data-sec-authorize-acl}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAclAttrProcessor
+[THYMELEAF]             * [* {sec:authorize,data-sec-authorize}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-expr,data-sec-authorize-expr}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-url,data-sec-authorize-url}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeUrlAttrProcessor
+[THYMELEAF]             * [* {xmlns:sec}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {sec:authentication,data-sec-authentication}] [1300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthenticationAttrProcessor
+[THYMELEAF]     * Processors for Template Mode: XML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {sec:authorize-acl}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAclAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-expr}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-url}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeUrlAttrProcessor
+[THYMELEAF]             * [* {xmlns:sec}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {sec:authentication}] [1300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthenticationAttrProcessor
+[THYMELEAF]     * Processors for Template Mode: TEXT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {sec:authorize-acl}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAclAttrProcessor
+[THYMELEAF]             * [* {sec:authorize}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-expr}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-url}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeUrlAttrProcessor
+[THYMELEAF]             * [* {xmlns:sec}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {sec:authentication}] [1300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthenticationAttrProcessor
+[THYMELEAF]     * Processors for Template Mode: JAVASCRIPT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {sec:authorize-acl}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAclAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-expr}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-url}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeUrlAttrProcessor
+[THYMELEAF]             * [* {xmlns:sec}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {sec:authentication}] [1300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthenticationAttrProcessor
+[THYMELEAF]     * Processors for Template Mode: CSS
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {sec:authorize-acl}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAclAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-expr}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-url}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeUrlAttrProcessor
+[THYMELEAF]             * [* {xmlns:sec}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {sec:authentication}] [1300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthenticationAttrProcessor
+[THYMELEAF]     * Expression Objects:
+[THYMELEAF]         * #authentication
+[THYMELEAF]         * #authorization
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2026-03-02 14:11:07.914 [http-nio-8081-exec-2] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2026-03-02 14:11:08.875 [http-nio-8081-exec-3] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-02 14:11:11.060 [http-nio-8081-exec-4] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 14:11:11.401 [http-nio-8081-exec-4] WARN  org.apache.catalina.util.SessionIdGeneratorBase - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [326] milliseconds.
+2026-03-02 14:11:11.596 [http-nio-8081-exec-6] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-02 14:11:13.974 [http-nio-8081-exec-7] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 14:11:14.090 [http-nio-8081-exec-9] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-02 14:11:16.984 [http-nio-8081-exec-1] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-02 14:11:22.066 [http-nio-8081-exec-3] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-02 14:11:23.456 [http-nio-8081-exec-4] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 14:11:23.772 [http-nio-8081-exec-6] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-02 14:11:26.626 [http-nio-8081-exec-9] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-02 14:11:28.492 [http-nio-8081-exec-10] INFO  com.rev.app.controller.AuthController - Redirecting to registration page. Mapping set for: /register and /auth/register
+2026-03-02 14:11:28.640 [http-nio-8081-exec-1] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-02 14:11:30.594 [http-nio-8081-exec-5] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-02 14:11:32.087 [http-nio-8081-exec-6] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-02 14:11:32.192 [http-nio-8081-exec-8] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-02 14:11:55.030 [http-nio-8081-exec-10] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=26, score=4, label=Very Strong
+2026-03-02 14:11:55.032 [http-nio-8081-exec-10] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 61: weak=0, reused=0, old=0, score=100
+2026-03-02 14:11:56.626 [http-nio-8081-exec-10] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
