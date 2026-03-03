@@ -147,11 +147,35 @@
             btn.addEventListener('click', () => {
                 const input = btn.previousElementSibling;
                 if (input) {
-                    input.type = input.type === 'password' ? 'text' : 'password';
-                    btn.textContent = input.type === 'password' ? '👁️' : '🙈';
+                    const isPassword = input.type === 'password';
+                    input.type = isPassword ? 'text' : 'password';
+                    btn.textContent = isPassword ? '🙈' : '👁️';
                 }
             });
         });
+
+        // Security Question Duplication Prevention
+        const allQuestions = Array.from(document.querySelectorAll('#securityQuestionSuggestions option')).map(opt => opt.value);
+        const questionInputs = document.querySelectorAll('input[list="securityQuestionSuggestions"]');
+
+        questionInputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                const datalist = document.getElementById('securityQuestionSuggestions');
+                const usedQuestions = Array.from(questionInputs)
+                    .filter(i => i !== input && i.value.trim() !== '')
+                    .map(i => i.value.trim());
+
+                datalist.innerHTML = '';
+                allQuestions.forEach(q => {
+                    if (!usedQuestions.includes(q)) {
+                        const opt = document.createElement('option');
+                        opt.value = q;
+                        datalist.appendChild(opt);
+                    }
+                });
+            });
+        });
+
         function updateStrength(pw) {
             let score = 0;
             if (pw.length >= 8) score++;
