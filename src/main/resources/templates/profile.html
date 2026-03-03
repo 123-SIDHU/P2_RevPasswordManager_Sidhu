@@ -8,13 +8,14 @@
         <div th:replace="~{layout :: navbar}" th:with="activePage='profile'"></div>
         <div class="main-content">
             <div class="page-body">
-                <div class="card-header mb-4" style="margin-bottom:24px;">
+                <div class="card-header mb-4" style="margin:0 auto 24px; max-width:540px;">
                     <h2 class="topbar-title">My Profile</h2>
                 </div>
-                <div th:replace="~{layout :: flash}"></div>
-                <div th:if="${errorMsg}" class="alert alert-danger">❌ <span th:text="${errorMsg}"></span></div>
+                <div th:replace="~{layout :: flash}" th:with="maxWidth='540px'"></div>
+                <div th:if="${errorMsg}" class="alert alert-danger" style="margin:10px auto; max-width:540px;">❌ <span
+                        th:text="${errorMsg}"></span></div>
 
-                <div style="max-width:540px;" class="">
+                <div style="max-width:540px; margin:0 auto;" class="">
                     <!-- Avatar Banner -->
                     <div class="card mb-4" style="margin-bottom:16px;text-align:center;padding:28px;">
                         <div class="user-avatar"
@@ -88,7 +89,8 @@
                         <div class="card-title" style="color:var(--danger);margin-bottom:12px;">⚠️ Security Actions
                         </div>
                         <div style="display:flex;flex-wrap:wrap;gap:8px;">
-                            <a href="/security/change-password" class="btn btn-secondary btn-sm">🔑 Change Password</a>
+                            <a href="/security/change-password" class="btn btn-secondary btn-sm">🔑 Change Master
+                                Password</a>
                             <a href="/security/2fa" class="btn btn-secondary btn-sm">📱 Manage 2FA</a>
                             <a href="/security/questions" class="btn btn-secondary btn-sm">❓ Security Questions</a>
                         </div>

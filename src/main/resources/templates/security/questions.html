@@ -8,13 +8,13 @@
         <div th:replace="~{layout :: navbar}" th:with="activePage='questions'"></div>
         <div class="main-content">
             <div class="page-body">
-                <div class="card-header mb-4" style="margin-bottom:24px;">
+                <div class="card-header mb-4" style="margin:0 auto 24px; max-width:580px;">
                     <h2 class="topbar-title">Security Center</h2>
                 </div>
 
                 <!-- Security Subnav -->
                 <div class="mb-4"
-                    style="display:flex;gap:10px;margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:12px;">
+                    style="display:flex;gap:10px;margin:0 auto 24px;border-bottom:1px solid var(--border);padding-bottom:12px; max-width:580px; justify-content: center;">
                     <a href="/security/audit" class="btn btn-sm"
                         th:classappend="${activePage == 'audit' ? 'btn-primary' : 'btn-secondary'}">🛡️ Security
                         Audit</a>
@@ -24,9 +24,9 @@
                         th:classappend="${activePage == 'questions' ? 'btn-primary' : 'btn-secondary'}">❓ Security
                         Questions</a>
                 </div>
-                <div th:replace="~{layout :: flash}"></div>
+                <div th:replace="~{layout :: flash}" th:with="maxWidth='580px'"></div>
 
-                <div style="max-width:580px;" class="">
+                <div style="max-width:580px; margin:0 auto;" class="">
                     <div class="alert alert-info mb-4" style="margin-bottom:16px;">
                         🔒 Security questions are used to recover your account if you forget your master password.
                         Minimum 3 questions required.

@@ -90,8 +90,8 @@ public class SecurityConfig {
                                                 .failureUrl("/login?error=true")
                                                 .permitAll())
                                 .logout(logout -> logout
-                                                .logoutRequestMatcher(new AntPathRequestMatcher("/logout", "POST"))
-                                                .logoutSuccessUrl("/login?logout=true")
+                                                .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                                                .logoutSuccessUrl("/?logout=true")
                                                 .invalidateHttpSession(true)
                                                 .clearAuthentication(true)
                                                 .deleteCookies("JSESSIONID")

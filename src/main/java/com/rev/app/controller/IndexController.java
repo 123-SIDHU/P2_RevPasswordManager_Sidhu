@@ -1,10 +1,11 @@
 package com.rev.app.controller;
 
-import com.rev.app.entity.User;
-import com.rev.app.util.AuthUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import com.rev.app.entity.User;
+import com.rev.app.util.AuthUtil;
 
 @Controller
 public class IndexController {

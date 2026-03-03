@@ -115,7 +115,7 @@ public class VaultController {
             return "vault/add-edit-entry";
         }
         vaultService.addEntry(user, dto);
-        redirectAttrs.addFlashAttribute("successMsg", "Password entry added successfully!");
+        redirectAttrs.addFlashAttribute("successMsg", "Password added to vault successfully!");
         return "redirect:/vault";
     }
 
@@ -152,7 +152,7 @@ public class VaultController {
             return "vault/add-edit-entry";
         }
         vaultService.updateEntry(user.getId(), id, dto);
-        redirectAttrs.addFlashAttribute("successMsg", "Entry updated!");
+        redirectAttrs.addFlashAttribute("successMsg", "Password updated successfully!");
         return "redirect:/vault/" + id;
     }
 
@@ -166,7 +166,7 @@ public class VaultController {
             return "redirect:/vault/" + id;
         }
         vaultService.deleteEntry(user.getId(), id);
-        redirectAttrs.addFlashAttribute("successMsg", "Entry deleted");
+        redirectAttrs.addFlashAttribute("successMsg", "Password deleted successfully");
         return "redirect:/vault";
     }
 

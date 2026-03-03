@@ -9,110 +9,102 @@
 </head>
 
 <body>
-<header class="landing-header">
-    <a class="brand-link" th:href="@{/}">
-        <div class="brand-icon-box">🔐</div>
-        <span class="brand-text">RevSecurity</span>
-    </a>
-    <nav class="auth-buttons">
-        <div th:if="${user != null}">
-            <a href="/dashboard" class="btn btn-primary" style="padding:10px 24px; border-radius:30px;">Go to
-                Dashboard</a>
-        </div>
-        <div th:unless="${user != null}" style="display:flex; gap:12px; align-items:center;">
-            <a th:href="@{/login}" class="btn btn-secondary"
-               style="border:none; background:transparent; font-weight:600;">Sign In</a>
-            <a th:href="@{/register}" class="btn btn-primary"
-               style="padding:10px 24px; border-radius:30px; background:var(--accent-gradient); border:none; box-shadow:0 4px 12px rgba(37, 99, 235, 0.2);">Get
-                Started</a>
-        </div>
-    </nav>
-</header>
-
-<main>
-    <!-- Alerts with improved styling -->
-    <div th:if="${successMsg}" class="alert alert-success slide-up"
-         style="margin:20px auto; max-width:800px; border-radius:12px;">
-        <span style="font-size:1.25rem;">✨</span>
-        <span th:text="${successMsg}"></span>
-    </div>
-    <div th:if="${errorMsg}" class="alert alert-danger slide-up"
-         style="margin:20px auto; max-width:800px; border-radius:12px;">
-        <span style="font-size:1.25rem;">⚠️</span>
-        <span th:text="${errorMsg}"></span>
-    </div>
-
-    <section class="landing-hero">
-        <div class="slide-up">
-            <h1 class="hero-title">Protect Your Digital Life,<br>Simpler Than Ever.</h1>
-            <p class="hero-subtitle">RevSecurity is the next-generation password manager designed for speed,
-                security, and absolute peace of mind.</p>
-            <div class="hero-buttons">
-                <a th:href="${user != null ? '/dashboard' : '/register'}" class="btn btn-primary"
-                   style="padding:16px 40px; font-size:1.1rem; border-radius:50px; background:var(--accent-gradient); border:none; box-shadow:0 10px 20px rgba(37, 99, 235, 0.3);">
-                    Start Free Trial
-                </a>
+    <header class="landing-header">
+        <a class="brand-link" th:href="@{/}">
+            <div class="brand-icon-box">🔐</div>
+            <span class="brand-text">RevSecurity</span>
+        </a>
+        <nav class="auth-buttons">
+            <div th:if="${user != null}">
+                <a href="/dashboard" class="btn btn-primary"
+                    style="padding:10px 24px; border-radius:30px; background: var(--accent-gradient); border: none;">Go
+                    to Dashboard</a>
+            </div>
+            <div th:unless="${user != null}" style="display:flex; gap:16px; align-items:center;">
                 <a th:href="@{/login}" class="btn btn-secondary"
-                   style="padding:16px 40px; font-size:1.1rem; border-radius:50px;">
-                    Member Login
-                </a>
+                    style="border:none; background:transparent; font-weight:600; color: var(--text-primary);">Sign
+                    In</a>
+                <a th:href="@{/register}" class="btn btn-primary"
+                    style="padding:10px 24px; border-radius:30px; background:var(--accent-gradient); border:none; box-shadow: var(--accent-glow);">Get
+                    Started</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div th:replace="~{layout :: flash}"></div>
+
+        <section class="landing-hero bg-image-hero">
+            <div class="slide-up">
+                <h1 class="hero-title">Protect Your Digital Life,<br>Simpler Than Ever.</h1>
+                <p class="hero-subtitle">RevSecurity is the next-generation password manager designed for speed,
+                    security, and absolute peace of mind.</p>
+                <div class="hero-buttons">
+                    <a th:href="${user != null ? '/dashboard' : '/register'}" class="btn btn-primary"
+                        style="padding:16px 40px; font-size:1.1rem; border-radius:50px; background:var(--accent-gradient); border:none; box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4);">
+                        Start Free Trial
+                    </a>
+                    <a th:href="@{/login}" class="btn btn-secondary"
+                        style="padding:16px 40px; font-size:1.1rem; border-radius:50px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: white;">
+                        Member Login
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="landing-features">
+            <h2 class="section-title slide-up">Security You Can Trust</h2>
+            <div class="feature-grid">
+                <div class="feature-card slide-up" style="animation-delay: 0.1s;">
+                    <div class="icon-box">🛡️</div>
+                    <h3>Military-Grade</h3>
+                    <p>End-to-end AES-256 encryption. Your master password is the only key, and even we can't see your
+                        data.</p>
+                </div>
+                <div class="feature-card slide-up" style="animation-delay: 0.2s;">
+                    <div class="icon-box">☁️</div>
+                    <h3>Seamless Sync</h3>
+                    <p>Access your vault from any device. Your passwords stay in sync across all your browsers and
+                        platforms.</p>
+                </div>
+                <div class="feature-card slide-up" style="animation-delay: 0.3s;">
+                    <div class="icon-box">⚡</div>
+                    <h3>Auto-Magic</h3>
+                    <p>Generate bulletproof passwords instantly and fill login forms with a single click. Save time
+                        every day.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="slide-up">
+                <h2 class="cta-title">Ready to secure your future?</h2>
+                <p class="cta-subtitle">Join thousands of users who trust RevSecurity for their daily digital
+                    protection.</p>
+                <a th:href="@{/register}" class="btn btn-white">Create Your Account</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="landing-footer">
+        <div class="footer-content">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 2rem;">
+                <div style="width: 24px; height: 24px; background: var(--accent-gradient); border-radius: 6px;"></div>
+                <span style="font-weight: 800; color: var(--text-primary);">RevSecurity</span>
+            </div>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">&copy; 2026 RevSecurity Inc. Securely crafted for
+                the web.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Terms of Service</a>
+                <a href="#" class="footer-link">Security Whitepaper</a>
+                <a href="#" class="footer-link">Help Center</a>
             </div>
         </div>
-    </section>
+    </footer>
 
-    <section class="landing-features">
-        <h2 class="section-title slide-up">Security You Can Trust</h2>
-        <div class="feature-grid">
-            <div class="feature-card slide-up" style="animation-delay: 0.1s;">
-                <div class="icon-box">🛡️</div>
-                <h3>Military-Grade</h3>
-                <p>End-to-end AES-256 encryption. Your master password is the only key, and even we can't see your
-                    data.</p>
-            </div>
-            <div class="feature-card slide-up" style="animation-delay: 0.2s;">
-                <div class="icon-box">☁️</div>
-                <h3>Seamless Sync</h3>
-                <p>Access your vault from any device. Your passwords stay in sync across all your browsers and
-                    platforms.</p>
-            </div>
-            <div class="feature-card slide-up" style="animation-delay: 0.3s;">
-                <div class="icon-box">⚡</div>
-                <h3>Auto-Magic</h3>
-                <p>Generate bulletproof passwords instantly and fill login forms with a single click. Save time
-                    every day.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-section">
-        <div class="slide-up">
-            <h2 class="cta-title">Ready to secure your future?</h2>
-            <p class="cta-subtitle">Join thousands of users who trust RevSecurity for their daily digital
-                protection.</p>
-            <a th:href="@{/register}" class="btn btn-white">Create Your Account</a>
-        </div>
-    </section>
-</main>
-
-<footer class="landing-footer">
-    <div class="footer-content">
-        <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 2rem;">
-            <div style="width: 24px; height: 24px; background: var(--accent-gradient); border-radius: 6px;"></div>
-            <span style="font-weight: 800; color: var(--text-primary);">RevSecurity</span>
-        </div>
-        <p style="color: var(--text-muted); margin-bottom: 2rem;">&copy; 2026 RevSecurity Inc. Securely crafted for
-            the web.</p>
-        <div class="footer-links">
-            <a href="#" class="footer-link">Privacy Policy</a>
-            <a href="#" class="footer-link">Terms of Service</a>
-            <a href="#" class="footer-link">Security Whitepaper</a>
-            <a href="#" class="footer-link">Help Center</a>
-        </div>
-    </div>
-</footer>
-
-<!-- Include layout scripts for alert auto-dismiss -->
-<div th:replace="~{layout :: scripts}"></div>
+    <!-- Include layout scripts for alert auto-dismiss -->
+    <div th:replace="~{layout :: scripts}"></div>
 </body>
 
 </html>

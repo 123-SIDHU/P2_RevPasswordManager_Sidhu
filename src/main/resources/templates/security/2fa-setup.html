@@ -8,13 +8,13 @@
         <div th:replace="~{layout :: navbar}" th:with="activePage='2fa'"></div>
         <div class="main-content">
             <div class="page-body">
-                <div class="card-header mb-4" style="margin-bottom:24px;">
+                <div class="card-header mb-4" style="margin:0 auto 24px; max-width:520px;">
                     <h2 class="topbar-title">Security Center</h2>
                 </div>
 
                 <!-- Security Subnav -->
                 <div class="mb-4"
-                    style="display:flex;gap:10px;margin-bottom:24px;border-bottom:1px solid var(--border);padding-bottom:12px;">
+                    style="display:flex;gap:10px;margin:0 auto 24px;border-bottom:1px solid var(--border);padding-bottom:12px; max-width:520px; justify-content: center;">
                     <a href="/security/audit" class="btn btn-sm"
                         th:classappend="${activePage == 'audit' ? 'btn-primary' : 'btn-secondary'}">🛡️ Security
                         Audit</a>
@@ -24,9 +24,9 @@
                         th:classappend="${activePage == 'questions' ? 'btn-primary' : 'btn-secondary'}">❓ Security
                         Questions</a>
                 </div>
-                <div th:replace="~{layout :: flash}"></div>
+                <div th:replace="~{layout :: flash}" th:with="maxWidth='520px'"></div>
 
-                <div style="max-width:520px;" class="">
+                <div style="max-width:520px; margin:0 auto;" class="">
                     <!-- Status Card -->
                     <div class="card mb-4" style="margin-bottom:16px;">
                         <div style="display:flex;align-items:center;justify-content:space-between;">
