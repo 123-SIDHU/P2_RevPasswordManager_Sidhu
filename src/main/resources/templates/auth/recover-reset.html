@@ -35,8 +35,11 @@
                 </div>
                 <div class="form-group">
                     <label class="form-label">Confirm New Password</label>
-                    <input type="password" name="confirmPassword" class="form-control" placeholder="Repeat password"
-                        required />
+                    <div class="input-group">
+                        <input type="password" name="confirmPassword" class="form-control" placeholder="Repeat password"
+                            required />
+                        <button type="button" class="toggle-pw">👁️</button>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn-primary w-full mt-4" style="justify-content:center;">
                     🔑 Reset Password
@@ -49,8 +52,9 @@
             btn.addEventListener('click', () => {
                 const input = btn.previousElementSibling;
                 if (input) {
-                    input.type = input.type === 'password' ? 'text' : 'password';
-                    btn.textContent = input.type === 'password' ? '👁️' : '🙈';
+                    const isPassword = input.type === 'password';
+                    input.type = isPassword ? 'text' : 'password';
+                    btn.textContent = isPassword ? '🙈' : '👁️';
                 }
             });
         });

@@ -25,3 +25,785 @@
 2026-03-03 09:18:05.858 [main] INFO  com.rev.app.service.impl.VerificationServiceImpl - OTP generated and emailed to test@mail.com for purpose=2FA
 2026-03-03 09:18:06.157 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry deleted: id=1 for user 1
 2026-03-03 09:18:06.164 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'null' for user null
+2026-03-03 09:21:08.388 [main] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=1, score=1, label=Weak
+2026-03-03 09:21:08.400 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=1, reused=0, old=0, score=90
+2026-03-03 09:21:08.441 [main] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 1: weak=0, reused=0, old=0, score=100
+2026-03-03 09:21:08.793 [main] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: user
+2026-03-03 09:21:08.821 [main] DEBUG com.rev.app.service.impl.PasswordGeneratorServiceImpl - Generated 2 password(s) with length 12
+2026-03-03 09:21:09.304 [main] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to test@mail.com for purpose=2FA
+2026-03-03 09:21:10.809 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-03-03 09:21:10.926 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Starting ISecurityQuestionRepositoryTest using Java 24.0.1 with PID 21200 (started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-03 09:21:10.934 [main] DEBUG com.rev.app.repository.ISecurityQuestionRepositoryTest - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-03 09:21:10.936 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+2026-03-03 09:21:13.297 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-03 09:21:13.479 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-03 09:21:13.590 [main] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-03 09:21:14.122 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory$EmbeddedDataSourceProxy@4cd1716d']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03 09:21:16.222 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03 09:21:20.835 [main] INFO  com.rev.app.repository.ISecurityQuestionRepositoryTest - Started ISecurityQuestionRepositoryTest in 10.772 seconds (process running for 17.905)
+2026-03-03 09:21:21.970 [main] INFO  com.rev.app.service.impl.UserServiceImpl - User user registered and security questions saved successfully.
+2026-03-03 09:21:22.235 [main] INFO  com.rev.app.service.impl.VerificationServiceImpl - OTP generated and emailed to test@mail.com for purpose=2FA
+2026-03-03 09:21:22.577 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry deleted: id=1 for user 1
+2026-03-03 09:21:22.584 [main] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'null' for user null
+2026-03-03 09:22:05.099 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2026-03-03 09:22:05.196 [restartedMain] INFO  com.rev.app.RevPasswordManagerP2Application - Starting RevPasswordManagerP2Application using Java 24.0.1 with PID 6752 (C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu\target\classes started by cheru in C:\Users\cheru\OneDrive\Pictures\Desktop\P2_RevPasswordManager_Sidhu)
+2026-03-03 09:22:05.203 [restartedMain] DEBUG com.rev.app.RevPasswordManagerP2Application - Running with Spring Boot v3.4.3, Spring v6.2.3
+2026-03-03 09:22:05.205 [restartedMain] INFO  com.rev.app.RevPasswordManagerP2Application - No active profile set, falling back to 1 default profile: "default"
+2026-03-03 09:22:08.601 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-03-03 09:22:08.604 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-03 09:22:08.605 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-03-03 09:22:08.698 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-03 09:22:09.308 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-03 09:22:09.458 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-03-03 09:22:09.547 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-03 09:22:10.310 [restartedMain] WARN  com.zaxxer.hikari.HikariConfig - HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2026-03-03 09:22:10.310 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-03 09:22:12.825 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@27bfc540
+2026-03-03 09:22:12.829 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-03 09:22:15.500 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 23.9
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-03 09:22:17.701 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-03 09:22:56.799 [restartedMain] DEBUG com.rev.app.filter.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-03-03 09:23:02.367 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-03-03 09:23:02.458 [restartedMain] INFO  com.rev.app.RevPasswordManagerP2Application - Started RevPasswordManagerP2Application in 58.059 seconds (process running for 60.314)
+2026-03-03 09:30:34.052 [http-nio-8081-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-03 09:30:34.422 [http-nio-8081-exec-9] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:30:34.466 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2026-03-03 09:30:34.721 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine.CONFIG - Initializing Thymeleaf Template engine configuration...
+[THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Thymeleaf version: 3.1.3.RELEASE (built 2024-12-08T21:30:43+0000)
+[THYMELEAF] * Cache Manager implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template resolvers:
+[THYMELEAF]     * org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers:
+[THYMELEAF]     * org.thymeleaf.spring6.messageresolver.SpringMessageResolver
+[THYMELEAF] * Link builders:
+[THYMELEAF]     * org.thymeleaf.linkbuilder.StandardLinkBuilder
+[THYMELEAF] * Dialect [1 of 2]: SpringStandard (org.thymeleaf.spring6.dialect.SpringStandardDialect)
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF]     * Processors for Template Mode: HTML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:include,data-th-include}] [100]: org.thymeleaf.standard.processor.StandardIncludeTagProcessor
+[THYMELEAF]             * [* {th:insert,data-th-insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace,data-th-replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each,data-th-each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch,data-th-switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case,data-th-case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if,data-th-if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless,data-th-unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object,data-th-object}] [500]: org.thymeleaf.spring6.processor.SpringObjectTagProcessor
+[THYMELEAF]             * [* {th:with,data-th-with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:attr,data-th-attr}] [700]: org.thymeleaf.standard.processor.StandardAttrTagProcessor
+[THYMELEAF]             * [* {th:attrprepend,data-th-attrprepend}] [800]: org.thymeleaf.standard.processor.StandardAttrprependTagProcessor
+[THYMELEAF]             * [* {th:attrappend,data-th-attrappend}] [900]: org.thymeleaf.standard.processor.StandardAttrappendTagProcessor
+[THYMELEAF]             * [* {th:method,data-th-method}] [990]: org.thymeleaf.spring6.processor.SpringMethodTagProcessor
+[THYMELEAF]             * [* {th:alt-title,data-th-alt-title}] [990]: org.thymeleaf.standard.processor.StandardAltTitleTagProcessor
+[THYMELEAF]             * [* {th:lang-xmllang,data-th-lang-xmllang}] [990]: org.thymeleaf.standard.processor.StandardLangXmlLangTagProcessor
+[THYMELEAF]             * [* {th:action,data-th-action}] [1000]: org.thymeleaf.spring6.processor.SpringActionTagProcessor
+[THYMELEAF]             * [* {th:href,data-th-href}] [1000]: org.thymeleaf.spring6.processor.SpringHrefTagProcessor
+[THYMELEAF]             * [* {th:src,data-th-src}] [1000]: org.thymeleaf.spring6.processor.SpringSrcTagProcessor
+[THYMELEAF]             * [* {th:disabled,data-th-disabled}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:checked,data-th-checked}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:loop,data-th-loop}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:autoplay,data-th-autoplay}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:autofocus,data-th-autofocus}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:nowrap,data-th-nowrap}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:reversed,data-th-reversed}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:seamless,data-th-seamless}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:declare,data-th-declare}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:readonly,data-th-readonly}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:formnovalidate,data-th-formnovalidate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:open,data-th-open}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:pubdate,data-th-pubdate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:novalidate,data-th-novalidate}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:required,data-th-required}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:ismap,data-th-ismap}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:default,data-th-default}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:defer,data-th-defer}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:async,data-th-async}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:hidden,data-th-hidden}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:controls,data-th-controls}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:multiple,data-th-multiple}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:scoped,data-th-scoped}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:selected,data-th-selected}] [1000]: org.thymeleaf.standard.processor.StandardConditionalFixedValueTagProcessor
+[THYMELEAF]             * [* {th:onselect,data-th-onselect}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousemove,data-th-onmousemove}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onblur,data-th-onblur}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmessage,data-th-onmessage}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onbeforeprint,data-th-onbeforeprint}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onended,data-th-onended}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oninvalid,data-th-oninvalid}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseout,data-th-onmouseout}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeydown,data-th-onkeydown}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onunload,data-th-onunload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onscroll,data-th-onscroll}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadeddata,data-th-onloadeddata}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ontimeupdate,data-th-ontimeupdate}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragleave,data-th-ondragleave}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousewheel,data-th-onmousewheel}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onload,data-th-onload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragstart,data-th-ondragstart}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onfocus,data-th-onfocus}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onprogress,data-th-onprogress}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadstart,data-th-onloadstart}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onpause,data-th-onpause}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragenter,data-th-ondragenter}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onerror,data-th-onerror}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondrop,data-th-ondrop}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onundo,data-th-onundo}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onstorage,data-th-onstorage}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondblclick,data-th-ondblclick}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onshow,data-th-onshow}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeyup,data-th-onkeyup}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncanplaythrough,data-th-oncanplaythrough}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onratechange,data-th-onratechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncontextmenu,data-th-oncontextmenu}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oncanplay,data-th-oncanplay}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onsuspend,data-th-onsuspend}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onforminput,data-th-onforminput}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseover,data-th-onmouseover}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ononline,data-th-ononline}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onstalled,data-th-onstalled}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onemptied,data-th-onemptied}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onreadystatechange,data-th-onreadystatechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragover,data-th-ondragover}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondragend,data-th-ondragend}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondrag,data-th-ondrag}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onpopstate,data-th-onpopstate}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onseeked,data-th-onseeked}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onabort,data-th-onabort}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmouseup,data-th-onmouseup}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onwaiting,data-th-onwaiting}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onreset,data-th-onreset}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onloadedmetadata,data-th-onloadedmetadata}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onformchange,data-th-onformchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onsubmit,data-th-onsubmit}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onhashchange,data-th-onhashchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onafterprint,data-th-onafterprint}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onchange,data-th-onchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:ondurationchange,data-th-ondurationchange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onplaying,data-th-onplaying}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onoffline,data-th-onoffline}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onvolumechange,data-th-onvolumechange}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:oninput,data-th-oninput}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onmousedown,data-th-onmousedown}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onresize,data-th-onresize}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onclick,data-th-onclick}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onseeking,data-th-onseeking}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onkeypress,data-th-onkeypress}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onplay,data-th-onplay}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onredo,data-th-onredo}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:onbeforeunload,data-th-onbeforeunload}] [1000]: org.thymeleaf.standard.processor.StandardDOMEventAttributeTagProcessor
+[THYMELEAF]             * [* {th:inline,data-th-inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineHTMLTagProcessor
+[THYMELEAF]             * [* {th:type,data-th-type}] [1000]: org.thymeleaf.standard.processor.StandardNonRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:name,data-th-name}] [1000]: org.thymeleaf.standard.processor.StandardNonRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:high,data-th-high}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:icon,data-th-icon}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:maxlength,data-th-maxlength}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:charset,data-th-charset}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:frame,data-th-frame}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:style,data-th-style}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:marginwidth,data-th-marginwidth}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:placeholder,data-th-placeholder}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:frameborder,data-th-frameborder}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:align,data-th-align}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:headers,data-th-headers}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:pattern,data-th-pattern}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scrolling,data-th-scrolling}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:contenteditable,data-th-contenteditable}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:width,data-th-width}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:spellcheck,data-th-spellcheck}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:contextmenu,data-th-contextmenu}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cols,data-th-cols}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:challenge,data-th-challenge}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scope,data-th-scope}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:span,data-th-span}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:height,data-th-height}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:autocomplete,data-th-autocomplete}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:min,data-th-min}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:datetime,data-th-datetime}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:colspan,data-th-colspan}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:enctype,data-th-enctype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:scheme,data-th-scheme}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:http-equiv,data-th-http-equiv}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formenctype,data-th-formenctype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:radiogroup,data-th-radiogroup}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:lang,data-th-lang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:media,data-th-media}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:codebase,data-th-codebase}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:standby,data-th-standby}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:list,data-th-list}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:sandbox,data-th-sandbox}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cellpadding,data-th-cellpadding}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:hspace,data-th-hspace}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:poster,data-th-poster}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:data,data-th-data}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:low,data-th-low}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:compact,data-th-compact}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rev,data-th-rev}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:size,data-th-size}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accesskey,data-th-accesskey}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:max,data-th-max}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:step,data-th-step}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:abbr,data-th-abbr}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:tabindex,data-th-tabindex}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:keytype,data-th-keytype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accept,data-th-accept}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:class,data-th-class}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:dropzone,data-th-dropzone}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:axis,data-th-axis}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:srclang,data-th-srclang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:target,data-th-target}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:manifest,data-th-manifest}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:for,data-th-for}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:sizes,data-th-sizes}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:label,data-th-label}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formmethod,data-th-formmethod}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:start,data-th-start}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rules,data-th-rules}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cite,data-th-cite}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:wrap,data-th-wrap}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:id,data-th-id}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:codetype,data-th-codetype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:classid,data-th-classid}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formaction,data-th-formaction}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:cellspacing,data-th-cellspacing}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:bgcolor,data-th-bgcolor}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:summary,data-th-summary}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:valuetype,data-th-valuetype}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:alt,data-th-alt}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:usemap,data-th-usemap}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:title,data-th-title}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:archive,data-th-archive}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:draggable,data-th-draggable}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rel,data-th-rel}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:vspace,data-th-vspace}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:dir,data-th-dir}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rows,data-th-rows}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:form,data-th-form}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:longdesc,data-th-longdesc}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:border,data-th-border}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:audio,data-th-audio}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:hreflang,data-th-hreflang}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:formtarget,data-th-formtarget}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:preload,data-th-preload}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:marginheight,data-th-marginheight}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:optimum,data-th-optimum}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:rowspan,data-th-rowspan}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:background,data-th-background}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:kind,data-th-kind}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:content,data-th-content}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:accept-charset,data-th-accept-charset}] [1000]: org.thymeleaf.standard.processor.StandardRemovableAttributeTagProcessor
+[THYMELEAF]             * [* {th:xmlbase,data-th-xmlbase}] [1000]: org.thymeleaf.standard.processor.StandardXmlBaseTagProcessor
+[THYMELEAF]             * [* {th:xmllang,data-th-xmllang}] [1000]: org.thymeleaf.standard.processor.StandardXmlLangTagProcessor
+[THYMELEAF]             * [* {xmlns:th}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {th:xmlspace,data-th-xmlspace}] [1000]: org.thymeleaf.standard.processor.StandardXmlSpaceTagProcessor
+[THYMELEAF]             * [{option} *] [1005]: org.thymeleaf.spring6.processor.SpringOptionInSelectFieldTagProcessor
+[THYMELEAF]             * [* {th:value,data-th-value}] [1010]: org.thymeleaf.spring6.processor.SpringValueTagProcessor
+[THYMELEAF]             * [* {th:classappend,data-th-classappend}] [1100]: org.thymeleaf.standard.processor.StandardClassappendTagProcessor
+[THYMELEAF]             * [* {th:styleappend,data-th-styleappend}] [1100]: org.thymeleaf.standard.processor.StandardStyleappendTagProcessor
+[THYMELEAF]             * [* {th:text,data-th-text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext,data-th-utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:fragment,data-th-fragment}] [1500]: org.thymeleaf.standard.processor.StandardFragmentTagProcessor
+[THYMELEAF]             * [* {th:assert,data-th-assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove,data-th-remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* {th:errors,data-th-errors}] [1700]: org.thymeleaf.spring6.processor.SpringErrorsTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputCheckboxFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputFileFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputGeneralFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputPasswordFieldTagProcessor
+[THYMELEAF]             * [{input} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringInputRadioFieldTagProcessor
+[THYMELEAF]             * [{option} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringOptionFieldTagProcessor
+[THYMELEAF]             * [{select} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringSelectFieldTagProcessor
+[THYMELEAF]             * [{textarea} {th:field,data-th-field}] [1700]: org.thymeleaf.spring6.processor.SpringTextareaFieldTagProcessor
+[THYMELEAF]             * [* {th:uerrors,data-th-uerrors}] [1700]: org.thymeleaf.spring6.processor.SpringUErrorsTagProcessor
+[THYMELEAF]             * [* {th:errorclass,data-th-errorclass}] [1800]: org.thymeleaf.spring6.processor.SpringErrorClassTagProcessor
+[THYMELEAF]             * [* {th:ref,data-th-ref}] [10000]: org.thymeleaf.standard.processor.StandardRefAttributeTagProcessor
+[THYMELEAF]             * [{th:block,th-block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* th:*] [2147483647]: org.thymeleaf.standard.processor.StandardDefaultAttributesTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]         * DOCTYPE Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardTranslationDocTypeProcessor
+[THYMELEAF]         * CDATA Section Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCDATASectionProcessor
+[THYMELEAF]         * Comment Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCommentProcessor
+[THYMELEAF]             * [1100]: org.thymeleaf.standard.processor.StandardConditionalCommentProcessor
+[THYMELEAF]     * Processors for Template Mode: XML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:include}] [100]: org.thymeleaf.standard.processor.StandardIncludeTagProcessor
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:attr}] [700]: org.thymeleaf.standard.processor.StandardAttrTagProcessor
+[THYMELEAF]             * [* {th:attrprepend}] [800]: org.thymeleaf.standard.processor.StandardAttrprependTagProcessor
+[THYMELEAF]             * [* {th:attrappend}] [900]: org.thymeleaf.standard.processor.StandardAttrappendTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineXMLTagProcessor
+[THYMELEAF]             * [* {xmlns:th}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:fragment}] [1500]: org.thymeleaf.standard.processor.StandardFragmentTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* {th:ref}] [10000]: org.thymeleaf.standard.processor.StandardRefAttributeTagProcessor
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* th:*] [2147483647]: org.thymeleaf.standard.processor.StandardDefaultAttributesTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]         * CDATA Section Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCDATASectionProcessor
+[THYMELEAF]         * Comment Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningCommentProcessor
+[THYMELEAF]     * Processors for Template Mode: TEXT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Processors for Template Mode: JAVASCRIPT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Processors for Template Mode: CSS
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {th:insert}] [100]: org.thymeleaf.standard.processor.StandardInsertTagProcessor
+[THYMELEAF]             * [* {th:replace}] [100]: org.thymeleaf.standard.processor.StandardReplaceTagProcessor
+[THYMELEAF]             * [* {th:each}] [200]: org.thymeleaf.standard.processor.StandardEachTagProcessor
+[THYMELEAF]             * [* {th:switch}] [250]: org.thymeleaf.standard.processor.StandardSwitchTagProcessor
+[THYMELEAF]             * [* {th:case}] [275]: org.thymeleaf.standard.processor.StandardCaseTagProcessor
+[THYMELEAF]             * [* {th:if}] [300]: org.thymeleaf.standard.processor.StandardIfTagProcessor
+[THYMELEAF]             * [* {th:unless}] [400]: org.thymeleaf.standard.processor.StandardUnlessTagProcessor
+[THYMELEAF]             * [* {th:object}] [500]: org.thymeleaf.standard.processor.StandardObjectTagProcessor
+[THYMELEAF]             * [* {th:with}] [600]: org.thymeleaf.standard.processor.StandardWithTagProcessor
+[THYMELEAF]             * [* {th:inline}] [1000]: org.thymeleaf.standard.processor.StandardInlineTextualTagProcessor
+[THYMELEAF]             * [* {th:text}] [1300]: org.thymeleaf.standard.processor.StandardTextTagProcessor
+[THYMELEAF]             * [* {th:utext}] [1400]: org.thymeleaf.standard.processor.StandardUtextTagProcessor
+[THYMELEAF]             * [* {th:assert}] [1550]: org.thymeleaf.standard.processor.StandardAssertTagProcessor
+[THYMELEAF]             * [* {th:remove}] [1600]: org.thymeleaf.standard.processor.StandardRemoveTagProcessor
+[THYMELEAF]             * [* 100000] [org.thymeleaf.standard.processor.StandardBlockTagProcessor]: {}
+[THYMELEAF]             * [{th:block} *] [100000]: org.thymeleaf.standard.processor.StandardBlockTagProcessor
+[THYMELEAF]         * Text Processors by [precedence]:
+[THYMELEAF]             * [1000]: org.thymeleaf.standard.processor.StandardInliningTextProcessor
+[THYMELEAF]     * Expression Objects:
+[THYMELEAF]         * #ctx
+[THYMELEAF]         * #root
+[THYMELEAF]         * #vars
+[THYMELEAF]         * #object
+[THYMELEAF]         * #locale
+[THYMELEAF]         * #conversions
+[THYMELEAF]         * #uris
+[THYMELEAF]         * #temporals
+[THYMELEAF]         * #calendars
+[THYMELEAF]         * #dates
+[THYMELEAF]         * #bools
+[THYMELEAF]         * #numbers
+[THYMELEAF]         * #objects
+[THYMELEAF]         * #strings
+[THYMELEAF]         * #arrays
+[THYMELEAF]         * #lists
+[THYMELEAF]         * #sets
+[THYMELEAF]         * #maps
+[THYMELEAF]         * #aggregates
+[THYMELEAF]         * #messages
+[THYMELEAF]         * #ids
+[THYMELEAF]         * #execInfo
+[THYMELEAF]         * #request
+[THYMELEAF]         * #response
+[THYMELEAF]         * #session
+[THYMELEAF]         * #servletContext
+[THYMELEAF]         * #fields
+[THYMELEAF]         * #themes
+[THYMELEAF]         * #mvc
+[THYMELEAF]         * #requestdatavalues
+[THYMELEAF]     * Execution Attributes:
+[THYMELEAF]         * "StandardExpressionParser": Standard Expression Parser
+[THYMELEAF]         * "StandardJavaScriptSerializer": org.thymeleaf.standard.serializer.StandardJavaScriptSerializer@2108140e
+[THYMELEAF]         * "StandardCSSSerializer": org.thymeleaf.standard.serializer.StandardCSSSerializer@1f97c29f
+[THYMELEAF]         * "EnableSpringELCompiler": false
+[THYMELEAF]         * "StandardVariableExpressionEvaluator": SpringEL
+[THYMELEAF]         * "StandardConversionService": org.thymeleaf.spring6.expression.SpringStandardConversionService@22dd613c
+[THYMELEAF] * Dialect [2 of 2]: SpringSecurity (org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect)
+[THYMELEAF]     * Prefix: "sec"
+[THYMELEAF]     * Processors for Template Mode: HTML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {sec:authorize-acl,data-sec-authorize-acl}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAclAttrProcessor
+[THYMELEAF]             * [* {sec:authorize,data-sec-authorize}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-expr,data-sec-authorize-expr}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-url,data-sec-authorize-url}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeUrlAttrProcessor
+[THYMELEAF]             * [* {xmlns:sec}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {sec:authentication,data-sec-authentication}] [1300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthenticationAttrProcessor
+[THYMELEAF]     * Processors for Template Mode: XML
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {sec:authorize-acl}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAclAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-expr}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-url}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeUrlAttrProcessor
+[THYMELEAF]             * [* {xmlns:sec}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {sec:authentication}] [1300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthenticationAttrProcessor
+[THYMELEAF]     * Processors for Template Mode: TEXT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {sec:authorize-acl}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAclAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-expr}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-url}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeUrlAttrProcessor
+[THYMELEAF]             * [* {xmlns:sec}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {sec:authentication}] [1300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthenticationAttrProcessor
+[THYMELEAF]     * Processors for Template Mode: JAVASCRIPT
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {sec:authorize-acl}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAclAttrProcessor
+[THYMELEAF]             * [* {sec:authorize}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-expr}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-url}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeUrlAttrProcessor
+[THYMELEAF]             * [* {xmlns:sec}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {sec:authentication}] [1300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthenticationAttrProcessor
+[THYMELEAF]     * Processors for Template Mode: CSS
+[THYMELEAF]         * Element Tag Processors by [matching element and attribute name] [precedence]:
+[THYMELEAF]             * [* {sec:authorize-acl}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAclAttrProcessor
+[THYMELEAF]             * [* {sec:authorize}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-expr}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeAttrProcessor
+[THYMELEAF]             * [* {sec:authorize-url}] [300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthorizeUrlAttrProcessor
+[THYMELEAF]             * [* {xmlns:sec}] [1000]: org.thymeleaf.standard.processor.StandardXmlNsTagProcessor
+[THYMELEAF]             * [* {sec:authentication}] [1300]: org.thymeleaf.extras.springsecurity6.dialect.processor.AuthenticationAttrProcessor
+[THYMELEAF]     * Expression Objects:
+[THYMELEAF]         * #authentication
+[THYMELEAF]         * #authorization
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2026-03-03 09:30:34.733 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2026-03-03 09:31:03.608 [http-nio-8081-exec-4] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:35:54.605 [http-nio-8081-exec-8] ERROR com.rev.app.exception.GlobalExceptionHandler - Unexpected error
+org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> com.rev.app.rest.AuthRestController.register(com.rev.app.dto.RegisterDTO) with 2 errors: [Field error in object 'registerDTO' on field 'securityQuestions': rejected value [null]; codes [NotNull.registerDTO.securityQuestions,NotNull.securityQuestions,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerDTO.securityQuestions,securityQuestions]; arguments []; default message [securityQuestions]]; default message [must not be null]] [Field error in object 'registerDTO' on field 'confirmPassword': rejected value [null]; codes [NotBlank.registerDTO.confirmPassword,NotBlank.confirmPassword,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [registerDTO.confirmPassword,confirmPassword]; arguments []; default message [confirmPassword]]; default message [Please confirm your master password]] 
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:159) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:180) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) [spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) [spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) [spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) [spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) [tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) [spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) [tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) [tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) [spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) [spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.4.3.jar:6.4.3]
+	at com.rev.app.filter.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:66) [classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) [spring-security-web-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) [spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243) [spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) [spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) [spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238) [spring-security-config-6.4.3.jar:6.4.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) [spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) [spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) [spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1447) [?:?]
+2026-03-03 09:37:35.490 [http-nio-8081-exec-2] INFO  com.rev.app.service.impl.UserServiceImpl - User newuser registered and security questions saved successfully.
+2026-03-03 09:39:10.230 [http-nio-8081-exec-7] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:39:30.971 [http-nio-8081-exec-5] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:42:14.385 [http-nio-8081-exec-1] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:44:36.325 [http-nio-8081-exec-9] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:44:36.687 [http-nio-8081-exec-4] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:44:46.139 [http-nio-8081-exec-8] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:44:57.218 [http-nio-8081-exec-6] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:44:57.351 [http-nio-8081-exec-2] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:45:15.143 [http-nio-8081-exec-9] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=26, score=4, label=Very Strong
+2026-03-03 09:45:15.156 [http-nio-8081-exec-9] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 61: weak=0, reused=0, old=0, score=100
+2026-03-03 09:45:15.669 [http-nio-8081-exec-9] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-03-03 09:46:14.164 [http-nio-8081-exec-6] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'Revature' for user Sidhu
+2026-03-03 09:47:01.219 [http-nio-8081-exec-6] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry updated: id=26 for user 61
+2026-03-03 09:47:21.261 [http-nio-8081-exec-9] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=26, score=4, label=Very Strong
+2026-03-03 09:47:21.262 [http-nio-8081-exec-9] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=41, score=4, label=Very Strong
+2026-03-03 09:47:21.265 [http-nio-8081-exec-9] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 61: weak=0, reused=2, old=0, score=90
+2026-03-03 09:47:21.562 [http-nio-8081-exec-9] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-03-03 09:48:30.441 [http-nio-8081-exec-8] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'IDBI' for user Sidhu
+2026-03-03 09:48:59.570 [http-nio-8081-exec-9] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry updated: id=42 for user 61
+2026-03-03 09:49:05.675 [http-nio-8081-exec-5] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=42, score=0, label=Weak
+2026-03-03 09:49:05.675 [http-nio-8081-exec-5] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=26, score=4, label=Very Strong
+2026-03-03 09:49:05.675 [http-nio-8081-exec-5] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=41, score=4, label=Very Strong
+2026-03-03 09:49:05.675 [http-nio-8081-exec-5] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 61: weak=1, reused=2, old=0, score=80
+2026-03-03 09:49:05.987 [http-nio-8081-exec-5] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-03-03 09:50:11.006 [http-nio-8081-exec-2] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'Amazon' for user Sidhu
+2026-03-03 09:51:04.463 [http-nio-8081-exec-5] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'Phone' for user Sidhu
+2026-03-03 09:52:21.360 [http-nio-8081-exec-4] INFO  com.rev.app.service.impl.VaultServiceImpl - Vault entry added: 'Gmail' for user Sidhu
+2026-03-03 09:53:31.933 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=43, score=4, label=Very Strong
+2026-03-03 09:53:31.933 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=62, score=2, label=Medium
+2026-03-03 09:53:31.933 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=42, score=0, label=Weak
+2026-03-03 09:53:31.934 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=26, score=4, label=Very Strong
+2026-03-03 09:53:31.934 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=61, score=0, label=Weak
+2026-03-03 09:53:31.934 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=41, score=4, label=Very Strong
+2026-03-03 09:53:31.934 [http-nio-8081-exec-3] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 61: weak=2, reused=2, old=0, score=70
+2026-03-03 09:53:32.240 [http-nio-8081-exec-3] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-03-03 09:53:42.056 [http-nio-8081-exec-7] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=43, score=4, label=Very Strong
+2026-03-03 09:53:42.056 [http-nio-8081-exec-7] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=62, score=2, label=Medium
+2026-03-03 09:53:42.056 [http-nio-8081-exec-7] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=42, score=0, label=Weak
+2026-03-03 09:53:42.062 [http-nio-8081-exec-7] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=26, score=4, label=Very Strong
+2026-03-03 09:53:42.063 [http-nio-8081-exec-7] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=61, score=0, label=Weak
+2026-03-03 09:53:42.064 [http-nio-8081-exec-7] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=41, score=4, label=Very Strong
+2026-03-03 09:53:42.064 [http-nio-8081-exec-7] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 61: weak=2, reused=2, old=0, score=70
+2026-03-03 09:54:11.942 [http-nio-8081-exec-2] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:54:12.056 [http-nio-8081-exec-9] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:54:18.715 [http-nio-8081-exec-5] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:54:30.720 [http-nio-8081-exec-1] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:54:54.003 [http-nio-8081-exec-9] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:55:19.762 [http-nio-8081-exec-7] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: Sidhu
+2026-03-03 09:55:20.486 [http-nio-8081-exec-4] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:55:20.575 [http-nio-8081-exec-10] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:55:37.258 [http-nio-8081-exec-1] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=43, score=4, label=Very Strong
+2026-03-03 09:55:37.260 [http-nio-8081-exec-1] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=62, score=2, label=Medium
+2026-03-03 09:55:37.260 [http-nio-8081-exec-1] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=42, score=0, label=Weak
+2026-03-03 09:55:37.261 [http-nio-8081-exec-1] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=26, score=4, label=Very Strong
+2026-03-03 09:55:37.261 [http-nio-8081-exec-1] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=61, score=0, label=Weak
+2026-03-03 09:55:37.261 [http-nio-8081-exec-1] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=41, score=4, label=Very Strong
+2026-03-03 09:55:37.261 [http-nio-8081-exec-1] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 61: weak=2, reused=2, old=0, score=70
+2026-03-03 09:55:37.578 [http-nio-8081-exec-1] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-03-03 09:56:02.971 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=43, score=4, label=Very Strong
+2026-03-03 09:56:02.971 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=62, score=2, label=Medium
+2026-03-03 09:56:02.971 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=42, score=0, label=Weak
+2026-03-03 09:56:02.971 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=26, score=4, label=Very Strong
+2026-03-03 09:56:02.971 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=61, score=0, label=Weak
+2026-03-03 09:56:02.971 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=41, score=4, label=Very Strong
+2026-03-03 09:56:02.971 [http-nio-8081-exec-3] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 61: weak=2, reused=2, old=0, score=70
+2026-03-03 09:56:03.685 [http-nio-8081-exec-3] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-03-03 09:57:28.248 [http-nio-8081-exec-10] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:57:28.346 [http-nio-8081-exec-6] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:57:30.724 [http-nio-8081-exec-2] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:57:30.815 [http-nio-8081-exec-9] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:57:32.114 [http-nio-8081-exec-7] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:57:32.212 [http-nio-8081-exec-5] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:57:39.813 [http-nio-8081-exec-8] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:57:40.117 [http-nio-8081-exec-1] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:57:43.156 [http-nio-8081-exec-2] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:57:43.245 [http-nio-8081-exec-9] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:57:53.769 [http-nio-8081-exec-5] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:57:56.085 [http-nio-8081-exec-10] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:57:56.186 [http-nio-8081-exec-6] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:58:11.075 [http-nio-8081-exec-2] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=43, score=4, label=Very Strong
+2026-03-03 09:58:11.075 [http-nio-8081-exec-2] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=62, score=2, label=Medium
+2026-03-03 09:58:11.075 [http-nio-8081-exec-2] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=42, score=0, label=Weak
+2026-03-03 09:58:11.075 [http-nio-8081-exec-2] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=26, score=4, label=Very Strong
+2026-03-03 09:58:11.077 [http-nio-8081-exec-2] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=61, score=0, label=Weak
+2026-03-03 09:58:11.077 [http-nio-8081-exec-2] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=41, score=4, label=Very Strong
+2026-03-03 09:58:11.077 [http-nio-8081-exec-2] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 61: weak=2, reused=2, old=0, score=70
+2026-03-03 09:58:11.485 [http-nio-8081-exec-2] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-03-03 09:58:13.545 [http-nio-8081-exec-7] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:58:13.633 [http-nio-8081-exec-5] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:58:19.321 [http-nio-8081-exec-8] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:58:19.410 [http-nio-8081-exec-1] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:58:23.734 [http-nio-8081-exec-2] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:58:23.826 [http-nio-8081-exec-9] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:58:38.505 [http-nio-8081-exec-10] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:58:40.828 [http-nio-8081-exec-8] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:58:40.960 [http-nio-8081-exec-1] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:58:49.599 [http-nio-8081-exec-9] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 09:58:51.046 [http-nio-8081-exec-7] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 09:58:51.129 [http-nio-8081-exec-5] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:02:10.755 [http-nio-8081-exec-2] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:02:12.440 [http-nio-8081-exec-3] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 10:02:12.607 [http-nio-8081-exec-7] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:02:15.244 [http-nio-8081-exec-8] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:02:25.965 [http-nio-8081-exec-1] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:02:46.058 [http-nio-8081-exec-9] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:05:01.412 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@5908f181 (ORA-17008: Closed connection
+https://docs.oracle.com/error-help/db/ora-17008/). Possibly consider using a shorter maxLifetime value.
+2026-03-03 10:09:20.659 [http-nio-8081-exec-10] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:09:40.578 [http-nio-8081-exec-2] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:09:47.225 [http-nio-8081-exec-7] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:10:03.197 [http-nio-8081-exec-4] WARN  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Security answer mismatch for user 61 question idx=2
+2026-03-03 10:10:03.364 [http-nio-8081-exec-10] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:10:11.391 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@3c74ffdd (ORA-17008: Closed connection
+https://docs.oracle.com/error-help/db/ora-17008/). Possibly consider using a shorter maxLifetime value.
+2026-03-03 10:10:16.183 [http-nio-8081-exec-2] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:10:33.065 [http-nio-8081-exec-4] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:10:48.980 [http-nio-8081-exec-5] INFO  com.rev.app.service.impl.PasswordRecoveryServiceImpl - Password reset via security questions for user: Sidhu
+2026-03-03 10:10:49.579 [http-nio-8081-exec-8] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 10:10:49.684 [http-nio-8081-exec-6] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:11:08.930 [http-nio-8081-exec-2] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=43, score=4, label=Very Strong
+2026-03-03 10:11:08.933 [http-nio-8081-exec-2] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=62, score=2, label=Medium
+2026-03-03 10:11:08.933 [http-nio-8081-exec-2] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=42, score=0, label=Weak
+2026-03-03 10:11:08.933 [http-nio-8081-exec-2] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=26, score=4, label=Very Strong
+2026-03-03 10:11:08.933 [http-nio-8081-exec-2] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=61, score=0, label=Weak
+2026-03-03 10:11:08.934 [http-nio-8081-exec-2] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=41, score=4, label=Very Strong
+2026-03-03 10:11:08.934 [http-nio-8081-exec-2] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 61: weak=2, reused=2, old=0, score=70
+2026-03-03 10:11:09.243 [http-nio-8081-exec-2] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-03-03 10:11:20.203 [http-nio-8081-exec-9] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=43, score=4, label=Very Strong
+2026-03-03 10:11:20.203 [http-nio-8081-exec-9] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=62, score=2, label=Medium
+2026-03-03 10:11:20.203 [http-nio-8081-exec-9] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=42, score=0, label=Weak
+2026-03-03 10:11:20.214 [http-nio-8081-exec-9] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=26, score=4, label=Very Strong
+2026-03-03 10:11:20.217 [http-nio-8081-exec-9] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=61, score=0, label=Weak
+2026-03-03 10:11:20.217 [http-nio-8081-exec-9] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=41, score=4, label=Very Strong
+2026-03-03 10:11:20.217 [http-nio-8081-exec-9] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 61: weak=2, reused=2, old=0, score=70
+2026-03-03 10:11:20.595 [http-nio-8081-exec-9] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-03-03 10:11:25.121 [http-nio-8081-exec-4] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=43, score=4, label=Very Strong
+2026-03-03 10:11:25.121 [http-nio-8081-exec-4] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=62, score=2, label=Medium
+2026-03-03 10:11:25.121 [http-nio-8081-exec-4] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=42, score=0, label=Weak
+2026-03-03 10:11:25.121 [http-nio-8081-exec-4] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=26, score=4, label=Very Strong
+2026-03-03 10:11:25.121 [http-nio-8081-exec-4] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=61, score=0, label=Weak
+2026-03-03 10:11:25.123 [http-nio-8081-exec-4] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=41, score=4, label=Very Strong
+2026-03-03 10:11:25.123 [http-nio-8081-exec-4] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 61: weak=2, reused=2, old=0, score=70
+2026-03-03 10:11:47.635 [http-nio-8081-exec-9] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=43, score=4, label=Very Strong
+2026-03-03 10:11:47.635 [http-nio-8081-exec-9] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=62, score=2, label=Medium
+2026-03-03 10:11:47.635 [http-nio-8081-exec-9] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=42, score=0, label=Weak
+2026-03-03 10:11:47.638 [http-nio-8081-exec-9] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=26, score=4, label=Very Strong
+2026-03-03 10:11:47.638 [http-nio-8081-exec-9] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=61, score=0, label=Weak
+2026-03-03 10:11:47.638 [http-nio-8081-exec-9] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=41, score=4, label=Very Strong
+2026-03-03 10:11:47.638 [http-nio-8081-exec-9] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 61: weak=2, reused=2, old=0, score=70
+2026-03-03 10:11:47.943 [http-nio-8081-exec-9] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-03-03 10:12:32.607 [http-nio-8081-exec-9] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to cherukusidhu@gmail.com for purpose=2FA
+2026-03-03 10:12:32.607 [http-nio-8081-exec-9] INFO  com.rev.app.service.impl.VerificationServiceImpl - OTP generated and emailed to cherukusidhu@gmail.com for purpose=2FA
+2026-03-03 10:12:34.383 [http-nio-8081-exec-5] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:12:46.728 [http-nio-8081-exec-8] INFO  com.rev.app.service.impl.VerificationServiceImpl - Code validated for user Sidhu purpose=2FA
+2026-03-03 10:12:48.258 [http-nio-8081-exec-8] INFO  com.rev.app.service.impl.UserServiceImpl - 2FA enabled for user: Sidhu
+2026-03-03 10:12:54.852 [http-nio-8081-exec-3] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 10:12:54.972 [http-nio-8081-exec-7] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:12:58.580 [http-nio-8081-exec-4] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 10:12:58.691 [http-nio-8081-exec-10] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:13:01.493 [http-nio-8081-exec-6] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 10:13:01.584 [http-nio-8081-exec-2] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:13:03.995 [http-nio-8081-exec-3] INFO  com.rev.app.controller.AuthController - Accessing login page from user/guest. Path aliases: /login, /auth/login
+2026-03-03 10:13:04.113 [http-nio-8081-exec-7] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:13:31.064 [http-nio-8081-exec-4] INFO  com.rev.app.service.impl.EmailServiceImpl - OTP email sent to cherukusidhu@gmail.com for purpose=LOGIN_2FA
+2026-03-03 10:13:31.064 [http-nio-8081-exec-4] INFO  com.rev.app.service.impl.VerificationServiceImpl - OTP generated and emailed to cherukusidhu@gmail.com for purpose=LOGIN_2FA
+2026-03-03 10:13:31.934 [http-nio-8081-exec-8] WARN  com.rev.app.exception.GlobalExceptionHandler - Not found: No static resource favicon.ico.
+2026-03-03 10:13:42.444 [http-nio-8081-exec-6] INFO  com.rev.app.service.impl.VerificationServiceImpl - Code validated for user Sidhu purpose=LOGIN_2FA
+2026-03-03 10:13:44.174 [http-nio-8081-exec-1] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=43, score=4, label=Very Strong
+2026-03-03 10:13:44.174 [http-nio-8081-exec-1] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=62, score=2, label=Medium
+2026-03-03 10:13:44.174 [http-nio-8081-exec-1] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=42, score=0, label=Weak
+2026-03-03 10:13:44.174 [http-nio-8081-exec-1] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=26, score=4, label=Very Strong
+2026-03-03 10:13:44.174 [http-nio-8081-exec-1] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=61, score=0, label=Weak
+2026-03-03 10:13:44.174 [http-nio-8081-exec-1] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=41, score=4, label=Very Strong
+2026-03-03 10:13:44.177 [http-nio-8081-exec-1] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 61: weak=2, reused=2, old=0, score=70
+2026-03-03 10:13:44.484 [http-nio-8081-exec-1] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-03-03 10:14:13.973 [http-nio-8081-exec-6] INFO  com.rev.app.service.impl.UserServiceImpl - 2FA disabled for user: Sidhu
+2026-03-03 10:14:20.633 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=43, score=4, label=Very Strong
+2026-03-03 10:14:20.635 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=62, score=2, label=Medium
+2026-03-03 10:14:20.635 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=42, score=0, label=Weak
+2026-03-03 10:14:20.635 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=26, score=4, label=Very Strong
+2026-03-03 10:14:20.635 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=61, score=0, label=Weak
+2026-03-03 10:14:20.635 [http-nio-8081-exec-3] DEBUG com.rev.app.service.impl.SecurityAuditServiceImpl - Password check: id=41, score=4, label=Very Strong
+2026-03-03 10:14:20.635 [http-nio-8081-exec-3] INFO  com.rev.app.service.impl.SecurityAuditServiceImpl - Security audit for user 61: weak=2, reused=2, old=0, score=70
+2026-03-03 10:14:20.937 [http-nio-8081-exec-3] DEBUG com.rev.app.controller.DashboardController - Dashboard loaded for user: Sidhu
+2026-03-03 10:15:08.306 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@7e6f761 (ORA-17008: Closed connection
+https://docs.oracle.com/error-help/db/ora-17008/). Possibly consider using a shorter maxLifetime value.
