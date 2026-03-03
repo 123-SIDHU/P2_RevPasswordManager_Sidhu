@@ -1,10 +1,11 @@
-package com.rev.app.service.impl;
+package com.rev.app.service;
 
 import com.rev.app.entity.VaultEntry;
 import com.rev.app.repository.IVaultEntryRepository;
 import com.rev.app.service.IEncryptionService;
 import com.rev.app.service.IPasswordGeneratorService;
 import com.rev.app.service.ISecurityAuditService.AuditReport;
+import com.rev.app.service.impl.SecurityAuditServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

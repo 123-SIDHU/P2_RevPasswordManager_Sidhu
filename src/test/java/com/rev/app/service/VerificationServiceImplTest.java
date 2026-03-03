@@ -1,8 +1,9 @@
-package com.rev.app.service.impl;
+package com.rev.app.service;
 
 import com.rev.app.entity.User;
 import com.rev.app.repository.IVerificationCodeRepository;
 import com.rev.app.service.IEmailService;
+import com.rev.app.service.impl.VerificationServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

@@ -1,9 +1,10 @@
-package com.rev.app.service.impl;
+package com.rev.app.service;
 
 import com.rev.app.entity.User;
 import com.rev.app.exception.InvalidCredentialsException;
 import com.rev.app.repository.ISecurityQuestionRepository;
 import com.rev.app.repository.IUserRepository;
+import com.rev.app.service.impl.PasswordRecoveryServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

@@ -1,5 +1,6 @@
-package com.rev.app.service.impl;
+package com.rev.app.service;
 
+import com.rev.app.service.impl.EmailServiceImpl;
 import jakarta.mail.internet.MimeMessage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
