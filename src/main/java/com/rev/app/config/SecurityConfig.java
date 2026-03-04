@@ -78,7 +78,8 @@ public class SecurityConfig {
                                                                 "/", "/index", "/login", "/register", "/auth/login", "/auth/register",
                                                                 "/recover/**", "/auth/verify-email", "/verify-email",
                                                                 "/auth/2fa-login", "/api/auth/**",
-                                                                "/static/**", "/css/**", "/js/**", "/images/**", "/favicon.ico")
+                                                                "/static/**", "/css/**", "/js/**", "/images/**", "/favicon.ico",
+                                                                "/h2-console/**")
                                                 .permitAll()
                                                 .anyRequest().authenticated())
                                 .formLogin(form -> form
@@ -100,7 +101,10 @@ public class SecurityConfig {
                                                 .maximumSessions(1)
                                                 .expiredUrl("/login?expired=true"))
                                 .csrf(csrf -> csrf
-                                                .ignoringRequestMatchers("/api/**") // If REST endpoints are ever added
+                                                .ignoringRequestMatchers("/api/**", "/h2-console/**")
+                                )
+                                .headers(headers -> headers
+                                                .frameOptions(frame -> frame.sameOrigin())
                                 );
 
                 return http.build();
